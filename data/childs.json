@@ -1,0 +1,1865 @@
+{
+  "c001": {
+    "name": "Mona",
+    "variants": {
+      "16": {},
+      "01": {
+        "censored": "imgur.com/GYxjPaj"
+      },
+      "02": {
+        "censored": "imgur.com/a/d0QpfBE"
+      }
+    }
+  },
+  "c002": {
+    "variants": {
+      "12": {},
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/KhNWW9m"
+      },
+      "02": {
+        "censored": "imgur.com/a/lbiOxJY"
+      }
+    },
+    "name": "Lisa"
+  },
+  "c003": {
+    "name": "Davi",
+    "variants": {
+      "13": {},
+      "01": {
+        "censored": "imgur.com/a/6OBVLpO"
+      },
+      "02": {
+        "censored": "imgur.com/a/EOMMHbh"
+      }
+    }
+  },
+  "c004": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/AqjOzva"
+      },
+      "02": {
+        "censored": "imgur.com/a/UMABIj8"
+      }
+    },
+    "name": "Cheoyong"
+  },
+  "c005": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/kUJd6dQ"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/fkszscv"
+      }
+    },
+    "name": "Mars"
+  },
+  "c007": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/KbtDWVu"
+      },
+      "02": {
+        "censored": "imgur.com/a/doehl1T"
+      }
+    },
+    "name": "Phoenix"
+  },
+  "c008": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/0C5WIqH"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/Y7O0sqZ"
+      }
+    },
+    "name": "Frigga"
+  },
+  "c009": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/sHGMTYZ"
+      },
+      "02": {
+        "censored": "imgur.com/a/Wih6Pd0"
+      }
+    },
+    "name": "Hector"
+  },
+  "c010": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/Q6PIwDU"
+      },
+      "02": {
+        "censored": "imgur.com/a/feqfhCn"
+      }
+    },
+    "name": "Demeter"
+  },
+  "c011": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/feqfhCn"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/F0S4eXO"
+      }
+    },
+    "name": "Deino"
+  },
+  "c013": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/YE1WQ8l"
+      },
+      "02": {
+        "censored": "imgur.com/a/hcG6quL"
+      }
+    },
+    "name": "Artemis"
+  },
+  "c015": {
+    "name": "???",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c017": {
+    "variants": {
+      "00": {},
+      "02": {
+        "uncensored": "imgur.com/a/uxJveKh"
+      }
+    }
+  },
+  "c018": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/b2IAwPt"
+      },
+      "02": {
+        "censored": "imgur.com/a/shIe6Ir"
+      }
+    },
+    "name": "Korra"
+  },
+  "c019": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/kaPuneL"
+      },
+      "02": {
+        "censored": "imgur.com/a/TrYrxM8"
+      }
+    },
+    "name": "Eris"
+  },
+  "c020": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/IIWCrNU",
+        "uncensored": "imgur.com/a/MsKIAKn"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/Aw9oY3r"
+      }
+    },
+    "name": "Fortuna"
+  },
+  "c022": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/w1RbVvm"
+      },
+      "02": {
+        "censored": "imgur.com/a/zwRer3V"
+      }
+    },
+    "name": "Mayahuel"
+  },
+  "c026": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/P6Mi0yI"
+      },
+      "02": {
+        "censored": "imgur.com/a/P6Mi0yI"
+      }
+    },
+    "name": "Eos"
+  },
+  "c027": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/BsABnfg"
+      },
+      "02": {
+        "censored": "imgur.com/a/u2OHNo2"
+      }
+    },
+    "name": "Cynthia"
+  },
+  "c028": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/LHRtmAI",
+        "uncensored": "imgur.com/a/ebmCmfM"
+      },
+      "02": {
+        "censored": "imgur.com/a/tukd9dZ"
+      }
+    },
+    "name": "Leda"
+  },
+  "c029": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/Nhy7Q95",
+        "uncensored": "imgur.com/a/sq5Kgt8"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/m2xR17Z"
+      }
+    },
+    "name": "Selene"
+  },
+  "c030": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/b8lZZVm"
+      },
+      "02": {
+        "censored": "imgur.com/a/kVP8bO1"
+      }
+    },
+    "name": "Detective Girl"
+  },
+  "c031": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/038khxk",
+        "uncensored": "imgur.com/a/aqgJeHh"
+      },
+      "02": {}
+    },
+    "name": "Freyja"
+  },
+  "c032": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/p8dYVKv"
+      },
+      "02": {
+        "censored": "imgur.com/a/ALyYNcp"
+      }
+    },
+    "name": "Alecto"
+  },
+  "c033": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/eDvkegH"
+      },
+      "02": {
+        "censored": "imgur.com/a/dUZd9w1"
+      }
+    },
+    "name": "Diana"
+  },
+  "c034": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/y3T9cma"
+      },
+      "02": {
+        "censored": "imgur.com/a/bNfb8DZ"
+      }
+    },
+    "name": "Mnemosyne"
+  },
+  "c035": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/E1SsNlT"
+      },
+      "02": {
+        "censored": "imgur.com/a/EK1SAr4"
+      }
+    },
+    "name": "Persephone"
+  },
+  "c036": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/cIKN1DW"
+      },
+      "02": {
+        "censored": "imgur.com/a/OpVnfsv"
+      }
+    },
+    "name": "Hermes"
+  },
+  "c037": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/bxhf3Rr"
+      },
+      "02": {
+        "censored": "imgur.com/a/wiPYPWP"
+      }
+    },
+    "name": "Judas"
+  },
+  "c038": {
+    "name": "Nu-Calypso(?)",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c039": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/jpztns9"
+      },
+      "02": {
+        "censored": "imgur.com/a/6ghXV0m"
+      }
+    },
+    "name": "Morrigan"
+  },
+  "c040": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/OQkFW33"
+      },
+      "02": {
+        "censored": "imgur.com/a/YbvttS7"
+      }
+    },
+    "name": "Shamash"
+  },
+  "c041": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/4nOE5WA"
+      },
+      "02": {
+        "censored": "imgur.com/a/nKxrztX"
+      }
+    },
+    "name": "Tiamat"
+  },
+  "c043": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/N0PEQli"
+      },
+      "02": {
+        "censored": "imgur.com/a/s6JGCCf"
+      }
+    },
+    "name": "Hera"
+  },
+  "c044": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/AFibeoy"
+      },
+      "02": {
+        "censored": "imgur.com/a/HihK7BH"
+      }
+    },
+    "name": "Pantheon"
+  },
+  "c045": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/ibNAIT0"
+      },
+      "02": {
+        "censored": "imgur.com/a/KrSYTtF"
+      }
+    },
+    "name": "Aria"
+  },
+  "c047": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/Y6Rj555"
+      },
+      "02": {
+        "censored": "imgur.com/a/nP3Fjn2"
+      }
+    },
+    "name": "Hestia"
+  },
+  "c048": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/sUdNJKJ"
+      },
+      "02": {
+        "censored": "imgur.com/a/YVgE2fd"
+      }
+    },
+    "name": "Neamhain"
+  },
+  "c049": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/SVALrlp",
+        "uncensored": "imgur.com/a/yvemes4"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/ItwhHiT"
+      }
+    },
+    "name": "Maat"
+  },
+  "c050": {
+    "variants": {
+      "02": {}
+    }
+  },
+  "c051": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/zWtehBd"
+      },
+      "02": {
+        "censored": "imgur.com/a/noAH8er"
+      }
+    },
+    "name": "Frej"
+  },
+  "c052": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/UWk5ZIq"
+      },
+      "02": {
+        "censored": "imgur.com/a/pbSCmcu"
+      }
+    },
+    "name": "Berit"
+  },
+  "c053": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/kpZyUz5"
+      },
+      "02": {
+        "censored": "imgur.com/a/AYoFcu6"
+      }
+    },
+    "name": "Metis"
+  },
+  "c054": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/yJj5L91"
+      },
+      "02": {
+        "censored": "imgur.com/a/CgEFOQV"
+      }
+    },
+    "name": "Legend"
+  },
+  "c056": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/DXYx33z",
+        "uncensored": "imgur.com/a/dXHicFD"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/Pj6fVo1"
+      }
+    },
+    "name": "Jeanne d' Arc"
+  },
+  "c057": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/GPKXt9Q"
+      },
+      "02": {
+        "censored": "imgur.com/a/ew2Wfrk"
+      }
+    },
+    "name": "Lan Fei"
+  },
+  "c058": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/UaKubkE"
+      },
+      "02": {
+        "censored": "imgur.com/a/IvhNvHY"
+      }
+    },
+    "name": "Nirrti"
+  },
+  "c060": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/6kQMQVO"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/nhn3T0R"
+      }
+    },
+    "name": "Tisiphone"
+  },
+  "c061": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/NE1rR39"
+      },
+      "02": {
+        "censored": "imgur.com/a/BAMCACs"
+      }
+    },
+    "name": "Siren"
+  },
+  "c062": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/IQjXfTu"
+      },
+      "02": {
+        "censored": "imgur.com/a/zsbvImX"
+      }
+    },
+    "name": "Europa"
+  },
+  "c063": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/fRqne7E"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/MuY4gqV"
+      }
+    },
+    "name": "Freesia"
+  },
+  "c065": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/gUnDp9c",
+        "uncensored": "imgur.com/a/8Kbqu5D"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/2ReuOLn"
+      }
+    },
+    "name": "Erato"
+  },
+  "c066": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/2oAY1JJ"
+      },
+      "02": {
+        "censored": "imgur.com/a/4iElJGx"
+      }
+    },
+    "name": "Aten"
+  },
+  "c067": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/KLWzoNk"
+      },
+      "02": {
+        "censored": "imgur.com/a/zwflAuo"
+      }
+    },
+    "name": "Thanatos"
+  },
+  "c068": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/kbWnZx0",
+        "uncensored": "imgur.com/a/Y1zUzAb"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/rHV85ns"
+      }
+    },
+    "name": "Ambrosia"
+  },
+  "c069": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/X3M49Hn"
+      },
+      "02": {
+        "censored": "imgur.com/a/cqTLwWI"
+      }
+    },
+    "name": "Ptah"
+  },
+  "c072": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/vJGyo1e"
+      },
+      "02": {
+        "censored": "imgur.com/a/qkoTKJy"
+      }
+    },
+    "name": "Fenrir"
+  },
+  "c074": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/eNurPYP",
+        "uncensored": "imgur.com/a/lgL6pwj"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/hxUbqaj"
+      }
+    },
+    "name": "Quirinus"
+  },
+  "c075": {
+    "name": "Taha",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c082": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/80jwC2C"
+      },
+      "02": {
+        "censored": "imgur.com/a/kkWa0hx"
+      }
+    },
+    "name": "Calchas"
+  },
+  "c083": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/kkWa0hx"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/u66hJT3"
+      }
+    },
+    "name": "Neith"
+  },
+  "c086": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/sNPrhkS"
+      },
+      "02": {
+        "censored": "imgur.com/a/grBrjS8"
+      }
+    },
+    "name": "Goga"
+  },
+  "c087": {
+    "name": "???",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c090": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/eGhTZ2e"
+      },
+      "02": {
+        "censored": "imgur.com/a/t5c6rl2"
+      }
+    },
+    "name": "Vulcan"
+  },
+  "c091": {
+    "variants": {
+      "00": {},
+      "01": {}
+    },
+    "name": "Myra (?)**"
+  },
+  "c092": {
+    "name": "???",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c095": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/OslX0Xt"
+      },
+      "02": {
+        "uncensored": "imgur.com/a/5JL43Yx"
+      }
+    },
+    "name": "Vesta"
+  },
+  "c099": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/2hvtMlL"
+      },
+      "02": {}
+    },
+    "name": "Melpomene"
+  },
+  "c101": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/aaOFKVy"
+      },
+      "02": {
+        "censored": "imgur.com/QIIpC7d"
+      }
+    },
+    "name": "Syrinx"
+  },
+  "c106": {
+    "name": "Medeia",
+    "variants": {
+      "01": {
+        "censored": "imgur.com/wSkzBzz"
+      },
+      "02": {
+        "censored": "imgur.com/qCRmhX1"
+      }
+    }
+  },
+  "c107": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/zcaxIyC"
+      },
+      "02": {
+        "censored": "imgur.com/E0pZEKu"
+      }
+    },
+    "name": "Apollo"
+  },
+  "c112": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/DhpGq5w"
+      },
+      "02": {
+        "censored": "imgur.com/osCHZdX"
+      }
+    },
+    "name": "Elias"
+  },
+  "c113": {
+    "variants": {
+      "00": {}
+    }
+  },
+  "c115": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/s2VBP0G"
+      },
+      "02": {
+        "censored": "imgur.com/aabiCwt"
+      }
+    },
+    "name": "Sonnet"
+  },
+  "c116": {
+    "name": "Pluto",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c117": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/lhHuWUC"
+      },
+      "02": {
+        "censored": "imgur.com/OgusS0b"
+      }
+    },
+    "name": "Yaga"
+  },
+  "c120": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/6w7uW1L"
+      },
+      "02": {
+        "censored": "imgur.com/maNwyFK",
+        "uncensored": "imgur.com/cM0qvfB"
+      }
+    },
+    "name": "Flora"
+  },
+  "c121": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/qnoBcg2"
+      },
+      "02": {
+        "censored": "imgur.com/qXpNFpK"
+      }
+    },
+    "name": "Muse"
+  },
+  "c123": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/pP6rH26"
+      },
+      "02": {
+        "censored": "imgur.com/HvpnK3v"
+      }
+    },
+    "name": "Baphomet"
+  },
+  "c124": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/DLV8WiL"
+      },
+      "02": {
+        "censored": "imgur.com/Slyy46f"
+      }
+    },
+    "name": "Eve"
+  },
+  "c125": {
+    "variants": {
+      "00": {},
+      "01": {}
+    },
+    "name": "Altice"
+  },
+  "c126": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/1Oo2mgx"
+      },
+      "02": {
+        "censored": "imgur.com/jNoBES7"
+      }
+    },
+    "name": "Salmacis"
+  },
+  "c127": {
+    "variants": {
+      "00": {},
+      "01": {
+        "uncensored": "imgur.com/hlTMznh"
+      },
+      "02": {
+        "uncensored": "imgur.com/TOBl0MM"
+      }
+    },
+    "name": "Bastet"
+  },
+  "c129": {
+    "name": "???",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c130": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/jg60zgm"
+      },
+      "02": {
+        "censored": "imgur.com/nnmFIGq"
+      }
+    },
+    "name": "Genius"
+  },
+  "c131": {
+    "variants": {
+      "00": {},
+      "01": {}
+    },
+    "name": "???"
+  },
+  "c132": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/5A5ERyw"
+      },
+      "02": {
+        "censored": "imgur.com/qMRutJ9"
+      }
+    },
+    "name": "Midas"
+  },
+  "c133": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/FjdnHQe"
+      },
+      "02": {
+        "censored": "imgur.com/2pDuy48"
+      }
+    },
+    "name": "Titania"
+  },
+  "c135": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/xz9Rdg8"
+      },
+      "02": {
+        "censored": "imgur.com/8TUjI8j"
+      }
+    },
+    "name": "Valkyrie"
+  },
+  "c139": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/ukUK9yr"
+      },
+      "02": {
+        "uncensored": "imgur.com/HTgGyiW"
+      }
+    },
+    "name": "Pomona"
+  },
+  "c141": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/VbpReps"
+      },
+      "02": {
+        "censored": "imgur.com/3R2Lrjj"
+      }
+    },
+    "name": "Amor"
+  },
+  "c142": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/GL310tN"
+      },
+      "02": {
+        "censored": "imgur.com/k7R6D7N"
+      }
+    },
+    "name": "Hypnos"
+  },
+  "c147": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/0ppA65d"
+      },
+      "02": {
+        "censored": "imgur.com/yZmlobM"
+      }
+    },
+    "name": "Baal"
+  },
+  "c148": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/uwULriK"
+      },
+      "02": {
+        "censored": "imgur.com/A0bliAT"
+      }
+    },
+    "name": "Inanna"
+  },
+  "c149": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/8iWk1QG"
+      },
+      "02": {
+        "censored": "imgur.com/0yyD5Ql"
+      }
+    },
+    "name": "Rusalka"
+  },
+  "c152": {
+    "variants": {
+      "00": {}
+    }
+  },
+  "c153": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/dCh7DBK"
+      },
+      "02": {
+        "censored": "imgur.com/FtObrSu"
+      }
+    },
+    "name": "Epona"
+  },
+  "c154": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/hIZDvik"
+      },
+      "02": {
+        "censored": "imgur.com/DRdkc7h"
+      }
+    },
+    "name": "Thoth"
+  },
+  "c156": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/bdZASNj"
+      },
+      "02": {
+        "censored": "imgur.com/hpgXdNP"
+      }
+    },
+    "name": "Elizabeth"
+  },
+  "c158": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/cLRar0Q"
+      },
+      "02": {
+        "censored": "imgur.com/M751KLg"
+      }
+    },
+    "name": "Naias"
+  },
+  "c161": {
+    "name": "???",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c164": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/sQebvFR"
+      },
+      "02": {
+        "uncensored": "imgur.com/J8DE6I3"
+      }
+    },
+    "name": "Ishtar"
+  },
+  "c167": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/6ktmBDa"
+      },
+      "02": {
+        "censored": "imgur.com/gxbpq9o"
+      }
+    },
+    "name": "Chang'e"
+  },
+  "c169": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/owlbNKg"
+      },
+      "02": {
+        "censored": "imgur.com/NB3kgQk"
+      }
+    },
+    "name": "Euros"
+  },
+  "c172": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/3dg4Nvc"
+      },
+      "02": {
+        "censored": "imgur.com/ZCLbrnW"
+      }
+    },
+    "name": "Yuna"
+  },
+  "c173": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/BSitYa6"
+      },
+      "02": {
+        "censored": "imgur.com/GXWtqax"
+      }
+    },
+    "name": "Daoine Sidhe"
+  },
+  "c174": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/7CLAWfh"
+      },
+      "02": {
+        "uncensored": "imgur.com/VJpEsKc"
+      }
+    },
+    "name": "A.I"
+  },
+  "c175": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/6muZfYI"
+      },
+      "02": {
+        "censored": "imgur.com/8wvJWwv"
+      }
+    },
+    "name": "Red Cross"
+  },
+  "c178": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/A8gi4X9"
+      },
+      "02": {
+        "censored": "imgur.com/5TdqONj"
+      }
+    },
+    "name": "Morgana"
+  },
+  "c180": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/Vekt1dJ"
+      },
+      "02": {
+        "uncensored": "imgur.com/glQFTkA"
+      }
+    },
+    "name": "Mammon"
+  },
+  "c183": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/gDmNG9i"
+      },
+      "02": {
+        "censored": "imgur.com/yGPF0nN"
+      }
+    },
+    "name": "Dana"
+  },
+  "c184": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/XZFKfSO"
+      },
+      "02": {
+        "censored": "imgur.com/5FqfOiJ"
+      }
+    },
+    "name": "Elysion"
+  },
+  "c185": {
+    "name": "???",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c188": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/HPsXDhi"
+      },
+      "02": {
+        "censored": "imgur.com/gIfQgsT",
+        "uncensored": "imgur.com/opwDxZq"
+      }
+    },
+    "name": "Atalanta"
+  },
+  "c189": {
+    "name": "Kratos",
+    "variants": {
+      "01": {
+        "censored": "imgur.com/x3ZmrWN"
+      },
+      "02": {
+        "censored": "imgur.com/Wom2xBQ"
+      }
+    }
+  },
+  "c190": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/utOmlmt"
+      },
+      "02": {
+        "censored": "imgur.com/y8tQm2O"
+      }
+    },
+    "name": "Isis"
+  },
+  "c191": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/Yd1Yczb"
+      },
+      "02": {
+        "censored": "imgur.com/mUUIsxa"
+      }
+    },
+    "name": "Sekhmet"
+  },
+  "c195": {
+    "variants": {
+      "20": {},
+      "00": {},
+      "01": {
+        "censored": "imgur.com/B9mcSw7"
+      },
+      "02": {
+        "censored": "imgur.com/nlQvuyR"
+      }
+    },
+    "name": "Cybele"
+  },
+  "c196": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/v9EmxwD"
+      },
+      "02": {
+        "censored": "imgur.com/zAvGqA0"
+      }
+    },
+    "name": "Idun"
+  },
+  "c198": {
+    "variants": {
+      "00": {},
+      "01": {
+        "uncensored": "imgur.com/EnBiV27"
+      },
+      "02": {
+        "uncensored": "imgur.com/ZzR3Lza"
+      }
+    },
+    "name": "Zelos"
+  },
+  "c199": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/pfRRhwg"
+      },
+      "02": {
+        "censored": "imgur.com/YjYoMzl"
+      }
+    },
+    "name": "Aurora"
+  },
+  "c200": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/rilJuOX"
+      },
+      "02": {
+        "censored": "imgur.com/evZBzQz"
+      }
+    },
+    "name": "Seshat"
+  },
+  "c202": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/7Qi9RFS"
+      },
+      "02": {
+        "uncensored": "imgur.com/ygxvtkr"
+      }
+    },
+    "name": "Victorix"
+  },
+  "c205": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/thZ7om9"
+      },
+      "02": {
+        "censored": "imgur.com/ujmsCME"
+      }
+    },
+    "name": "Merlin"
+  },
+  "c208": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/65zQcnw"
+      },
+      "02": {
+        "censored": "imgur.com/zD0BjkZ"
+      }
+    },
+    "name": "Firo"
+  },
+  "c209": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/phj361J"
+      },
+      "02": {
+        "censored": "imgur.com/F5aQ6Aq"
+      }
+    },
+    "name": "Hecate"
+  },
+  "c210": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/MnySKMK"
+      },
+      "02": {
+        "censored": "imgur.com/oQTUlT1"
+      }
+    },
+    "name": "Tartarus"
+  },
+  "c214": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/Hm1xLcI"
+      },
+      "02": {
+        "censored": "imgur.com/SJtsaVV"
+      }
+    },
+    "name": "Jupiter"
+  },
+  "c220": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/BEuhQij"
+      },
+      "02": {
+        "uncensored": "imgur.com/1XvdjNV"
+      }
+    },
+    "name": "Atropos"
+  },
+  "c221": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/krjInoU"
+      },
+      "02": {
+        "uncensored": "imgur.com/FJa7kvS"
+      }
+    },
+    "name": "Jana"
+  },
+  "c222": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/xAGoDCB"
+      },
+      "02": {
+        "censored": "imgur.com/Rl1yvT5"
+      }
+    },
+    "name": "El Dorado"
+  },
+  "c224": {
+    "name": "???",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c225": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/3ceRoaI"
+      },
+      "02": {
+        "censored": "imgur.com/UPQXaBH"
+      }
+    },
+    "name": "Rudolph"
+  },
+  "c226": {
+    "name": "Ragnar",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c227": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/9SerF1C"
+      },
+      "02": {
+        "censored": "imgur.com/fgSigMk"
+      }
+    },
+    "name": "Mafdet"
+  },
+  "c229": {
+    "variants": {
+      "00": {},
+      "02": {}
+    }
+  },
+  "c230": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/mplyiJG"
+      },
+      "02": {
+        "censored": "imgur.com/chCE5tA"
+      }
+    },
+    "name": "Skuld"
+  },
+  "c232": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/3pwiFb9"
+      },
+      "02": {
+        "censored": "imgur.com/tVIymWv"
+      }
+    },
+    "name": "Daphne"
+  },
+  "c233": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/kdo0NzX"
+      },
+      "02": {
+        "censored": "imgur.com/7957vO7"
+      }
+    },
+    "name": "Arges"
+  },
+  "c234": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/T90XlQ3"
+      },
+      "02": {
+        "censored": "imgur.com/Nt5qx5R"
+      }
+    },
+    "name": "Hercules"
+  },
+  "c235": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/WllTcKb"
+      },
+      "02": {
+        "censored": "imgur.com/ZegEleA"
+      }
+    },
+    "name": "Danu"
+  },
+  "c237": {
+    "name": "???",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c238": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/QCwuoEO"
+      },
+      "02": {
+        "censored": "imgur.com/udoih5l"
+      }
+    },
+    "name": "Medb"
+  },
+  "c242": {
+    "variants": {
+      "00": {}
+    }
+  },
+  "c246": {
+    "variants": {
+      "10": {},
+      "88": {},
+      "00": {},
+      "01": {
+        "uncensored": "imgur.com/RP597Hh"
+      },
+      "02": {
+        "uncensored": "imgur.com/suOMVl8"
+      }
+    },
+    "name": "Naughty Krampus"
+  },
+  "c251": {
+    "name": "???",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c253": {
+    "name": "Nicole(?)",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c254": {
+    "name": "Davi 5* Summon",
+    "variants": {
+      "01": {},
+      "02": {}
+    }
+  },
+  "c255": {
+    "name": "Mona Title Screen",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c256": {
+    "name": "Lisa Side View",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c257": {
+    "name": "Underground Guy (?)",
+    "variants": {
+      "01": {},
+      "02": {}
+    }
+  },
+  "c258": {
+    "name": "Red Pixie",
+    "variants": {
+      "01": {},
+      "02": {}
+    }
+  },
+  "c269": {
+    "name": "Black Pixie",
+    "variants": {
+      "01": {},
+      "02": {}
+    }
+  },
+  "c270": {
+    "name": "White Pixie",
+    "variants": {
+      "01": {},
+      "02": {}
+    }
+  },
+  "c271": {
+    "name": "Blue Pixie",
+    "variants": {
+      "01": {},
+      "02": {}
+    }
+  },
+  "c272": {
+    "name": "Green Pixie",
+    "variants": {
+      "01": {},
+      "02": {}
+    }
+  },
+  "c277": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/xsFYrd4",
+        "uncensored": "imgur.com/MvqCCfS"
+      },
+      "02": {
+        "uncensored": "imgur.com/zQfkliP"
+      }
+    },
+    "name": "Leuce"
+  },
+  "c290": {
+    "variants": {
+      "02": {}
+    }
+  },
+  "c299": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/5i4K9NM"
+      },
+      "02": {
+        "uncensored": "imgur.com/Z8yZ8MI"
+      }
+    },
+    "name": "Satan Santa Claus"
+  },
+  "c314": {
+    "name": "Mona (3)?",
+    "variants": {
+      "01": {}
+    }
+  },
+  "c353": {
+    "variants": {
+      "00": {},
+      "01": {},
+      "02": {}
+    },
+    "name": "Charlotte"
+  },
+  "c355": {
+    "name": "Guardian Chang'e",
+    "variants": {
+      "01": {
+        "censored": "imgur.com/a/VUMOSZU"
+      },
+      "02": {
+        "censored": "imgur.com/a/wzUfUGq"
+      }
+    }
+  },
+  "c358": {
+    "name": "Hatsune Miku",
+    "variants": {
+      "01": {
+        "censored": "imgur.com/a/IbOZtyf"
+      },
+      "02": {
+        "censored": "imgur.com/a/C97jLru"
+      }
+    }
+  },
+  "c359": {
+    "name": "Snow Miku",
+    "variants": {
+      "01": {
+        "censored": "imgur.com/a/BwPp3iy"
+      },
+      "02": {
+        "censored": "imgur.com/a/xanTAXV"
+      }
+    }
+  },
+  "c376": {
+    "name": "Slot Machine Girl",
+    "variants": {
+      "01": {
+        "censored": "imgur.com/a/EA2rP0r"
+      }
+    }
+  },
+  "c401": {
+    "name": "Princess Snow Miku",
+    "variants": {
+      "01": {
+        "censored": "imgur.com/a/xhaiD81"
+      },
+      "02": {}
+    }
+  },
+  "m038": {
+    "variants": {
+      "10": {
+        "censored": "imgur.com/a/pHs03wF"
+      },
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/D3Xuvd6"
+      },
+      "02": {
+        "censored": "imgur.com/a/EYZQxM8"
+      }
+    },
+    "name": "Diablo"
+  },
+  "m040": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/pdQB2fK"
+      },
+      "02": {
+        "censored": "imgur.com/a/2DZWBwj"
+      }
+    },
+    "name": "Chain Killer"
+  },
+  "m049": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/xETc6os"
+      },
+      "02": {
+        "censored": "imgur.com/a/j009pvh"
+      }
+    },
+    "name": "Old Skull"
+  },
+  "m050": {
+    "variants": {
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/TNFisFi"
+      },
+      "02": {
+        "censored": "imgur.com/a/tEOUqvh"
+      }
+    },
+    "name": "Guillotine"
+  },
+  "m051": {
+    "variants": {
+      "10": {},
+      "00": {},
+      "01": {
+        "censored": "imgur.com/a/3rTX9V6"
+      },
+      "02": {
+        "censored": "imgur.com/a/oYxlk9L"
+      }
+    },
+    "name": "Hades"
+  },
+  "m056": {
+    "variants": {
+      "00": {},
+      "01": {},
+      "02": {}
+    },
+    "name": "Abaddon"
+  }
+}
