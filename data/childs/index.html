@@ -6,12 +6,12 @@
   </head>
   <body>
     <h1>Childs Data Viewer</h1>
-    <p>This is a quick and dirty way of rendering <a href="./childs.json">childs.json</a> in friendlier form.</p>
-    <p><a href="./childs.json">childs.json</a> was created to give people an open-source, programatically accessible data Childs data set. Use it however you will.</p>
+    <p>This is a quick and dirty way of rendering <a href="../childs.json">childs.json</a> in friendlier form.</p>
+    <p><a href="../childs.json">childs.json</a> was created to give people an open-source, programatically accessible data Childs data set. Use it however you will.</p>
     <div id="container"></data>
     <script type="application/javascript">
       var $container = $("#container")
-      $.getJSON('./childs.json', function(childs) {
+      $.getJSON('../childs.json', function(childs) {
         $.each(childs, function(id, data) {
           console.log(id, data)
           var output = `<div>${id} ${data.name}`
