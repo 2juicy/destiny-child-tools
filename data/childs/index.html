@@ -3,6 +3,16 @@
     <meta charset="UTF-8">
     <title>Childs</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <style type="text/css">
+      .child {
+        padding: .5em 0;
+        border-bottom: 1px solid #ccc;
+      }
+      .id,
+      .name {
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
     <h1>Childs Data Viewer</h1>
@@ -13,9 +23,17 @@
       var $container = $("#container")
       $.getJSON('../childs.json', function(childs) {
         $.each(childs, function(id, data) {
-          console.log(id, data)
-          var output = `<div>${id} ${data.name}`
-
+          var output = `<div class="child"><div class="id">${id}</div> <div class="name">${data.name}</div>`
+          if(data.variants) {
+            $.each(data.variants, function(variant, d) {
+              if(d.censored) {
+                output += ` <a href="https://${d.censored}" target="_blank">${variant} censored</a>`
+              }
+              if(d.uncensored) {
+                output += ` <a href="https://${d.uncensored}" target="_blank">${variant} uncensored</a>`
+              }
+            })
+          }
           output += '</div>'
           $container.append(output)
         })
