@@ -2,7 +2,7 @@
 var canvasSize = 500
 
 var modelName = 'miku'
-var modelScale = 1
+var modelScale = 1.2
 var modelX = 0
 var modelY = 0.1
 var motionIdle = null, motionAttack = null
