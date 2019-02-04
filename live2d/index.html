@@ -26,16 +26,22 @@
     .custom-combobox-input {
       padding: .2em .5em;
     }
+    #ui {
+      display: none;
+    }
 	</style>
   <script src="./ui.js" type="application/javascript"></script>
 </head>
 <body onload="init()">
   <p>Live2D viewer based on work by Arsylk using Live2D cubism v2 api. Maintained by <a href="https://github.com/LokiCoder">Loki</a>.</p>
-  <p>Select model:
-    <select onchange="setViewer(this.value)"></select>
-  </p>
-  <iframe src="viewer.html?mN=c001_01" style="width: 100%; height: 600px; border: none;"></iframe>
-  <p>Direct Link: <a id="direct-link" href="" target="_blank"></a></p>
-  <p>Embed code:</p>
-  <pre id="embed"></pre>
+  <img src="./loading.gif" alt="Loading" id="loading"/>
+  <div id="ui">
+    <p>Select model:
+      <select onchange="setViewer(this.value)"></select>
+    </p>
+    <iframe src="viewer.html?mN=c001_01" style="width: 100%; height: 600px; border: none;"></iframe>
+    <p>Direct Link: <a id="direct-link" href="" target="_blank"></a></p>
+    <p>Embed code:</p>
+    <pre id="embed"></pre>
+  </div>
 </html>

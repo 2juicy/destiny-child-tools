@@ -156,6 +156,8 @@ function init() {
     loadData(function() {
       setViewer('c001_01')
       createComboBox()
+      $('#loading').hide()
+      $('#ui').show()
     })
   })
 }
