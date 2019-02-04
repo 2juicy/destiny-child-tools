@@ -17,18 +17,8 @@ function getLabel(id, details) {
   var parts = id.split('_'),
       child = childs[parts[0]],
       v = parts[1],
-      variant = child && child.variants[v]
-  return id + ' ' + (child
-    ? ((variant && variant.name)
-      ? variant.name
-      : (child.name || '???') + ' ' + (v == '00' ? 'Story'
-        : v == '01' ? 'E-A Class'
-        : v == '02' ? 'S Class'
-        : 'Special'
-      ))
-    : '???') +
-    (details.modder ? ' ' + details.modder : '') +
-    (details.name ? ' ' + details.name : '')
+      variant = child && child.variants[v];
+  return id + ' ' + child.name + child.variants[v].title.trim();
 }
 function loadData(callback) {
   $.getJSON('./assets.json', function(data) {
