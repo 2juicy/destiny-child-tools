@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Live2D</title>
+	<style type="text/css">
+  	pre {
+      border: 1px solid #666;
+      background: #ccc;
+      padding: 1em;
+      text-align: left;
+    }
+	</style>
+  <script type="application/javascript">
+    function setViewer(model) {
+      var viewer = document.getElementsByTagName('iframe')[0]
+      viewer.src = 'viewer.html?mN=' + model
+      var code = viewer.outerHTML.replace('viewer.html', document.location.toString() + 'viewer.html')
+      var embed = document.getElementById('embed').innerHTML = code.replace(/</g, '&lt;')
+      console.log(code, )
+      // embed.innerHTML =
+    }
+  </script>
+</head>
+<body onload="setViewer('c001_01')">
+  <p>Live2D viewer based on work by Arsylk using Live2D cubism v2 api</p>
+  <p>Select model:
+    <select onchange="setViewer(this.value)">
+      <option value="c001_01">c001_01</option>
+      <option value="c001_02">c001_02</option>
+      <option value="c001_12">c001_12</option>
+      <option value="c001_14">c001_14</option>
+      <option value="c002_00">c002_00</option>
+      <option value="c002_01">c002_01</option>
+      <option value="c002_02">c002_02</option>
+      <option value="c002_10">c002_10</option>
+      <option value="c002_11">c002_11</option>
+      <option value="c002_12">c002_12</option>
+    </select>
+    Embed code:
+  </p>
+  <pre id="embed"></pre>
+  <iframe src="viewer.html?mN=c001_01" style="width: 100%; height: 700px; border: none;"></iframe>
+
+
+</html>
