@@ -1,11 +1,10 @@
 // default parameters
-var canvasSize = 500
-
-var modelName = 'miku'
-var modelScale = 1.1
-var modelX = 0
-var modelY = 0.1
-var motionIdle = null, motionAttack = null
+var canvasSize = 500,
+    modelName = 'miku',
+    modelScale = 1.1,
+    modelX = 0,
+    modelY = 0.1,
+    motionIdle = null, motionAttack = null
 
 function totsugeki() {
   if(motionMgr !== null && motionAttack !== null) {
