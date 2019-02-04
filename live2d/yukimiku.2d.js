@@ -1,6 +1,5 @@
 // default parameters
-var canvasWidth = 500
-var canvasHeight = 500
+var canvasSize = 500
 
 var modelName = 'miku'
 var modelScale = 1
@@ -17,9 +16,10 @@ function totsugeki() {
 
 function initModel() {
   // get variables from GET
-  var searchParams = (new URL(window.location.href)).searchParams
-  canvas.width = searchParams.get('cW') || canvasWidth
-  canvas.height = searchParams.get('cH') || canvasHeight
+  var searchParams = (new URL(window.location.href)).searchParams,
+      size = searchParams.get('cW') || canvasSize
+  canvas.width = size
+  canvas.height = size
   var mS = searchParams.get('mS')
   if(mS) modelScale = mS
   var mX = searchParams.get('mX')
