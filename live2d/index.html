@@ -8,6 +8,7 @@
     integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
     body {
       font-family: sans-serif;
@@ -17,6 +18,8 @@
       background: #ccc;
       padding: 1em;
       text-align: left;
+      max-width: 90%;
+      overflow: auto;
     }
     .custom-combobox-toggle {
       height: 1.7em;
@@ -29,10 +32,19 @@
     #ui {
       display: none;
     }
+    #selector-container {
+      white-space: nowrap;
+    }
+    #loading {
+      max-width: 100%;
+    }
     .ui-autocomplete {
       max-height: 500px;
       overflow-y: auto;
       overflow-x: hidden;
+    }
+    iframe {
+      max-width: 100%;
     }
   </style>
   <script src="./ui.js" type="application/javascript"></script>
@@ -45,7 +57,7 @@
   <img src="./loading.gif" alt="Loading" id="loading"/>
   <div id="ui">
     <p>Select model:
-      <select onchange="setViewer(this.value)"></select>
+      <span id="selector-container"><select onchange="setViewer(this.value)"></select></span>
     </p>
     <iframe style="width: 500px; height: 500px; border: none;"></iframe>
     <p>Direct Link: <a id="direct-link" href="" target="_blank"></a></p>
