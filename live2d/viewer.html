@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Live2D</title>
   <style>
-    canvas {
-      border: dashed 0px #CCC;
-    }
     body {
       overflow: hidden;
     }
   </style>
-   <script src="./lib/live2d.min.js"></script>
-   <script src="./lib/Live2DFramework.js"></script>
-   <script src="./yukimiku.2d.js"></script>
-   <script>
-       window.addEventListener("load", function(){
-            var notme = document.getElementsByTagName("div");
-            for(var i = 0; i < notme.length; i++){
-                notme[i].remove();
-            }
-        });
-   </script>
+  <script src="./lib/live2d.min.js"></script>
+  <script src="./lib/Live2DFramework.js"></script>
+  <script src="./yukimiku.2d.js"></script>
+  <script>
+    window.addEventListener("load", function() {
+      var notme = document.getElementsByTagName("div");
+      for (var i = 0; i < notme.length; i++) {
+        notme[i].remove();
+      }
+    });
+  </script>
 </head>
+
 <body onload="initModel()" onclick="totsugeki()">
-    <!-- accepts parameters from get -->
-    <!-- mN -->
-    <!-- modelName -->
-    <!-- cW, cH -->
-    <!-- canvasWidth, canvasHeight -->
-    <!-- mS, mX, mY -->
-    <!-- modelScale, modelX, modelY -->
+  <!-- accepts parameters from get -->
+  <!-- mN -->
+  <!-- modelName -->
+  <!-- cW, cH -->
+  <!-- canvasWidth, canvasHeight -->
+  <!-- mS, mX, mY -->
+  <!-- modelScale, modelX, modelY -->
   <canvas id="canvas"></canvas>
-<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website&amp;utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div></body>
+</body>
+
 </html>
