@@ -17,7 +17,7 @@ function totsugeki() {
 function initModel() {
   // get variables from GET
   var searchParams = (new URL(window.location.href)).searchParams,
-      size = searchParams.get('cW') || canvasSize
+      size = searchParams.get('size') || canvasSize
   canvas.width = size
   canvas.height = size
   var mS = searchParams.get('mS')

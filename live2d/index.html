@@ -7,8 +7,11 @@
     src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
     integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
     crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style type="text/css">
     body {
       font-family: sans-serif;
@@ -32,16 +35,27 @@
     #ui {
       display: none;
     }
-    #selector-container {
+    .nowrap {
       white-space: nowrap;
+      margin-top: 1em;
+      margin-right: 1em;
+      display: inline-block;
     }
     #loading {
       max-width: 100%;
+    }
+    #size-label {
+      margin-left: 1em;
     }
     .ui-autocomplete {
       max-height: 500px;
       overflow-y: auto;
       overflow-x: hidden;
+    }
+    .ui-slider {
+      display : inline-block;
+      width: 150px;
+      margin-left: 1em;
     }
     iframe {
       max-width: 100%;
@@ -57,7 +71,10 @@
   <img src="./loading.gif" alt="Loading" id="loading"/>
   <div id="ui">
     <p>Select model:
-      <span id="selector-container"><select onchange="setViewer(this.value)"></select></span>
+      <span class="nowrap"><select onchange="setViewer(this.value)"></select></span>
+      <span class="nowrap">
+        Size: <span id="size-slider"></span> <span id="size-label"></span>px
+      </span>
     </p>
     <iframe style="width: 500px; height: 500px; border: none;"></iframe>
     <p>Direct Link: <a id="direct-link" href="" target="_blank"></a></p>

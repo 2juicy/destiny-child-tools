@@ -1,8 +1,13 @@
-function setViewer(model) {
-  var viewer = document.getElementsByTagName('iframe')[0]
-  viewer.src = 'viewer.html?mN=' + model
+var selectedModel
+function updateViewer(model) {
+  if(model && typeof model == 'string') selectedModel = model
+  var viewer = document.getElementsByTagName('iframe')[0],
+      size = $('#size-slider').slider('value')
+  viewer.src = 'viewer.html?mN=' + selectedModel + '&size=' + size
+  viewer.style.width = size + 'px'
+  viewer.style.height = size + 'px'
   var code = viewer.outerHTML.replace('viewer.html', document.location.toString() + 'viewer.html')
-  var embed = document.getElementById('embed').innerHTML = code.replace(/</g, '&lt')
+  document.getElementById('embed').innerHTML = code.replace(/</g, '&lt')
   $('#direct-link').attr('href', viewer.src)
   $('#direct-link').html(viewer.src)
 }
@@ -33,6 +38,7 @@ function getLabel(id, details) {
 function loadData(callback) {
   $.getJSON('./assets.json', function(data) {
     $.each(data, function(id, details) {
+      selectedModel = selectedModel || id
       $('select').append(
         '<option value="' + id + '">' + getLabel(id, details) + '</option>'
       )
@@ -148,14 +154,31 @@ function createComboBox() {
     }
   })
   $('select').combobox({
-    select: function() { setViewer(this.value)}
+    select: function() { updateViewer(this.value)}
   })
+}
+function createSlider() {
+  var initialSize = 500,
+      maxWidth = 2000,
+      docWidth = $(document).width()
+  $('#size-slider').slider({
+    min: 200,
+    max: docWidth < maxWidth ? docWidth : maxWidth,
+    step: 50,
+    value: initialSize,
+    slide: function(_, ui) {
+      $('#size-label').html(ui.value)
+    },
+    change: updateViewer
+  })
+  $('#size-label').html($('#size-slider').slider('value'))
 }
 function init() {
   loadChilds(function() {
     loadData(function() {
-      setViewer('c001_01')
       createComboBox()
+      createSlider()
+      updateViewer()
       $('#loading').hide()
       $('#ui').show()
     })
