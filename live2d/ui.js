@@ -18,14 +18,14 @@ function getLabel(id, details) {
       child = childs[parts[0]],
       v = parts[1],
       variant = child && child.variants[v]
-  return id + ' ' + (
+  return id + ' ' + (child && (
     (variant && variant.name)
     ? variant.name
     : child.name + ' ' + (v == '00' ? 'Story'
       : v == '01' ? 'E-A Class'
       : v == '02' ? 'S Class'
       : 'Special'
-    ) +
+    )) +
     ' ' + (details.modder || '') +
     ' ' + (details.name || '')
   )
