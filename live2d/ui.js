@@ -22,16 +22,17 @@ function getLabel(id, details) {
   var parts = id.split('_'),
       child = childs[parts[0]],
       v = parts[1],
-      variant = child && child.variants[v]
+      variant = child && child.variants[v],
+      name = child && child.name || '???'
   return id + ' ' + (child
-    ? ((variant && variant.name)
-      ? variant.name
-      : (child.name || '???') + ' ' + (v == '00' ? 'Story'
+    ? ((variant && variant.title)
+      ? variant.title + ' ' + name
+      : name + ' ' + (v == '00' ? 'Story'
         : v == '01' ? 'E-A Class'
           : v == '02' ? 'S Class'
             : 'Special'
       ))
-    : '???') +
+    : name) +
     (details.modder ? ' ' + details.modder : '') +
     (details.name ? ' ' + details.name : '')
 }
