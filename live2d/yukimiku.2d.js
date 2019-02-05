@@ -67,6 +67,7 @@ function init(canvas) {
   // ------------------------
   loadBytes(getPath(modelJson.model), 'arraybuffer', function(buf) {
     live2DModel = Live2DModelWebGL.loadModel(buf)
+    document.getElementById('loading').remove()
   })
 
   // ------------------------
