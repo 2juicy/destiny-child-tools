@@ -55,7 +55,9 @@
     .ui-slider {
       display : inline-block;
       width: 150px;
-      margin-left: 1em;
+      margin-left: .5em;
+      position: relative;
+      top: .2em;
     }
     iframe {
       max-width: 100%;
@@ -66,12 +68,16 @@
 <body onload="init()">
   <img src="./loading.gif" alt="Loading" id="loading"/>
   <div id="ui">
-    <p>Select model:
-      <span class="nowrap"><select onchange="setViewer(this.value)"></select></span>
+    <div>Model:
+      <span class="nowrap"><select></select></span>
       <span class="nowrap">
         Size: <span id="size-slider"></span> <span id="size-label"></span>px
       </span>
-    </p>
+      <span class="nowrap">
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+      </span>
+    </div>
     <iframe style="width: 500px; height: 500px; border: none;"></iframe>
     <p>Direct Link: <a id="direct-link" href="" target="_blank"></a></p>
     <p>Embed code:</p>

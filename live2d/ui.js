@@ -1,4 +1,8 @@
-var selectedModel
+/* global $ */
+var selectedModel, modelIds = []
+function getSelectedIndex() {
+  return modelIds.indexOf(selectedModel)
+}
 function updateViewer(model) {
   if(model && typeof model == 'string') selectedModel = model
   var viewer = document.getElementsByTagName('iframe')[0],
@@ -10,6 +14,9 @@ function updateViewer(model) {
   document.getElementById('embed').innerHTML = code.replace(/</g, '&lt')
   $('#direct-link').attr('href', viewer.src)
   $('#direct-link').html(viewer.src)
+  var i = getSelectedIndex()
+  $('#previous').button(i > 0 ? 'enable' : 'disable')
+  $('#next').button(i < modelIds.length - 1 ? 'enable' : 'disable')
 }
 var childs
 function loadChilds(callback) {
@@ -18,7 +25,7 @@ function loadChilds(callback) {
     callback()
   })
 }
-function getLabel(id, details) {
+function getLabel(id) {
   var parts = id.split('_'),
       child = childs[parts[0]],
       v = parts[1],
@@ -32,16 +39,16 @@ function getLabel(id, details) {
           : v == '02' ? 'S Class'
             : 'Special'
       ))
-    : name) +
-    (details.modder ? ' ' + details.modder : '') +
-    (details.name ? ' ' + details.name : '')
+    : name)
 }
 function loadData(callback) {
   $.getJSON('./assets.json', function(data) {
-    $.each(data, function(id, details) {
+    modelData = data
+    $.each(data, function(id) {
       selectedModel = selectedModel || id
+      modelIds.push(id)
       $('select').append(
-        '<option value="' + id + '">' + getLabel(id, details) + '</option>'
+        '<option value="' + id + '">' + getLabel(id) + '</option>'
       )
     })
     callback()
@@ -109,7 +116,7 @@ function createComboBox() {
 
     _source: function( request, response ) {
       var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), 'i')
-      response( this.element.children('option').map(function() {
+      response(this.element.children('option').map(function() {
         var text = $( this ).text()
         if( this.value && ( !request.term || matcher.test(text) ) ) {
           return {
@@ -156,6 +163,7 @@ function createComboBox() {
   $('select').combobox({
     select: function() { updateViewer(this.value)}
   })
+  $('select').on('change', function() { updateViewer(this.value)})
 }
 function createSlider() {
   var initialSize = 500,
@@ -173,11 +181,22 @@ function createSlider() {
   })
   $('#size-label').html($('#size-slider').slider('value'))
 }
-function init() {
+function setSelectedIndex(i) {
+  $('select option').eq(i).prop('selected', true)
+  var $select = $('select'),
+      id = $select.val()
+  updateViewer(id)
+  $select.combobox('instance').input.val(getLabel(id))
+}
+function init() { // eslint-disable-line no-unused-vars
   loadChilds(function() {
     loadData(function() {
       createComboBox()
       createSlider()
+      $('#previous').button()
+      $('#previous').click(function() { setSelectedIndex(getSelectedIndex() - 1) })
+      $('#next').button()
+      $('#next').click(function() { setSelectedIndex(getSelectedIndex() + 1) })
       updateViewer()
       $('#loading').hide()
       $('#ui').show()
