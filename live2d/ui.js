@@ -1,5 +1,8 @@
 /* global $ */
-var selectedModel, modelIds = []
+var selectedModel,
+    modelIds = [],
+    searchParams = (new URL(document.location.toString())).searchParams
+
 function getSelectedIndex() {
   return modelIds.indexOf(selectedModel)
 }
@@ -197,7 +200,8 @@ function init() { // eslint-disable-line no-unused-vars
       $('#previous').click(function() { setSelectedIndex(getSelectedIndex() - 1) })
       $('#next').button()
       $('#next').click(function() { setSelectedIndex(getSelectedIndex() + 1) })
-      updateViewer()
+      var model = searchParams.get('model')
+      updateViewer(modelIds.indexOf(model) > -1 && model)
       $('#loading').hide()
       $('#ui').show()
     })
