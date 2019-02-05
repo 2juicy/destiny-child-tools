@@ -1,13 +1,15 @@
 /* global $ */
 var selectedModel,
+    childs,
     modelIds = [],
+    assets = {},
     searchParams = (new URL(document.location.toString())).searchParams
 
 function getSelectedIndex() {
   return modelIds.indexOf(selectedModel)
 }
-function updateViewer(model) {
-  if(model && typeof model == 'string') selectedModel = model
+function updateViewer(id) {
+  if(id && typeof id == 'string') selectedModel = id
   var viewer = document.getElementsByTagName('iframe')[0],
       size = $('#size-slider').slider('value')
   viewer.src = 'viewer.html?mN=' + selectedModel + '&size=' + size
@@ -20,20 +22,34 @@ function updateViewer(model) {
   var i = getSelectedIndex()
   $('#previous').button(i > 0 ? 'enable' : 'disable')
   $('#next').button(i < modelIds.length - 1 ? 'enable' : 'disable')
+  if(assets[id] && assets[id].modder) {
+    var name = getName(id)
+    $('#mod-link a').attr('href', 'http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Childs/' + name.replace(/\s/g, '_'))
+    $('#mod-link a').html('Download this ' + name + ' mod')
+    $('#mod-link').show()
+  }
+  else $('#mod-link').hide()
 }
-var childs
+
 function loadChilds(callback) {
   $.getJSON('../data/childs.json', function(_childs) {
     childs = _childs
     callback()
   })
 }
+function getChild(id) {
+  return childs[id.split('_')[0]]
+}
+function getName(id) {
+  var child = getChild(id)
+  return child && child.name || '???'
+}
 function getLabel(id) {
   var parts = id.split('_'),
-      child = childs[parts[0]],
+      child = getChild(id),
       v = parts[1].replace(/-.+$/, ''),
       variant = child && child.variants[v],
-      name = child && child.name || '???'
+      name = getName(id)
   return id + ' ' + (child
     ? ((variant && variant.title)
       ? variant.title + ' ' + name
@@ -50,6 +66,7 @@ function loadAssets(callback) {
       var id = asset.id
       selectedModel = selectedModel || id
       modelIds.push(id)
+      assets[id] = asset
       $('select').append(
         '<option value="' + id + '">' + getLabel(id) + '</option>'
       )
