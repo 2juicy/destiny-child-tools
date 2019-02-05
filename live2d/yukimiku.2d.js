@@ -8,7 +8,6 @@ var canvasSize = 500,
 
 function totsugeki() {
   if(motionMgr !== null && motionAttack !== null) {
-    console.log(motionAttack)
     motionMgr.startMotion(motionAttack)
   }
 }
@@ -30,7 +29,6 @@ function initModel() {
 
   loadBytes(getPath('MOC.' + modelName + '.json'), 'text', function(buf) {
     var modelJson = JSON.parse(buf)
-    console.log(modelJson)
     initLive2d(modelJson)
   })
 }
