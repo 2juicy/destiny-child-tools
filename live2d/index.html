@@ -61,6 +61,7 @@
     }
     iframe {
       max-width: 100%;
+      overflow: hidden;
     }
   </style>
   <script src="./ui.js" type="application/javascript"></script>
@@ -78,7 +79,9 @@
         <button id="next">Next</button>
       </span>
     </div>
-    <iframe style="width: 500px; height: 500px; border: none;"></iframe>
+    <iframe style="width: 500px; height: 500px; max-width: 100%; border: none; overflow: hidden;"
+      scrolling="no"
+      seamless="seamless"></iframe>
     <p>Direct Link: <a id="direct-link" href="" target="_blank"></a></p>
     <p>Embed code:</p>
     <pre id="embed"></pre>
