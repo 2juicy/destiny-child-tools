@@ -28,7 +28,7 @@ function loadChilds(callback) {
 function getLabel(id) {
   var parts = id.split('_'),
       child = childs[parts[0]],
-      v = parts[1],
+      v = parts[1].replace(/-.+$/, ''),
       variant = child && child.variants[v],
       name = child && child.name || '???'
   return id + ' ' + (child
@@ -41,10 +41,10 @@ function getLabel(id) {
       ))
     : name)
 }
-function loadData(callback) {
+function loadAssets(callback) {
   $.getJSON('./assets.json', function(data) {
-    modelData = data
-    $.each(data, function(id) {
+    $.each(data, function(i, asset) {
+      var id = asset.id
       selectedModel = selectedModel || id
       modelIds.push(id)
       $('select').append(
@@ -190,7 +190,7 @@ function setSelectedIndex(i) {
 }
 function init() { // eslint-disable-line no-unused-vars
   loadChilds(function() {
-    loadData(function() {
+    loadAssets(function() {
       createComboBox()
       createSlider()
       $('#previous').button()

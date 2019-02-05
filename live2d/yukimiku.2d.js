@@ -27,7 +27,7 @@ function initModel() {
   var mN = searchParams.get('mN')
   if(mN) modelName = mN
 
-  loadBytes(getPath('MOC.' + modelName + '.json'), 'text', function(buf) {
+  loadBytes(getPath('MOC.' + modelName.split('-')[0] + '.json'), 'text', function(buf) {
     var modelJson = JSON.parse(buf)
     initLive2d(modelJson)
   })
