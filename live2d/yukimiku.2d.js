@@ -98,12 +98,14 @@ function init(canvas) {
     motionIdle._$eo = 0
     motionIdle._$dP = 0
   })
-  loadBytes(getPath(modelJson.motions.attack[0].file), 'arraybuffer', function(buf) {
-    motionAttack = new Live2DMotion.loadMotion(buf)
-    // remove fade in/out delay to make it smooth
-    motionAttack._$eo = 0
-    motionAttack._$dP = 0
-  });
+  if(modelJson.motions.attack) {
+    loadBytes(getPath(modelJson.motions.attack[0].file), 'arraybuffer', function(buf) {
+      motionAttack = new Live2DMotion.loadMotion(buf)
+      // remove fade in/out delay to make it smooth
+      motionAttack._$eo = 0
+      motionAttack._$dP = 0
+    })
+  }
 
   // ------------------------
   // ?loop every frame
