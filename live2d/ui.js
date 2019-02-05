@@ -25,7 +25,7 @@ function updateViewer(id) {
   if(assets[id] && assets[id].modder) {
     var name = getName(id)
     $('#mod-link a').attr('href', 'http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Childs/' + name.replace(/\s/g, '_'))
-    $('#mod-link a').html('Download this ' + name + ' mod')
+    $('#mod-link a').html('Download this ' + name + ' mod by ' + assets[id].modder)
     $('#mod-link').show()
   }
   else $('#mod-link').hide()
