@@ -22,13 +22,16 @@ function updateViewer(id) {
   var i = getSelectedIndex()
   $('#previous').button(i > 0 ? 'enable' : 'disable')
   $('#next').button(i < modelIds.length - 1 ? 'enable' : 'disable')
-  if(assets[id] && assets[id].modder) {
-    var name = getName(id)
+  if(assets[selectedModel] && assets[selectedModel].modder) {
+    var name = getName(selectedModel)
     $('#mod-link a').attr('href', 'http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Childs/' + name.replace(/\s/g, '_'))
-    $('#mod-link a').html('Download this ' + name + ' mod by ' + assets[id].modder)
+    $('#mod-link a').html('Download this ' + name + ' mod by ' + assets[selectedModel].modder)
     $('#mod-link').show()
   }
   else $('#mod-link').hide()
+  if(window.history && window.history.pushState) {
+    window.history.pushState({}, null, '?model=' + encodeURIComponent(selectedModel) + '&size=' + size)
+  }
 }
 
 function loadChilds(callback) {
@@ -186,14 +189,13 @@ function createComboBox() {
   $('select').on('change', function() { updateViewer(this.value)})
 }
 function createSlider() {
-  var initialSize = 500,
-      maxWidth = 2000,
+  var maxWidth = 2000,
       docWidth = $(document).width()
   $('#size-slider').slider({
     min: 200,
     max: docWidth < maxWidth ? docWidth : maxWidth,
     step: 50,
-    value: initialSize,
+    value: searchParams.get('size') || 500,
     slide: function(_, ui) {
       $('#size-label').html(ui.value)
     },
