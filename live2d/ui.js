@@ -55,13 +55,10 @@ function getLabel(id) {
       name = getName(id)
   return id + ' ' + (child
     ? ((variant && variant.title)
-      ? variant.title + ' ' + name
-      : name + ' ' + (v == '00' ? 'Story'
-        : v == '01' ? 'E-A Class'
-          : v == '02' ? 'S Class'
-            : 'Special'
-      ))
-    : name)
+      ? variant.title + ' ' + name : name
+    )
+    : name
+  )
 }
 function loadAssets(callback) {
   $.getJSON('./assets.json', function(data) {
