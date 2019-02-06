@@ -29,8 +29,8 @@ function updateViewer(id) {
     $('#mod-link').show()
   }
   else $('#mod-link').hide()
-  if(window.history && window.history.pushState) {
-    window.history.pushState({}, null, '?model=' + encodeURIComponent(selectedModel) + '&size=' + size)
+  if(window.history && window.history.replaceState) {
+    window.history.replaceState({}, null, '?model=' + encodeURIComponent(selectedModel) + '&size=' + size)
   }
 }
 
