@@ -24,7 +24,7 @@ function updateViewer(id) {
   $('#next').button(i < modelIds.length - 1 ? 'enable' : 'disable')
   if(assets[selectedModel] && assets[selectedModel].modder) {
     var name = getName(selectedModel)
-    $('#mod-link a').attr('href', 'http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Childs/' + name.replace(/\s/g, '_'))
+    $('#mod-link a').attr('href', assets[selectedModel].download || 'http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Childs/' + name.replace(/\s/g, '_'))
     $('#mod-link a').html('Download this ' + name + ' mod by ' + assets[selectedModel].modder)
     $('#mod-link').show()
   }
