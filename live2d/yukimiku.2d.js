@@ -1,9 +1,12 @@
 // default parameters
 var canvasSize = 500,
     modelName = 'miku',
-    modelScale = 1.1,
+    modelScale = 1,
+    modelScaleAdjust = .1,
     modelX = 0,
-    modelY = 0.1,
+    modelY = 0,
+    modelXAdjust = 0,
+    modelYAdjust = 150,
     motionIdle = null, motionAttack = null
 
 function totsugeki() {
@@ -18,12 +21,9 @@ function initModel() {
       size = searchParams.get('size') || canvasSize
   canvas.width = size
   canvas.height = size
-  var mS = searchParams.get('mS')
-  if(mS) modelScale = mS
-  var mX = searchParams.get('mX')
-  if(mX) modelX = mX
-  var mY = searchParams.get('mY')
-  if(mY) modelY = mY
+  modelScale = parseFloat(searchParams.get('scale') || modelScale) + modelScaleAdjust
+  modelX = (parseFloat(searchParams.get('x') || modelX) + modelXAdjust) / 1000
+  modelY = (parseFloat(searchParams.get('y') || modelY) + modelYAdjust) / 1000
   var mN = searchParams.get('mN')
   if(mN) modelName = mN
 
