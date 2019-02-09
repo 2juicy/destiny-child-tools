@@ -3,7 +3,6 @@ var selectedModel,
     childs,
     modelIds = [],
     assets = {},
-    modelInfo,
     searchParams = (new URL(document.location.toString())).searchParams
 
 function getSelectedIndex() {
@@ -12,12 +11,8 @@ function getSelectedIndex() {
 function updateViewer(id) {
   if(id && typeof id == 'string') selectedModel = id
   var viewer = document.getElementsByTagName('iframe')[0],
-      size = $('#size-slider').slider('value'),
-      src = 'viewer.html?mN=' + selectedModel + '&size=' + size,
-      positions = modelInfo[selectedModel.replace(/-.+$/, '')],
-      p = positions && positions.home
-  if(p) src += '&x=' + p.position.x + '&y=' + p.position.y + '&scale=' + p.scale
-  viewer.src = src
+      size = $('#size-slider').slider('value')
+  viewer.src = 'viewer.html?mN=' + selectedModel + '&size=' + size
   viewer.style.width = size + 'px'
   viewer.style.height = size + 'px'
   var code = viewer.outerHTML.replace('viewer.html', document.location.toString() + 'viewer.html')
@@ -42,12 +37,6 @@ function updateViewer(id) {
 function loadChilds(callback) {
   $.getJSON('../data/childs.json', function(_childs) {
     childs = _childs
-    callback()
-  })
-}
-function loadModelInfo(callback) {
-  $.getJSON('./model_info.json', function(_modelInfo) {
-    modelInfo = _modelInfo
     callback()
   })
 }
@@ -220,21 +209,19 @@ function setSelectedIndex(i) {
 }
 function init() { // eslint-disable-line no-unused-vars
   loadChilds(function() {
-    loadModelInfo(function() {
-      loadAssets(function() {
-        createComboBox()
-        createSlider()
-        $('#previous').button()
-        $('#previous').click(function() { setSelectedIndex(getSelectedIndex() - 1) })
-        $('#next').button()
-        $('#next').click(function() { setSelectedIndex(getSelectedIndex() + 1) })
-        var model = searchParams.get('model')
-        var modelIndex = modelIds.indexOf(model)
-        if(modelIndex > -1) setSelectedIndex(modelIndex)
-        else updateViewer()
-        $('#loading').hide()
-        $('#ui').show()
-      })
+    loadAssets(function() {
+      createComboBox()
+      createSlider()
+      $('#previous').button()
+      $('#previous').click(function() { setSelectedIndex(getSelectedIndex() - 1) })
+      $('#next').button()
+      $('#next').click(function() { setSelectedIndex(getSelectedIndex() + 1) })
+      var model = searchParams.get('model')
+      var modelIndex = modelIds.indexOf(model)
+      if(modelIndex > -1) setSelectedIndex(modelIndex)
+      else updateViewer()
+      $('#loading').hide()
+      $('#ui').show()
     })
   })
 }
