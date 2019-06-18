@@ -2,8 +2,8 @@
 Centralized repository for various Destiny Child game related tools
 
 * [Destiny Child NSFW-Friendly Wiki](./wiki/)
-* [Childs Data Viewer](./data/childs/) - [JSON format](./data/childs.json)
-* [Live2D Viewer](./live2d/) (proof of concept)
+* [Childs Data Viewer](https://lokicoder.github.io/destiny-child-tools/data/childs/) - [JSON format](https://lokicoder.github.io/destiny-child-tools/data/childs.json)
+* [Live2D Viewer](https://lokicoder.github.io/destiny-child-tools/live2d/) ([sourcecode](./live2d/))
 
 ## Contributing
 
@@ -22,6 +22,6 @@ To start a development server, install/update dependencies by running `npm insta
 
 Run `npm start` or `yarn start` to start a development server running on http://localhost:8080 to be able to see the result of your changes locally.
 
-## Contributing
+### More help
 
-Documentation on contributing to this project is coming soon. For now, ping `Loki` on the [Destiny Child Discord Server](https://discord.gg/ahv7SM).
+For more help, `Loki#7248` on the [Destiny Child Discord Server](https://discord.gg/ahv7SM).
