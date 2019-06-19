@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'docs'),
-    publicPath: '/',
+    publicPath: './',
     filename: 'bundle.js'
   },
   devServer: {
@@ -39,7 +39,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src/index.html'),
-      filename: 'index.html'
+      filename: 'index.html',
+      inject: false
     })
   ]
 }
