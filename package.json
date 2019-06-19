@@ -26,8 +26,7 @@
     "webpack-dev-server": "3.7.2"
   },
   "scripts": {
-    "start ": "http-server",
-    "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "dist": "webpack --config ./webpack.config.js --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

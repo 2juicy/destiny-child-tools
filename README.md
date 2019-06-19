@@ -5,7 +5,7 @@ Centralized repository for various Destiny Child game related tools
 * [Childs Data Viewer](https://lokicoder.github.io/destiny-child-tools/data/childs/) - [JSON format](https://lokicoder.github.io/destiny-child-tools/data/childs.json)
 * [Live2D Viewer](https://lokicoder.github.io/destiny-child-tools/live2d/) ([sourcecode](./live2d/))
 
-## Other links 
+## Other links
 
 * https://arsylk.pythonanywhere.com/apk/view_models
 
@@ -24,7 +24,7 @@ The first step is to create your own fork of [the primary repository](https://gi
 
 To start a development server, install/update dependencies by running `npm install` or `yarn` (if you are using yarn). You should only have to do this when new dependencies have been added to `package.json`.
 
-Run `npm start` or `yarn start` to start a development server running on http://localhost:8080 to be able to see the result of your changes locally.
+Run `yarn start` to start a development server running on http://localhost:8080 to be able to see the result of your changes locally.
 
 ### More help
 

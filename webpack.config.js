@@ -5,12 +5,12 @@ const webpack = require('webpack'),
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname),
+    path: path.join(__dirname, 'public'),
     publicPath: '/',
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: './public',
     hot: true
   },
   module: {
