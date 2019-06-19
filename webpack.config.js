@@ -6,11 +6,11 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'docs'),
-    publicPath: './',
+    publicPath: '/',
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: './docs',
+    contentBase: './docs/',
     hot: true
   },
   module: {
