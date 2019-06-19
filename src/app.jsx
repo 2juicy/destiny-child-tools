@@ -49,13 +49,11 @@ export default function ButtonAppBar() {
             </Toolbar>
           </AppBar>
         </div>
-        <Container>
-          <List component="nav">
-            <ListLink text="Live2D Viewer" href="./live2d/" />
-            <ListLink text="Modding Wiki (nsfw)" href="http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Mods" />
-            <ListLink text="GitHub Sourcecode" href="https://github.com/LokiCoder/destiny-child-tools" />
-          </List>
-        </Container>
+        <List component="nav">
+          <ListLink text="Live2D Viewer" href="./live2d/" />
+          <ListLink text="Modding Wiki (nsfw)" href="http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Mods" />
+          <ListLink text="GitHub Sourcecode" href="https://github.com/LokiCoder/destiny-child-tools" />
+        </List>
       </ThemeProvider>
     </CssBaseline>
   )
