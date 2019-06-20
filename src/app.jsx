@@ -28,12 +28,9 @@ const pages = {
 }
 
 const useStyles = makeStyles(theme => ({
-  root: {
+  flexGrow: {
     flexGrow: 1,
-  },
-  title: {
-    flexGrow: 1,
-  },
+  }
 }))
 
 const App = function({fetchChilds, page}) {
@@ -43,7 +40,7 @@ const App = function({fetchChilds, page}) {
   return (
       <CssBaseline>
         <ThemeProvider theme={theme}>
-          <div className={classes.root}>
+          <div className={classes.flexGrow}>
             <AppBar position="static">
               <Toolbar>
                 <Box mr={2}>
@@ -51,7 +48,7 @@ const App = function({fetchChilds, page}) {
                     <img src="./icon.png" height="32" />
                   </Link>
                 </Box>
-                <Typography variant="h6" className={classes.title}>
+                <Typography variant="h6" className={classes.flexGrow}>
                   Destiny Child Tools
                 </Typography>
                 <SelectChild />

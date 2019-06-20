@@ -21,6 +21,7 @@ const useStyles = makeStyles(theme => ({
   input: {
     display: 'flex',
     padding: 0,
+    marginLeft: '1rem',
     height: 'auto',
     color: theme.palette.type === 'light' ? theme.palette.grey[300] : theme.palette.grey[700],
   },
@@ -49,7 +50,7 @@ const useStyles = makeStyles(theme => ({
   },
   placeholder: {
     position: 'absolute',
-    left: 2,
+    left: '1rem',
     bottom: 6,
     fontSize: 16,
   },
