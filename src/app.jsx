@@ -48,6 +48,11 @@ const App = function({fetchChilds, page}) {
           <div className={classes.root}>
             <AppBar position="static">
               <Toolbar>
+                <Box mr={2}>
+                  <Link to="/">
+                    <img src="./icon.png" height="32" />
+                  </Link>
+                </Box>
                 <Typography variant="h6" className={classes.title}>
                   Destiny Child Tools
                 </Typography>
