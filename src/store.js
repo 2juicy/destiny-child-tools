@@ -1,19 +1,27 @@
 import {applyMiddleware, compose, createStore, combineReducers} from 'redux'
 import thunk from 'redux-thunk'
+import {connectRoutes} from 'redux-first-router'
+import childList from './reducers/child-list.js'
+import childs from './reducers/childs.js'
+import page from './reducers/page.js'
+import routes from './routes.js'
+import {history} from './history.js'
 
-const childs = (state = {childs: 'here'}, action) => {
-  if(action.type == 'SET_CHILDS') return action.childs
-  return state
-}
-
-const rootReducer = (state, action) => ({
-  foo: 'bar'
+const {reducer, middleware, enhancer} = connectRoutes(routes, {
+  createHistory: () => history
 })
 
-export default createStore(
-  combineReducers({childs}),
-  compose(
-    applyMiddleware(thunk),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
+const rootReducer = combineReducers({
+  childs,
+  childList,
+  page,
+  location: reducer
+})
+const middlewares = applyMiddleware(middleware, thunk)
+const enhancers = compose(
+  enhancer,
+  middlewares,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
+
+export default createStore(rootReducer, enhancers)
