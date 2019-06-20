@@ -18,10 +18,10 @@ const rootReducer = combineReducers({
   location: reducer
 })
 const middlewares = applyMiddleware(middleware, thunk)
-const enhancers = compose(
-  enhancer,
-  middlewares,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-)
 
-export default createStore(rootReducer, enhancers)
+
+const enhancers = [enhancer, middlewares]
+if(window.__REDUX_DEVTOOLS_EXTENSION__) enhancers.push(window.__REDUX_DEVTOOLS_EXTENSION__())
+
+
+export default createStore(rootReducer, compose.apply(compose, enhancers))
