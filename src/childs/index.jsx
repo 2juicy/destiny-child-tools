@@ -16,11 +16,15 @@ const Childs = ({childs}) => {
         <Typography color="textPrimary">Childs</Typography>
       </Breadcrumbs>
       <List>
-        {childs.map(({name, id}, i) =>
-          <ListItem button component={RouterLink} to={`childs/${id}`} key={id + 'list'}>
-            <ListItemText primary={`${name} (${id})`} />
-          </ListItem>
-        )}
+        {childs.map(({name, id, variants}, i) => {
+          const numVariants = Object.keys(variants).length
+          return (
+            <ListItem button component={RouterLink} to={`childs/${id}`} key={id + 'list'}>
+              <ListItemText
+                primary={`${name} (${id}) - ${numVariants} variant${numVariants > 1 ? 's' : ''}`} />
+            </ListItem>
+          )
+        })}
       </List>
     </div>
   )
