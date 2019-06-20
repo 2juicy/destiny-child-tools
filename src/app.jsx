@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import Link from 'redux-first-router-link'
+import {fade} from '@material-ui/core/styles'
 import {createMuiTheme} from '@material-ui/core/styles'
 import {makeStyles} from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
@@ -30,9 +31,6 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
   title: {
     flexGrow: 1,
   },
@@ -56,11 +54,11 @@ const App = function({fetchChilds, page}) {
                 <Typography variant="h6" className={classes.title}>
                   Destiny Child Tools
                 </Typography>
+                <SelectChild />
               </Toolbar>
             </AppBar>
           </div>
           <Box p={2}>
-            <SelectChild />
             <Page />
           </Box>
         </ThemeProvider>
