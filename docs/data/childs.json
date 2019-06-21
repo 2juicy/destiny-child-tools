@@ -11551,7 +11551,10 @@
     "id": "c277"
   },
   "c167": {
+    "stars": 5,
+    "tierPVP": 10,
     "name": "Chang'e",
+    "tierRaid": 10,
     "variants": {
       "10": {
         "title": "Banyan",
@@ -11604,7 +11607,10 @@
         }
       }
     },
-    "id": "c167"
+    "tierBoss": 10,
+    "type": "support",
+    "id": "c167",
+    "tierPVE": 10
   },
   "c057": {
     "name": "Lan Fei",
@@ -14023,7 +14029,10 @@
     "id": "c159"
   },
   "c049": {
+    "stars": 5,
+    "tierPVP": 9,
     "name": "Maat",
+    "tierRaid": 9,
     "variants": {
       "10": {
         "title": "Inspiring",
@@ -14066,9 +14075,10 @@
         }
       }
     },
+    "tierBoss": 10,
+    "type": "healer",
     "id": "c049",
-    "stars": 5,
-    "type": "healer"
+    "tierPVE": 8
   },
   "sm151": {
     "name": "암즈",
@@ -14703,7 +14713,10 @@
     "id": "c106"
   },
   "c227": {
+    "stars": 5,
+    "tierPVP": 9,
     "name": "Mafdet",
+    "tierRaid": 8,
     "variants": {
       "00": {
         "title": "Human",
@@ -14736,8 +14749,10 @@
         }
       }
     },
+    "tierBoss": 8,
+    "type": "attacker",
     "id": "c227",
-    "stars": 5
+    "tierPVE": 8
   },
   "c348": {
     "name": "Dark Mars",
