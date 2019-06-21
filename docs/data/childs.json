@@ -3054,7 +3054,10 @@
     "id": "m166"
   },
   "m056": {
+    "stars": 5,
+    "tierPVP": 6,
     "name": "Abaddon",
+    "tierRaid": 7,
     "variants": {
       "00": {
         "title": "Human",
@@ -3087,7 +3090,11 @@
         }
       }
     },
-    "id": "m056"
+    "tierBoss": 7,
+    "type": "attacker",
+    "id": "m056",
+    "element": "grass",
+    "tierPVE": 6
   },
   "m177": {
     "name": "Dark Star",
@@ -6791,7 +6798,10 @@
     "tierPVE": 10
   },
   "c194": {
+    "stars": 5,
+    "tierPVP": 7,
     "name": "Ashtoreth",
+    "tierRaid": 7,
     "variants": {
       "00": {
         "title": "Human",
@@ -6824,7 +6834,11 @@
         }
       }
     },
-    "id": "c194"
+    "tierBoss": 7,
+    "type": "attacker",
+    "id": "c194",
+    "element": "light",
+    "tierPVE": 7
   },
   "sc318": {
     "name": "바리",
@@ -8279,7 +8293,10 @@
     "id": "c053"
   },
   "c174": {
+    "stars": 5,
+    "tierPVP": 6,
     "name": "A.I",
+    "tierRaid": 6,
     "variants": {
       "10": {
         "title": "Little Star",
@@ -8342,7 +8359,11 @@
         }
       }
     },
-    "id": "c174"
+    "tierBoss": 3,
+    "type": "tank",
+    "id": "c174",
+    "element": "dark",
+    "tierPVE": 6
   },
   "c295": {
     "name": "Teresa",
@@ -10669,7 +10690,10 @@
     "id": "c034"
   },
   "c045": {
+    "stars": 5,
+    "tierPVP": 7,
     "name": "Aria",
+    "tierRaid": 7,
     "variants": {
       "10": {
         "title": "Holy Eve",
@@ -10752,7 +10776,11 @@
         }
       }
     },
-    "id": "c045"
+    "tierBoss": 7,
+    "type": "support",
+    "id": "c045",
+    "element": "light",
+    "tierPVE": 7
   },
   "c056": {
     "name": "Jeanne d'Arc",
@@ -10863,7 +10891,10 @@
     "id": "c188"
   },
   "c199": {
+    "stars": 5,
+    "tierPVP": 7,
     "name": "Aurora",
+    "tierRaid": 7,
     "variants": {
       "10": {
         "title": "Nightmare",
@@ -10906,7 +10937,11 @@
         }
       }
     },
-    "id": "c199"
+    "tierBoss": 6,
+    "type": "healer",
+    "id": "c199",
+    "element": "fire",
+    "tierPVE": 7
   },
   "c200": {
     "name": "Seshet",
@@ -14399,7 +14434,10 @@
     "id": "c358"
   },
   "c127": {
+    "stars": 5,
+    "tierPVP": 8,
     "name": "Bastet",
+    "tierRaid": 6,
     "variants": {
       "10": {
         "title": "Advent",
@@ -14442,7 +14480,11 @@
         }
       }
     },
-    "id": "c127"
+    "tierBoss": 6,
+    "type": "attacker",
+    "id": "c127",
+    "element": "light",
+    "tierPVE": 7
   },
   "c369": {
     "name": "Grandma",
@@ -15674,7 +15716,10 @@
     "id": "c339"
   },
   "c229": {
+    "stars": 5,
+    "tierPVP": 6,
     "name": "Brownie",
+    "tierRaid": 5,
     "variants": {
       "10": {
         "title": "Postal",
@@ -15717,7 +15762,11 @@
         }
       }
     },
-    "id": "c229"
+    "tierBoss": 5,
+    "type": "support",
+    "id": "c229",
+    "element": "grass",
+    "tierPVE": 6
   },
   "c009": {
     "name": "Hector",
