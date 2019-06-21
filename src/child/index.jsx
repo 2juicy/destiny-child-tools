@@ -11,6 +11,9 @@ import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import RouterLink from '../link.jsx'
 import Link from '@material-ui/core/Link'
 import Grid from '@material-ui/core/Grid'
+import IconButton from '@material-ui/core/IconButton'
+import EditIcon from '@material-ui/icons/Edit'
+import {Censor} from '../censorship.jsx'
 
 const useStyles = makeStyles({
   box: {
@@ -21,6 +24,9 @@ const useStyles = makeStyles({
   },
   live2d: {
     minHeight: 275,
+  },
+  editButton: {
+    marginLeft: '.5rem'
   },
   bullet: {
     display: 'inline-block',
@@ -49,7 +55,14 @@ const Child = ({child}) => {
         <Typography color="textPrimary">{name} ({id})</Typography>
       </Breadcrumbs>
       <Box mt={2}>
-        <Typography variant="h5">{name} Variants</Typography>
+        <Typography variant="h5">
+          {name} Variants
+          {__DEV__ &&
+              <IconButton className={classes.editButton} aria-label="Edit">
+                <EditIcon/>
+              </IconButton>
+          }
+        </Typography>
       </Box>
       {variants.toOrderedMap().sortBy((v, k) => k)
         .map((variant, vId) => variant && variant.get &&
@@ -64,23 +77,27 @@ const Child = ({child}) => {
                 </Button>
                 <Grid container>
                   <Grid item xs={4}>
-                    <img src={`./img/childs/portraits/${id}_${vId}.png`}
-                       height="250"
-                       alt={`${variant.get('title')} ${name} Portrait`} />
+                    <Censor min={1}>
+                      <img src={`./img/childs/portraits/${id}_${vId}.png`}
+                         height="250"
+                         alt={`${variant.get('title')} ${name} Portrait`} />
+                    </Censor>
                   </Grid>
                   <Grid item xs={8}>
-                    <iframe
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        maxWidth: '100%',
-                        border: 'none',
-                        overflow: 'hidden'
-                      }}
-                      className={classes.live2d}
-                      scrolling="no"
-                      seamless="seamless"
-                      src={`./live2d/viewer.html?mN=${id}_${vId}&size=500`} />
+                    <Censor min={1}>
+                      <iframe
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          maxWidth: '100%',
+                          border: 'none',
+                          overflow: 'hidden'
+                        }}
+                        className={classes.live2d}
+                        scrolling="no"
+                        seamless="seamless"
+                        src={`./live2d/viewer.html?mN=${id}_${vId}&size=500`} />
+                    </Censor>
                   </Grid>
                 </Grid>
                 </CardContent>

@@ -2,7 +2,7 @@ const webpack = require('webpack'),
       HtmlWebpackPlugin = require('html-webpack-plugin'),
       path = require('path')
 
-module.exports = {
+const config = {
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'docs'),
@@ -11,7 +11,13 @@ module.exports = {
   },
   devServer: {
     contentBase: './docs/',
-    hot: true
+    hot: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        pathRewrite: {'^/api': ''}
+      }
+    }
   },
   module: {
     rules: [
@@ -41,6 +47,11 @@ module.exports = {
       template: path.join(__dirname, 'src/index.html'),
       filename: 'index.html',
       inject: false
+    }),
+    new webpack.DefinePlugin({
+      __DEV__: JSON.stringify(process.env.NODE_ENV == 'development'),
     })
   ]
 }
+
+module.exports = config

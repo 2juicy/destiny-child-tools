@@ -13,13 +13,16 @@ import Typography from '@material-ui/core/Typography'
 import IconButton from '@material-ui/core/IconButton'
 import ThemeProvider from '@material-ui/styles/ThemeProvider'
 import MenuIcon from '@material-ui/icons/Menu'
+import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew'
 import theme from './theme.js'
 import {fetchChilds} from './actions/childs.js'
 import Child from './child/index.jsx'
 import Childs from './childs/index.jsx'
+import Censorship from './censorship.jsx'
 import Home from './home/index.jsx'
 import NotFound from './not-found.jsx'
 import SelectChild from './select-child.js'
+import {Censor} from './censorship.jsx'
 
 const pages = {
   HOME: Home,
@@ -47,7 +50,9 @@ const App = function({fetchChilds, page}) {
               <Toolbar>
                 <Box mr={2}>
                   <Link to="/">
-                    <img src="./icon.png" height="32" />
+                    <Censor min={1} fallback={<AccessibilityNewIcon />}>
+                      <img src="./icon.png" height="32" />
+                    </Censor>
                   </Link>
                 </Box>
                 <Typography variant="h6" className={classes.flexGrow}>
@@ -59,6 +64,9 @@ const App = function({fetchChilds, page}) {
           </div>
           <Box p={2}>
             <Page />
+            <Box pt={2}>
+              <Censorship/>
+            </Box>
           </Box>
         </ThemeProvider>
       </CssBaseline>
