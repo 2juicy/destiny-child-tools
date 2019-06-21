@@ -5,7 +5,10 @@ const defaultState = fromJS({
   numToShow: 20,
   asc: true,
   sort: 'id',
-  page: 0
+  page: 0,
+  element: false,
+  stars: false,
+  type: false
 })
 
 export default (state = defaultState, action) => {
@@ -27,6 +30,9 @@ export default (state = defaultState, action) => {
       sort: action.sort,
       asc: action.asc
     })
+  }
+  if(action.type == 'CHILD_LIST_SET_FILTER') {
+    state = state.set(action.filter, action.value)
   }
   return state
 }

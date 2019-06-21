@@ -13,3 +13,9 @@ export const setSort = (sort, asc = true) => ({
   sort,
   asc
 })
+
+export const setFilter = (filter, value) => ({
+  type: 'CHILD_LIST_SET_FILTER',
+  filter,
+  value
+})

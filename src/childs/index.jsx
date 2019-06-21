@@ -1,4 +1,5 @@
 import React from 'react'
+import {makeStyles} from '@material-ui/core/styles'
 import {connect} from 'react-redux'
 import RouterLink from '../link.jsx'
 import Box from '@material-ui/core/Box'
@@ -22,7 +23,7 @@ import FormHelperText from '@material-ui/core/FormHelperText'
 import FormControl from '@material-ui/core/FormControl'
 import MenuItem from '@material-ui/core/MenuItem'
 import InputLabel from '@material-ui/core/InputLabel'
-import {setNumToShow, setSort, setPage} from '../actions/child-list.js'
+import {setNumToShow, setSort, setPage, setFilter} from '../actions/child-list.js'
 import EditButton from '../edit-button.jsx'
 import StarsInput from '../stars-input.jsx'
 import TypeInput from '../type-input.jsx'
@@ -30,6 +31,13 @@ import ElementInput from '../element-input.jsx'
 import TypeIcon from '../type-icon.jsx'
 import ElementIcon from '../element-icon.jsx'
 import {TierPVEInput, TierPVPInput, TierRaidInput, TierBossInput} from '../tier-input.jsx'
+
+const useStyles = makeStyles({
+  filter: {
+    marginRight: '1rem'
+  },
+})
+
 
 const TableChildCellLink = ({child, children, Editor, mode}) => (
   <TableCell>
@@ -42,15 +50,32 @@ const TableChildCellLink = ({child, children, Editor, mode}) => (
   </TableCell>
 )
 
-const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort, setPage, page}) => {
-  const numChilds = childs.size
+const Childs = ({
+  childs,
+  numToShow,
+  setNumToShow,
+  mode,
+  sort,
+  asc,
+  setSort,
+  setPage,
+  page,
+  stars,
+  setFilter,
+  element,
+  type
+}) => {
   childs = childs.toList()
     .sortBy(child =>
       sort == 'variants'
         ? child.get('variants').size
         : child.get(sort) || (asc ? Infinity : -1 * Infinity)
     )
+  if(stars) childs = childs.filter(child => child.get('stars') == stars)
+  if(element) childs = childs.filter(child => child.get('element') == element)
+  if(type) childs = childs.filter(child => child.get('type') == type)
   if(!asc) childs = childs.reverse()
+  const numChilds = childs.size
   childs = childs.slice(numToShow * page, numToShow * page + numToShow)
 
   const order = asc ? 'asc' : 'desc',
@@ -64,6 +89,7 @@ const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort, setP
             </TableSortLabel>
           </TableCell>
         )
+  const classes = useStyles()
   return (
     <div>
       <Box mb={2}>
@@ -75,7 +101,7 @@ const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort, setP
       </Box>
       <Paper>
         <Box mb={2} p={2}>
-          <FormControl>
+          <FormControl className={classes.filter}>
             <InputLabel>Show</InputLabel>
             <Select value={numToShow} onChange={e => setNumToShow(e.target.value)}>
               <MenuItem value={10}>10 Childs</MenuItem>
@@ -83,6 +109,39 @@ const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort, setP
               <MenuItem value={50}>50 Childs</MenuItem>
               <MenuItem value={100}>100 Childs</MenuItem>
               <MenuItem value={200}>200 Childs</MenuItem>
+            </Select>
+          </FormControl>
+          <FormControl className={classes.filter}>
+            <InputLabel>Stars</InputLabel>
+            <Select value={stars} onChange={e => setFilter('stars', e.target.value)}>
+              <MenuItem value={false}>Any Stars</MenuItem>
+              <MenuItem value={5}>5 Stars</MenuItem>
+              <MenuItem value={4}>4 Stars</MenuItem>
+              <MenuItem value={3}>3 Stars</MenuItem>
+              <MenuItem value={2}>2 Stars</MenuItem>
+              <MenuItem value={1}>1 Star</MenuItem>
+            </Select>
+          </FormControl>
+          <FormControl className={classes.filter}>
+            <InputLabel>Element</InputLabel>
+            <Select value={element} onChange={e => setFilter('element', e.target.value)}>
+              <MenuItem value={false}>Any Element</MenuItem>
+              <MenuItem value={'light'}>Light</MenuItem>
+              <MenuItem value={'dark'}>Dark</MenuItem>
+              <MenuItem value={'fire'}>Fire</MenuItem>
+              <MenuItem value={'water'}>Water</MenuItem>
+              <MenuItem value={'grass'}>Grass</MenuItem>
+            </Select>
+          </FormControl>
+          <FormControl className={classes.filter}>
+            <InputLabel>Type</InputLabel>
+            <Select value={type} onChange={e => setFilter('type', e.target.value)}>
+              <MenuItem value={false}>Any Type</MenuItem>
+              <MenuItem value={'attacker'}>Attacker</MenuItem>
+              <MenuItem value={'tank'}>Tank</MenuItem>
+              <MenuItem value={'healer'}>Healer</MenuItem>
+              <MenuItem value={'support'}>Support</MenuItem>
+              <MenuItem value={'debuffer'}>Debuffer</MenuItem>
             </Select>
           </FormControl>
         </Box>
@@ -172,8 +231,11 @@ export default connect(
       sort: childList.get('sort'),
       asc: childList.get('asc'),
       page: childList.get('page'),
+      stars: childList.get('stars'),
+      element: childList.get('element'),
+      type: childList.get('type'),
       mode: state.get('child').get('mode')
     }
   },
-  {setNumToShow, setSort, setPage}
+  {setNumToShow, setSort, setPage, setFilter}
 )(Childs )
