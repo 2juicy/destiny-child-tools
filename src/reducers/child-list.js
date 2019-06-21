@@ -2,9 +2,10 @@ import {fromJS} from 'immutable'
 
 const defaultState = fromJS({
   ids: [],
-  numToShow: 25,
+  numToShow: 20,
   asc: true,
-  sort: 'id'
+  sort: 'id',
+  page: 0
 })
 
 export default (state = defaultState, action) => {
@@ -14,10 +15,12 @@ export default (state = defaultState, action) => {
       fromJS(Object.keys(action.childs))
       .take(state.get('numToShow'))
     )
-
   }
   if(action.type == 'CHILD_LIST_SET_NUM_TO_SHOW') {
     state = state.set('numToShow', action.numToShow)
+  }
+  if(action.type == 'CHILD_LIST_SET_PAGE') {
+    state = state.set('page', action.page)
   }
   if(action.type == 'CHILD_LIST_SET_SORT') {
     state = state.merge({

@@ -13054,7 +13054,10 @@
     "id": "c235"
   },
   "c004": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Cheoyong",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -13087,8 +13090,11 @@
         }
       }
     },
+    "tierBoss": 1,
+    "type": "attacker",
     "id": "c004",
-    "stars": 3
+    "element": "light",
+    "tierPVE": 1
   },
   "c125": {
     "name": "Altice",
@@ -14940,7 +14946,10 @@
     "id": "c359"
   },
   "c007": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Phoenix",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -14973,8 +14982,11 @@
         }
       }
     },
+    "tierBoss": 1,
+    "type": "tank",
     "id": "c007",
-    "stars": 3
+    "element": "fire",
+    "tierPVE": 1
   },
   "c128": {
     "name": "Galatea",

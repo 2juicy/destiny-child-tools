@@ -11,6 +11,7 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText  from '@material-ui/core/ListItemText'
 import Table from '@material-ui/core/Table'
+import TablePagination from '@material-ui/core/TablePagination'
 import TableBody from '@material-ui/core/TableBody'
 import TableCell from '@material-ui/core/TableCell'
 import TableHead from '@material-ui/core/TableHead'
@@ -21,7 +22,7 @@ import FormHelperText from '@material-ui/core/FormHelperText'
 import FormControl from '@material-ui/core/FormControl'
 import MenuItem from '@material-ui/core/MenuItem'
 import InputLabel from '@material-ui/core/InputLabel'
-import {setNumToShow, setSort} from '../actions/child-list.js'
+import {setNumToShow, setSort, setPage} from '../actions/child-list.js'
 import EditButton from '../edit-button.jsx'
 import StarsInput from '../stars-input.jsx'
 import TypeInput from '../type-input.jsx'
@@ -41,7 +42,8 @@ const TableChildCellLink = ({child, children, Editor, mode}) => (
   </TableCell>
 )
 
-const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort}) => {
+const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort, setPage, page}) => {
+  const numChilds = childs.size
   childs = childs.toList()
     .sortBy(child =>
       sort == 'variants'
@@ -49,7 +51,7 @@ const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort}) => 
         : child.get(sort) || (asc ? Infinity : -1 * Infinity)
     )
   if(!asc) childs = childs.reverse()
-  childs = childs.take(numToShow)
+  childs = childs.slice(numToShow * page, numToShow * page + numToShow)
 
   const order = asc ? 'asc' : 'desc',
         Sortable = ({name, children}) => (
@@ -76,11 +78,11 @@ const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort}) => 
           <FormControl>
             <InputLabel>Show</InputLabel>
             <Select value={numToShow} onChange={e => setNumToShow(e.target.value)}>
-              <MenuItem value={25}>25 Childs</MenuItem>
+              <MenuItem value={10}>10 Childs</MenuItem>
+              <MenuItem value={20}>20 Childs</MenuItem>
               <MenuItem value={50}>50 Childs</MenuItem>
               <MenuItem value={100}>100 Childs</MenuItem>
-              <MenuItem value={500}>500 Childs</MenuItem>
-              <MenuItem value={999999}>All Childs</MenuItem>
+              <MenuItem value={200}>200 Childs</MenuItem>
             </Select>
           </FormControl>
         </Box>
@@ -147,6 +149,15 @@ const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort}) => 
             }).toArray()}
           </TableBody>
         </Table>
+        <TablePagination
+          component="div"
+          rowsPerPageOptions={[10, 20, 50, 100, 200]}
+          page={page}
+          rowsPerPage={numToShow}
+          count={numChilds}
+          onChangeRowsPerPage={e => setNumToShow(e.target.value)}
+          onChangePage={(e, newPage) => setPage(newPage)}
+          />
       </Paper>
     </div>
   )
@@ -160,8 +171,9 @@ export default connect(
       numToShow: childList.get('numToShow'),
       sort: childList.get('sort'),
       asc: childList.get('asc'),
+      page: childList.get('page'),
       mode: state.get('child').get('mode')
     }
   },
-  {setNumToShow, setSort}
+  {setNumToShow, setSort, setPage}
 )(Childs )

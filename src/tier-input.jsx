@@ -21,7 +21,8 @@ const TierInput = ({child, setChildTier, type, processing}) => (
       <MenuItem value={4}>4</MenuItem>
       <MenuItem value={3}>3</MenuItem>
       <MenuItem value={2}>2</MenuItem>
-      <MenuItem value={1}>1 (worst)</MenuItem>
+      <MenuItem value={1}>1</MenuItem>
+      <MenuItem value={1}>0 (worst)</MenuItem>
     </Select>
   </FormControl>
 )
