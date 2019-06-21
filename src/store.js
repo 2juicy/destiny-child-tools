@@ -6,6 +6,7 @@ import childList from './reducers/child-list.js'
 import childs from './reducers/childs.js'
 import child from './reducers/child.js'
 import censorship from './reducers/censorship.js'
+import processing from './reducers/processing.js'
 import page from './reducers/page.js'
 import routes from './routes.js'
 import {history} from './history.js'
@@ -17,6 +18,7 @@ const {reducer, middleware, enhancer} = connectRoutes(routes, {
 
 const rootReducer = combineReducers({
   censorship,
+  processing,
   child,
   childs,
   childList,

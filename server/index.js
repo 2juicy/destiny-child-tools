@@ -12,6 +12,7 @@ app.post('/childs', (req, res) => {
   fs.writeFileSync(path.resolve(__dirname, '../docs/data/childs.json'),
     JSON.stringify(req.body, null, 2)
   )
+  res.send(req.body)
 })
 
 app.listen(port, () => console.log(`Development API server running on port ${port}!`))

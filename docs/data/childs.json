@@ -10336,7 +10336,10 @@
     "id": "c353"
   },
   "c001": {
+    "stars": 3,
+    "tierPVP": 3,
     "name": "Mona",
+    "tierRaid": 3,
     "variants": {
       "12": {
         "title": "Beach",
@@ -10399,8 +10402,11 @@
         }
       }
     },
+    "tierBoss": 1,
+    "type": "tank",
     "id": "c001",
-    "stars": 3
+    "element": "dark",
+    "tierPVE": 4
   },
   "c122": {
     "name": "Samuel",
@@ -11149,7 +11155,10 @@
     "id": "c354"
   },
   "c002": {
+    "stars": 3,
+    "tierPVP": 6,
     "name": "Lisa",
+    "tierRaid": 7,
     "variants": {
       "10": {
         "title": "Beach",
@@ -11212,8 +11221,11 @@
         }
       }
     },
+    "tierBoss": 9,
+    "type": "attacker",
     "id": "c002",
-    "stars": 3
+    "element": "water",
+    "tierPVE": 6
   },
   "c123": {
     "name": "Baphomet",
@@ -12093,7 +12105,10 @@
     "id": "c355"
   },
   "c003": {
+    "stars": 3,
+    "tierPVP": 4,
     "name": "Davi",
+    "tierRaid": 3,
     "variants": {
       "10": {
         "title": "Beach",
@@ -12196,11 +12211,17 @@
         }
       }
     },
+    "tierBoss": 6,
+    "type": "attacker",
     "id": "c003",
-    "stars": 3
+    "element": "fire",
+    "tierPVE": 5
   },
   "c124": {
+    "stars": 5,
+    "tierPVP": 10,
     "name": "Eve",
+    "tierRaid": 10,
     "variants": {
       "10": {
         "title": "Cyan Rose",
@@ -12263,7 +12284,11 @@
         }
       }
     },
-    "id": "c124"
+    "tierBoss": 10,
+    "type": "attacker",
+    "id": "c124",
+    "element": "dark",
+    "tierPVE": 10
   },
   "c245": {
     "name": "Cammy",
@@ -12783,6 +12808,7 @@
     "tierBoss": 8,
     "type": "debuffer",
     "id": "c058",
+    "element": "light",
     "tierPVE": 8
   },
   "c069": {
@@ -13730,6 +13756,7 @@
     "tierBoss": 10,
     "type": "tank",
     "id": "c005",
+    "element": "water",
     "tierPVE": 8
   },
   "c126": {

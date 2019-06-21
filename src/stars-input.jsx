@@ -9,10 +9,10 @@ import InputLabel from '@material-ui/core/InputLabel'
 
 const Stars = ({stars}) => stars + ' Stars'
 
-const StarsInput = ({child, setChildStars}) => (
+const StarsInput = ({child, setChildStars, processing}) => (
   <FormControl>
     <InputLabel>Star Level</InputLabel>
-    <Select value={child.get('stars') || false} onChange={e => setChildStars(child, e.target.value)}>
+    <Select value={child.get('stars') || false} onChange={e => setChildStars(child, e.target.value)} disabled={processing}>
       <MenuItem value={false}>unknown</MenuItem>
       <MenuItem value={1}><Stars stars={1} /></MenuItem>
       <MenuItem value={2}><Stars stars={2} /></MenuItem>
@@ -24,6 +24,8 @@ const StarsInput = ({child, setChildStars}) => (
 )
 
 export default connect(
-  null,
+  state => ({
+    processing: state.get('processing')
+  }),
   {setChildStars}
 )(StarsInput)

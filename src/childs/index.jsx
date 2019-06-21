@@ -57,7 +57,7 @@ const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort}) => 
             <TableSortLabel active={sort == name} direction={order}
               onClick={() => setSort(name, sort == name
                 ? !asc
-                : name.match(/^(tier|stars|variants)/) ? false : true)}>
+                : name.match(/^(tier|stars|variants|element|type)/) ? false : true)}>
               {children}
             </TableSortLabel>
           </TableCell>

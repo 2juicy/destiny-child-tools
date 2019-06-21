@@ -7,10 +7,10 @@ import FormControl from '@material-ui/core/FormControl'
 import MenuItem from '@material-ui/core/MenuItem'
 import InputLabel from '@material-ui/core/InputLabel'
 
-const TierInput = ({child, setChildTier, type}) => (
+const TierInput = ({child, setChildTier, type, processing}) => (
   <FormControl>
     <InputLabel>Tier {type}</InputLabel>
-    <Select value={child.get('tier' + type) || false} onChange={e => setChildTier(child, type, e.target.value)}>
+    <Select value={child.get('tier' + type) || false} onChange={e => setChildTier(child, type, e.target.value)} disabled={processing}>
       <MenuItem value={false}>unknown</MenuItem>
       <MenuItem value={10}>10 (best)</MenuItem>
       <MenuItem value={9}>9</MenuItem>
@@ -27,7 +27,9 @@ const TierInput = ({child, setChildTier, type}) => (
 )
 
 const TierInputConnected = connect(
-  null,
+  state => ({
+    processing: state.get('processing')
+  }),
   {setChildTier}
 )(TierInput)
 
