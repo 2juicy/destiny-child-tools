@@ -14,6 +14,7 @@ import Grid from '@material-ui/core/Grid'
 import {Censor} from '../censorship.jsx'
 import EditButton from '../edit-button.jsx'
 import StarsInput from '../stars-input.jsx'
+import {TierPVEInput, TierPVPInput, TierRaidInput, TierBossInput} from '../tier-input.jsx'
 
 const useStyles = makeStyles({
   box: {
@@ -57,6 +58,46 @@ const Child = ({child, setMode, mode, setChildStars}) => {
           ? <div><StarsInput child={child} /></div>
           : child.get('stars') && <div>
             Stars: {child.get('stars')}
+          </div>
+        }
+        {mode == 'edit'
+          ? <div><TierPVEInput child={child} /></div>
+          : child.get('tierPVE') && <div>
+            Tier PVE: {child.get('tierPVE')} (
+            <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
+              RiceMine
+            </Link>
+            )
+          </div>
+        }
+        {mode == 'edit'
+          ? <div><TierPVPInput child={child} /></div>
+          : child.get('tierPVP') && <div>
+            Tier PVP: {child.get('tierPVP')} (
+            <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
+              RiceMine
+            </Link>
+            )
+          </div>
+        }
+        {mode == 'edit'
+          ? <div><TierRaidInput child={child} /></div>
+          : child.get('tierRaid') && <div>
+            Tier Raid: {child.get('tierRaid')} (
+            <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
+              RiceMine
+            </Link>
+            )
+          </div>
+        }
+        {mode == 'edit'
+          ? <div><TierBossInput child={child} /></div>
+          : child.get('tierBoss') && <div>
+            Tier Boss: {child.get('tierBoss')} (
+            <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
+              RiceMine
+            </Link>
+            )
           </div>
         }
       </Box>

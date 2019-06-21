@@ -6767,7 +6767,11 @@
         }
       }
     },
-    "id": "c183"
+    "id": "c183",
+    "stars": 5,
+    "tierPVE": 10,
+    "tierPVP": 10,
+    "tierRaid": 10
   },
   "c194": {
     "name": "Ashtoreth",
@@ -13705,7 +13709,11 @@
       }
     },
     "id": "c005",
-    "stars": 5
+    "stars": 5,
+    "tierPVE": 8,
+    "tierPVP": 8,
+    "tierRaid": 8,
+    "tierBoss": 10
   },
   "c126": {
     "name": "Salmacis",

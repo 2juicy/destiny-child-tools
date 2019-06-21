@@ -21,25 +21,45 @@ import FormHelperText from '@material-ui/core/FormHelperText'
 import FormControl from '@material-ui/core/FormControl'
 import MenuItem from '@material-ui/core/MenuItem'
 import InputLabel from '@material-ui/core/InputLabel'
-import {setNumToShow} from '../actions/child-list.js'
+import {setNumToShow, setSort} from '../actions/child-list.js'
 import EditButton from '../edit-button.jsx'
 import StarsInput from '../stars-input.jsx'
+import {TierPVEInput, TierPVPInput, TierRaidInput, TierBossInput} from '../tier-input.jsx'
 
 const TableChildCellLink = ({child, children, Editor, mode}) => (
   <TableCell>
     {mode == 'edit' && Editor
       ? <Editor child={child} />
       : <Link component={RouterLink}  to={`/childs/${child.get('id')}`}>
-        {children}
+        {children || ''}
       </Link>
     }
   </TableCell>
 )
 
-const Childs = ({childs, numToShow, setNumToShow, mode}) => {
+
+
+const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort}) => {
   childs = childs.toList()
-    .sortBy(child => child.get('id'))
-    .take(numToShow)
+    .sortBy(child =>
+      sort == 'variants'
+        ? child.get('variants').size
+        : child.get(sort) || (asc ? Infinity : -1 * Infinity)
+    )
+  if(!asc) childs = childs.reverse()
+  childs = childs.take(numToShow)
+
+  const order = asc ? 'asc' : 'desc',
+        Sortable = ({name, children}) => (
+          <TableCell sortDirection={order}>
+            <TableSortLabel active={sort == name} direction={order}
+              onClick={() => setSort(name, sort == name
+                ? !asc
+                : name.match(/^(tier|stars|variants)/) ? false : true)}>
+              {children}
+            </TableSortLabel>
+          </TableCell>
+        )
   return (
     <div>
       <Box mb={2}>
@@ -67,10 +87,14 @@ const Childs = ({childs, numToShow, setNumToShow, mode}) => {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Id</TableCell>
-              <TableCell>Name</TableCell>
-              <TableCell>Stars</TableCell>
-              <TableCell>Variants</TableCell>
+              <Sortable name="id">ID</Sortable>
+              <Sortable name="name">Name</Sortable>
+              <Sortable name="stars">Stars</Sortable>
+              <Sortable name="tierPVE">Tier PVE</Sortable>
+              <Sortable name="tierPVP">Tier PVP</Sortable>
+              <Sortable name="tierRaid">Tier Raid</Sortable>
+              <Sortable name="tierBoss">Tier Boss</Sortable>
+              <Sortable name="variants">Variants</Sortable>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -85,7 +109,19 @@ const Childs = ({childs, numToShow, setNumToShow, mode}) => {
                     {child.get('name')}
                   </TableChildCellLink>
                   <TableChildCellLink child={child} mode={mode} Editor={StarsInput}>
-                    {child.get('stars') || ''}
+                    {child.get('stars')}
+                  </TableChildCellLink>
+                  <TableChildCellLink child={child} mode={mode} Editor={TierPVEInput}>
+                    {child.get('tierPVE')}
+                  </TableChildCellLink>
+                  <TableChildCellLink child={child} mode={mode} Editor={TierPVPInput}>
+                    {child.get('tierPVP')}
+                  </TableChildCellLink>
+                  <TableChildCellLink child={child} mode={mode} Editor={TierRaidInput}>
+                    {child.get('tierRaid')}
+                  </TableChildCellLink>
+                  <TableChildCellLink child={child} mode={mode} Editor={TierBossInput}>
+                    {child.get('tierBoss')}
                   </TableChildCellLink>
                   <TableChildCellLink child={child}>
                     {child.get('variants').size}
@@ -102,11 +138,14 @@ const Childs = ({childs, numToShow, setNumToShow, mode}) => {
 
 export default connect(
   state => {
+    const childList = state.get('childList')
     return {
       childs: state.get('childs'),
-      numToShow: state.get('childList').get('numToShow'),
+      numToShow: childList.get('numToShow'),
+      sort: childList.get('sort'),
+      asc: childList.get('asc'),
       mode: state.get('child').get('mode')
     }
   },
-  {setNumToShow}
+  {setNumToShow, setSort}
 )(Childs )

@@ -3,8 +3,8 @@ import {fromJS} from 'immutable'
 const defaultState = fromJS({
   ids: [],
   numToShow: 25,
-  sortOrder: 'asc',
-  sortBy: "name"
+  asc: true,
+  sort: 'id'
 })
 
 export default (state = defaultState, action) => {
@@ -18,6 +18,12 @@ export default (state = defaultState, action) => {
   }
   if(action.type == 'CHILD_LIST_SET_NUM_TO_SHOW') {
     state = state.set('numToShow', action.numToShow)
+  }
+  if(action.type == 'CHILD_LIST_SET_SORT') {
+    state = state.merge({
+      sort: action.sort,
+      asc: action.asc
+    })
   }
   return state
 }
