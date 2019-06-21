@@ -233,11 +233,14 @@ const components = {
 }
 
 function IntegrationReactSelect({childs}) {
-
-  const data = childs.map(({id, name}) => ({
-    label: name + ' (' + id + ')',
-    value: id
-  }))
+  console.log(childs, childs.size);
+  const data = childs
+    .toList()
+    .sortBy(child => child.get('name'))
+    .map(child => ({
+      label: child.get('name') + ' (' + child.get('id') + ')',
+      value: child.get('id')
+    })).toArray()
   const classes = useStyles()
   const theme = useTheme()
   const [single, setSingle] = React.useState(null)
@@ -282,7 +285,9 @@ function IntegrationReactSelect({childs}) {
 
 
 export default connect(
-  ({childs, childList}) => ({
-    childs: childList.map(key => childs[key])
-  })
+  state => {
+    return {
+      childs: state.get('childs')
+    }
+  }
 )(IntegrationReactSelect)

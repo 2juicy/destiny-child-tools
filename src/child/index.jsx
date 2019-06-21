@@ -31,27 +31,29 @@ const useStyles = makeStyles({
 
 const Child = ({child}) => {
   const classes = useStyles()
-  return child
-   ? (
+  if(!child) return <div>Loading ...</div>
+  const name = child.get('name'),
+        id = child.get('id'),
+        variants = child.get('variants')
+  return (
     <div>
       <Breadcrumbs aria-label="Breadcrumb">
         <Link component={RouterLink} to="/">Home</Link>
         <Link component={RouterLink} to="/childs">Childs</Link>
-        <Typography color="textPrimary">{child.name} ({child.id})</Typography>
+        <Typography color="textPrimary">{name} ({id})</Typography>
       </Breadcrumbs>
       <Box mt={2}>
-        <Typography variant="h5">{child.name} Variants</Typography>
+        <Typography variant="h5">{name} Variants</Typography>
       </Box>
-      {Object.keys(child.variants)
-        .sort((a, b) => parseInt(a) - parseInt(b))
-        .map(variantId =>
-          <Box m={1} key={child.id + variantId} className={classes.box}>
+      {variants.toOrderedMap().sortBy((v, k) => k)
+        .map((variant, variantId) => variant && variant.get &&
+          <Box m={1} key={id + variantId} className={classes.box}>
             <Card>
               <CardContent>
                 <Button
-                      href={`./live2d/?model=${child.id}_${variantId}`}
+                      href={`./live2d/?model=${id}_${variantId}`}
                       target="_blank">
-                  {child.variants[variantId].title} {child.name} ({child.id}_{variantId})
+                  {variant.get('title')} {name} ({id}_{variantId})
                   <Box ml={2}><OpenInNewIcon /></Box>
                 </Button>
                 <iframe
@@ -64,19 +66,18 @@ const Child = ({child}) => {
                   }}
                   scrolling="no"
                   seamless="seamless"
-                  src={`./live2d/viewer.html?mN=${child.id}_${variantId}&size=500`} />
+                  src={`./live2d/viewer.html?mN=${id}_${variantId}&size=500`} />
                 </CardContent>
             </Card>
           </Box>
-        )
+        ).toList()
       }
     </div>
   )
-  : <div>Loading ...</div>
 }
 
 export default connect(
-  ({childs, location: {payload: {id}}}) => ({
-    child: childs[id]
+  state => ({
+    child: state.get('childs').get(state.get('location').payload.id)
   })
 )(Child )

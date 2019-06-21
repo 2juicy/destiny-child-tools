@@ -37,6 +37,8 @@ const App = function({fetchChilds, page}) {
   fetchChilds()
   const classes = useStyles(),
         Page = pages[page] || NotFound
+
+  console.log(page);
   return (
       <CssBaseline>
         <ThemeProvider theme={theme}>
@@ -64,6 +66,8 @@ const App = function({fetchChilds, page}) {
 }
 
 export default connect(
-  ({page}) => ({page}),
+  state => ({
+    page: state.get('page')
+  }),
   {fetchChilds}
 )(App)
