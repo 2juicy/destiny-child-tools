@@ -14,11 +14,11 @@ const StarsInput = ({child, setChildStars, processing}) => (
     <InputLabel>Star Level</InputLabel>
     <Select value={child.get('stars') || false} onChange={e => setChildStars(child, e.target.value)} disabled={processing}>
       <MenuItem value={false}>unknown</MenuItem>
-      <MenuItem value={1}><Stars stars={1} /></MenuItem>
-      <MenuItem value={2}><Stars stars={2} /></MenuItem>
-      <MenuItem value={3}><Stars stars={3} /></MenuItem>
-      <MenuItem value={4}><Stars stars={4} /></MenuItem>
       <MenuItem value={5}><Stars stars={5} /></MenuItem>
+      <MenuItem value={4}><Stars stars={4} /></MenuItem>
+      <MenuItem value={3}><Stars stars={3} /></MenuItem>
+      <MenuItem value={2}><Stars stars={2} /></MenuItem>
+      <MenuItem value={1}><Stars stars={1} /></MenuItem>
     </Select>
   </FormControl>
 )
