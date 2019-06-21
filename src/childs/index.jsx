@@ -25,9 +25,11 @@ import {setNumToShow, setSort} from '../actions/child-list.js'
 import EditButton from '../edit-button.jsx'
 import StarsInput from '../stars-input.jsx'
 import TypeInput from '../type-input.jsx'
+import ElementInput from '../element-input.jsx'
 import TypeIcon from '../type-icon.jsx'
+import ElementIcon from '../element-icon.jsx'
 import {TierPVEInput, TierPVPInput, TierRaidInput, TierBossInput} from '../tier-input.jsx'
-console.log(TypeIcon)
+
 const TableChildCellLink = ({child, children, Editor, mode}) => (
   <TableCell>
     {mode == 'edit' && Editor
@@ -38,8 +40,6 @@ const TableChildCellLink = ({child, children, Editor, mode}) => (
     }
   </TableCell>
 )
-
-
 
 const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort}) => {
   childs = childs.toList()
@@ -92,6 +92,7 @@ const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort}) => 
               <Sortable name="id">ID</Sortable>
               <Sortable name="name">Name</Sortable>
               <Sortable name="stars">Stars</Sortable>
+              <Sortable name="element">Element</Sortable>
               <Sortable name="type">Type</Sortable>
               <Sortable name="tierPVE">Tier PVE</Sortable>
               <Sortable name="tierPVP">Tier PVP</Sortable>
@@ -113,6 +114,12 @@ const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort}) => 
                   </TableChildCellLink>
                   <TableChildCellLink child={child} mode={mode} Editor={StarsInput}>
                     {child.get('stars')}
+                  </TableChildCellLink>
+                  <TableChildCellLink child={child} mode={mode} Editor={ElementInput}>
+                    {child.get('element')
+                      ? <ElementIcon child={child} />
+                      : ''
+                    }
                   </TableChildCellLink>
                   <TableChildCellLink child={child} mode={mode} Editor={TypeInput}>
                     {child.get('type')

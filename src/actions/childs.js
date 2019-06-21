@@ -6,6 +6,17 @@ export const fetchChilds = () => dispatch => {
   })
 }
 
+export const setChildProp = (child, prop, value) =>
+  (dispatch, getState) => {
+    dispatch({
+      type: 'CHILDS_SET_CHILD_PROP',
+      prop,
+      value,
+      child
+    })
+    dispatch(saveData())
+  }
+
 export const setChildStars = (child, stars) =>
   (dispatch, getState) => {
     dispatch({

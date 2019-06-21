@@ -15,6 +15,9 @@ import {Censor} from '../censorship.jsx'
 import EditButton from '../edit-button.jsx'
 import StarsInput from '../stars-input.jsx'
 import TypeInput from '../type-input.jsx'
+import TypeIcon from '../type-icon.jsx'
+import ElementInput from '../element-input.jsx'
+import ElementIcon from '../element-icon.jsx'
 import {TierPVEInput, TierPVPInput, TierRaidInput, TierBossInput} from '../tier-input.jsx'
 
 const useStyles = makeStyles({
@@ -62,9 +65,15 @@ const Child = ({child, setMode, mode, setChildStars}) => {
           </div>
         }
         {mode == 'edit'
+              ? <div><ElementInput child={child} /></div>
+              : child.get('element') && <div>
+              Element: <ElementIcon child={child} />
+          </div>
+        }
+        {mode == 'edit'
           ? <div><TypeInput child={child} /></div>
           : child.get('type') && <div>
-            Type: {child.get('type')}
+            Type: <TypeIcon child={child} />
           </div>
         }
         {mode == 'edit'

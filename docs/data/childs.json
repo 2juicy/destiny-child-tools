@@ -6773,6 +6773,7 @@
     "tierBoss": 8,
     "type": "tank",
     "id": "c183",
+    "element": "light",
     "tierPVE": 10
   },
   "c194": {
@@ -11610,6 +11611,7 @@
     "tierBoss": 10,
     "type": "support",
     "id": "c167",
+    "element": "water",
     "tierPVE": 10
   },
   "c057": {
@@ -14078,6 +14080,7 @@
     "tierBoss": 10,
     "type": "healer",
     "id": "c049",
+    "element": "light",
     "tierPVE": 8
   },
   "sm151": {
@@ -14752,6 +14755,7 @@
     "tierBoss": 8,
     "type": "attacker",
     "id": "c227",
+    "element": "light",
     "tierPVE": 8
   },
   "c348": {

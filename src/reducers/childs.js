@@ -21,5 +21,9 @@ export default (state = Map(), action) => {
     const id = action.child.get('id')
     return state.set(id, state.get(id).set('tier' + action.tierType, action.tier))
   }
+  if(action.type == 'CHILDS_SET_CHILD_PROP') {
+    const id = action.child.get('id')
+    return state.set(id, state.get(id).set(action.prop, action.value))
+  }
   return state
 }
