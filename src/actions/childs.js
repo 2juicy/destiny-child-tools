@@ -15,6 +15,17 @@ export const setChildStars = (child, stars) =>
     })
     dispatch(saveData())
   }
+
+export const setChildType = (child, childType) =>
+  (dispatch, getState) => {
+    dispatch({
+      type: 'CHILDS_SET_CHILD_TYPE',
+      childType,
+      child
+    })
+    dispatch(saveData())
+  }
+
 export const setChildTier = (child, type, tier) =>
   (dispatch, getState) => {
     dispatch({

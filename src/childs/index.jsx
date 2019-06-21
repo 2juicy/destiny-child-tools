@@ -24,15 +24,17 @@ import InputLabel from '@material-ui/core/InputLabel'
 import {setNumToShow, setSort} from '../actions/child-list.js'
 import EditButton from '../edit-button.jsx'
 import StarsInput from '../stars-input.jsx'
+import TypeInput from '../type-input.jsx'
+import TypeIcon from '../type-icon.jsx'
 import {TierPVEInput, TierPVPInput, TierRaidInput, TierBossInput} from '../tier-input.jsx'
-
+console.log(TypeIcon)
 const TableChildCellLink = ({child, children, Editor, mode}) => (
   <TableCell>
     {mode == 'edit' && Editor
       ? <Editor child={child} />
-      : <Link component={RouterLink}  to={`/childs/${child.get('id')}`}>
-        {children || ''}
-      </Link>
+    : <Link component={RouterLink}  to={`/childs/${child.get('id')}`}>
+      {children || ''}
+    </Link>
     }
   </TableCell>
 )
@@ -90,6 +92,7 @@ const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort}) => 
               <Sortable name="id">ID</Sortable>
               <Sortable name="name">Name</Sortable>
               <Sortable name="stars">Stars</Sortable>
+              <Sortable name="type">Type</Sortable>
               <Sortable name="tierPVE">Tier PVE</Sortable>
               <Sortable name="tierPVP">Tier PVP</Sortable>
               <Sortable name="tierRaid">Tier Raid</Sortable>
@@ -110,6 +113,12 @@ const Childs = ({childs, numToShow, setNumToShow, mode, sort, asc, setSort}) => 
                   </TableChildCellLink>
                   <TableChildCellLink child={child} mode={mode} Editor={StarsInput}>
                     {child.get('stars')}
+                  </TableChildCellLink>
+                  <TableChildCellLink child={child} mode={mode} Editor={TypeInput}>
+                    {child.get('type')
+                      ? <TypeIcon child={child} />
+                      : ''
+                    }
                   </TableChildCellLink>
                   <TableChildCellLink child={child} mode={mode} Editor={TierPVEInput}>
                     {child.get('tierPVE')}

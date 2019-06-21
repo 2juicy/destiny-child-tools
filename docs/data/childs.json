@@ -6734,7 +6734,10 @@
     "id": "c062"
   },
   "c183": {
+    "stars": 5,
+    "tierPVP": 10,
     "name": "Dana",
+    "tierRaid": 8,
     "variants": {
       "00": {
         "title": "Human",
@@ -6767,11 +6770,10 @@
         }
       }
     },
+    "tierBoss": 8,
+    "type": "tank",
     "id": "c183",
-    "stars": 5,
-    "tierPVE": 10,
-    "tierPVP": 10,
-    "tierRaid": 10
+    "tierPVE": 10
   },
   "c194": {
     "name": "Ashtoreth",
@@ -12734,7 +12736,10 @@
     "id": "c289"
   },
   "c058": {
+    "stars": 5,
+    "tierPVP": 8,
     "name": "Nirrti",
+    "tierRaid": 7,
     "variants": {
       "00": {
         "title": "Human",
@@ -12767,7 +12772,10 @@
         }
       }
     },
-    "id": "c058"
+    "tierBoss": 8,
+    "type": "debuffer",
+    "id": "c058",
+    "tierPVE": 8
   },
   "c069": {
     "name": "Ptah",
@@ -13675,7 +13683,10 @@
     "id": "c115"
   },
   "c005": {
+    "stars": 5,
+    "tierPVP": 8,
     "name": "Mars",
+    "tierRaid": 8,
     "variants": {
       "00": {
         "title": "Human",
@@ -13708,12 +13719,10 @@
         }
       }
     },
+    "tierBoss": 10,
+    "type": "tank",
     "id": "c005",
-    "stars": 5,
-    "tierPVE": 8,
-    "tierPVP": 8,
-    "tierRaid": 8,
-    "tierBoss": 10
+    "tierPVE": 8
   },
   "c126": {
     "name": "Salmacis",
@@ -14057,7 +14066,9 @@
         }
       }
     },
-    "id": "c049"
+    "id": "c049",
+    "stars": 5,
+    "type": "healer"
   },
   "sm151": {
     "name": "암즈",

@@ -14,6 +14,7 @@ import Grid from '@material-ui/core/Grid'
 import {Censor} from '../censorship.jsx'
 import EditButton from '../edit-button.jsx'
 import StarsInput from '../stars-input.jsx'
+import TypeInput from '../type-input.jsx'
 import {TierPVEInput, TierPVPInput, TierRaidInput, TierBossInput} from '../tier-input.jsx'
 
 const useStyles = makeStyles({
@@ -58,6 +59,12 @@ const Child = ({child, setMode, mode, setChildStars}) => {
           ? <div><StarsInput child={child} /></div>
           : child.get('stars') && <div>
             Stars: {child.get('stars')}
+          </div>
+        }
+        {mode == 'edit'
+          ? <div><TypeInput child={child} /></div>
+          : child.get('type') && <div>
+            Type: {child.get('type')}
           </div>
         }
         {mode == 'edit'
