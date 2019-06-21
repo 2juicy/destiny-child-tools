@@ -41,7 +41,6 @@ const App = function({fetchChilds, page}) {
   const classes = useStyles(),
         Page = pages[page] || NotFound
 
-  console.log(page);
   return (
       <CssBaseline>
         <ThemeProvider theme={theme}>

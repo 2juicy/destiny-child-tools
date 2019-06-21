@@ -233,7 +233,6 @@ const components = {
 }
 
 function IntegrationReactSelect({childs}) {
-  console.log(childs, childs.size);
   const data = childs
     .toList()
     .sortBy(child => child.get('name'))

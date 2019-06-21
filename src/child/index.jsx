@@ -13,7 +13,15 @@ import Link from '@material-ui/core/Link'
 import Grid from '@material-ui/core/Grid'
 import IconButton from '@material-ui/core/IconButton'
 import EditIcon from '@material-ui/icons/Edit'
+import CancelIcon from '@material-ui/icons/Cancel'
+import Select from '@material-ui/core/Select'
+import FormHelperText from '@material-ui/core/FormHelperText'
+import FormControl from '@material-ui/core/FormControl'
+import MenuItem from '@material-ui/core/MenuItem'
+import InputLabel from '@material-ui/core/InputLabel'
 import {Censor} from '../censorship.jsx'
+import {setMode} from '../actions/child.js'
+import {setChildStars} from '../actions/childs.js'
 
 const useStyles = makeStyles({
   box: {
@@ -41,7 +49,9 @@ const useStyles = makeStyles({
   },
 })
 
-const Child = ({child}) => {
+const Stars = ({stars}) => stars + ' Stars'
+
+const Child = ({child, setMode, mode, setChildStars}) => {
   const classes = useStyles()
   if(!child) return <div>Loading ...</div>
   const name = child.get('name'),
@@ -56,13 +66,34 @@ const Child = ({child}) => {
       </Breadcrumbs>
       <Box mt={2}>
         <Typography variant="h5">
-          {name} Variants
-          {__DEV__ &&
-              <IconButton className={classes.editButton} aria-label="Edit">
-                <EditIcon/>
+          {name}
+          {__DEV__ && mode == 'view'
+              ? <IconButton className={classes.editButton} aria-label="Edit" onClick={() => setMode('edit')}>
+                <EditIcon />
+              </IconButton>
+              : <IconButton className={classes.editButton} aria-label="Cancel" onClick={() => setMode('view')}>
+                <CancelIcon />
               </IconButton>
           }
         </Typography>
+        {mode == 'edit' &&
+          <div>
+            <FormControl>
+              <InputLabel>Star Level</InputLabel>
+              <Select value={child.get('stars') || false} onChange={e => setChildStars(child, e.target.value)}>
+                <MenuItem value={false}>unknown</MenuItem>
+                <MenuItem value={1}><Stars stars={1} /></MenuItem>
+                <MenuItem value={2}><Stars stars={2} /></MenuItem>
+                <MenuItem value={3}><Stars stars={3} /></MenuItem>
+                <MenuItem value={4}><Stars stars={4} /></MenuItem>
+                <MenuItem value={5}><Stars stars={5} /></MenuItem>
+              </Select>
+            </FormControl>
+          </div>
+        }
+      </Box>
+      <Box mt={2}>
+        <Typography variant="h5">{name} Variants</Typography>
       </Box>
       {variants.toOrderedMap().sortBy((v, k) => k)
         .map((variant, vId) => variant && variant.get &&
@@ -111,6 +142,8 @@ const Child = ({child}) => {
 
 export default connect(
   state => ({
-    child: state.get('childs').get(state.get('location').payload.id)
-  })
+    child: state.get('childs').get(state.get('location').payload.id),
+    mode: state.get('child').get('mode')
+  }),
+  {setMode, setChildStars}
 )(Child )
