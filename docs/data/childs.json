@@ -6586,7 +6586,10 @@
     "id": "c161"
   },
   "c051": {
+    "stars": 5,
+    "tierPVP": 8,
     "name": "Frey",
+    "tierRaid": 9,
     "variants": {
       "10": {
         "title": "Liberated",
@@ -6659,7 +6662,11 @@
         }
       }
     },
-    "id": "c051"
+    "tierBoss": 9,
+    "type": "attacker",
+    "id": "c051",
+    "element": "dark",
+    "tierPVE": 9
   },
   "c172": {
     "name": "Yuna",
@@ -10965,7 +10972,10 @@
     "id": "c332"
   },
   "c101": {
+    "stars": 5,
+    "tierPVP": 9,
     "name": "Syrinx",
+    "tierRaid": 9,
     "variants": {
       "00": {
         "title": "Human",
@@ -10998,7 +11008,11 @@
         }
       }
     },
-    "id": "c101"
+    "tierBoss": 8,
+    "type": "healer",
+    "id": "c101",
+    "element": "grass",
+    "tierPVE": 9
   },
   "c222": {
     "name": "El Dorado",
@@ -12497,7 +12511,10 @@
     "id": "c377"
   },
   "c267": {
+    "stars": 5,
+    "tierPVP": 9,
     "name": "Cleopatra",
+    "tierRaid": 10,
     "variants": {
       "10": {
         "title": "Favored",
@@ -12570,7 +12587,11 @@
         }
       }
     },
-    "id": "c267"
+    "tierBoss": 10,
+    "type": "attacker",
+    "id": "c267",
+    "element": "light",
+    "tierPVE": 10
   },
   "c388": {
     "name": "Kouka",
@@ -15061,7 +15082,10 @@
     "id": "c018"
   },
   "c139": {
+    "stars": 5,
+    "tierPVP": 9,
     "name": "Pomona",
+    "tierRaid": 10,
     "variants": {
       "00": {
         "title": "Human",
@@ -15094,7 +15118,11 @@
         }
       }
     },
-    "id": "c139"
+    "tierBoss": 8,
+    "type": "healer",
+    "id": "c139",
+    "element": "light",
+    "tierPVE": 10
   },
   "c029": {
     "name": "Selene",
