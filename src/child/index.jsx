@@ -10,11 +10,17 @@ import Typography from '@material-ui/core/Typography'
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import RouterLink from '../link.jsx'
 import Link from '@material-ui/core/Link'
+import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles({
   box: {
-    width: 350,
     display: 'inline-block'
+  },
+  card: {
+    maxWidth: 450,
+  },
+  live2d: {
+    minHeight: 275,
   },
   bullet: {
     display: 'inline-block',
@@ -46,27 +52,37 @@ const Child = ({child}) => {
         <Typography variant="h5">{name} Variants</Typography>
       </Box>
       {variants.toOrderedMap().sortBy((v, k) => k)
-        .map((variant, variantId) => variant && variant.get &&
-          <Box m={1} key={id + variantId} className={classes.box}>
-            <Card>
-              <CardContent>
+        .map((variant, vId) => variant && variant.get &&
+          <Box m={1} key={id + vId} className={classes.box}>
+            <Card className={classes.card}>
+              <CardContent className={classes.cardContent}>
                 <Button
-                      href={`./live2d/?model=${id}_${variantId}`}
+                      href={`./live2d/?model=${id}_${vId}`}
                       target="_blank">
-                  {variant.get('title')} {name} ({id}_{variantId})
+                  {variant.get('title')} {name} ({id}_{vId})
                   <Box ml={2}><OpenInNewIcon /></Box>
                 </Button>
-                <iframe
-                  style={{
-                    width: '350px',
-                    height: '350px',
-                    maxWidth: '100%',
-                    border: 'none',
-                    overflow: 'hidden'
-                  }}
-                  scrolling="no"
-                  seamless="seamless"
-                  src={`./live2d/viewer.html?mN=${id}_${variantId}&size=500`} />
+                <Grid container>
+                  <Grid item xs={4}>
+                    <img src={`./img/childs/portraits/${id}_${vId}.png`}
+                       height="250"
+                       alt={`${variant.get('title')} ${name} Portrait`} />
+                  </Grid>
+                  <Grid item xs={8}>
+                    <iframe
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        maxWidth: '100%',
+                        border: 'none',
+                        overflow: 'hidden'
+                      }}
+                      className={classes.live2d}
+                      scrolling="no"
+                      seamless="seamless"
+                      src={`./live2d/viewer.html?mN=${id}_${vId}&size=500`} />
+                  </Grid>
+                </Grid>
                 </CardContent>
             </Card>
           </Box>
