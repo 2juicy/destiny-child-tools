@@ -11,7 +11,6 @@ export default (state = Map(), action) => {
   }
   if(action.type == 'CHILDS_SET_CHILD_STARS') {
     const id = action.child.get('id')
-    console.log(state.get(id).set('stars', action.stars).toJS());
     return state.set(id, state.get(id).set('stars', action.stars))
   }
   return state
