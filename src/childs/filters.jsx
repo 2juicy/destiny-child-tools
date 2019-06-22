@@ -78,7 +78,7 @@ const Filters = ({
           }
         </div>
         <TextField
-          label="Filter by name"
+          label="Filter by name or ID"
           value={filter}
           onChange={e => setFilter('filter', e.target.value)}
           margin="normal"

@@ -38,7 +38,7 @@ const Childs = ({
   if(type) childs = childs.filter(child => child.get('type') == type)
   if(filter) {
     childs = childs.filter(child =>
-      child.get('name').toLowerCase().match(filter.toLowerCase())
+      (child.get('name').toLowerCase() + child.get('id')).match(filter.toLowerCase())
     )
   }
   if(!asc) childs = childs.reverse()
