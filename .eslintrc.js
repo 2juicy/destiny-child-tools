@@ -7,7 +7,13 @@ module.exports = {
     'es6': true,
     'mocha': true
   },
-  'extends': 'eslint:recommended',
+  'parserOptions': {
+    'sourceType': 'module',
+  },
+  'extends': [
+    'eslint:recommended',
+    'plugin:react/recommended'
+  ],
   'rules': {
     'array-callback-return': 'error',
     'curly': ['error', 'multi-line'],
@@ -87,6 +93,7 @@ module.exports = {
     'space-before-function-paren': ['error', 'never'],
     'space-infix-ops': 'error',
     'space-unary-ops': 'error',
-    'spaced-comment': ['error', 'always']
+    'spaced-comment': ['error', 'always'],
+    'react/prop-types': 0
   }
 }

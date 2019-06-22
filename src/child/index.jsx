@@ -7,7 +7,7 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
-import OpenInNewIcon from '@material-ui/icons/OpenInNew';
+import OpenInNewIcon from '@material-ui/icons/OpenInNew'
 import RouterLink from '../link.jsx'
 import Link from '@material-ui/core/Link'
 import Grid from '@material-ui/core/Grid'
@@ -43,7 +43,7 @@ const useStyles = makeStyles({
   },
 })
 
-const Child = ({child, setMode, mode, setChildStars}) => {
+const Child = ({child, mode}) => {
   const classes = useStyles()
   if(!child) return <div>Loading ...</div>
   const name = child.get('name'),
@@ -65,9 +65,9 @@ const Child = ({child, setMode, mode, setChildStars}) => {
           </div>
         }
         {mode == 'edit'
-              ? <div><ElementInput child={child} /></div>
-              : child.get('element') && <div>
-              Element: <ElementIcon child={child} />
+          ? <div><ElementInput child={child} /></div>
+          : child.get('element') && <div>
+            Element: <ElementIcon child={child} />
           </div>
         }
         {mode == 'edit'
@@ -126,8 +126,8 @@ const Child = ({child, setMode, mode, setChildStars}) => {
             <Card className={classes.card}>
               <CardContent className={classes.cardContent}>
                 <Button
-                      href={`./live2d/?model=${id}_${vId}`}
-                      target="_blank">
+                  href={`./live2d/?model=${id}_${vId}`}
+                  target="_blank">
                   {variant.get('title')} {name} ({id}_{vId})
                   <Box ml={2}><OpenInNewIcon /></Box>
                 </Button>
@@ -135,8 +135,8 @@ const Child = ({child, setMode, mode, setChildStars}) => {
                   <Grid item xs={4}>
                     <Censor min={1}>
                       <img src={`./img/childs/portraits/${id}_${vId}.png`}
-                         height="250"
-                         alt={`${variant.get('title')} ${name} Portrait`} />
+                        height="250"
+                        alt={`${variant.get('title')} ${name} Portrait`} />
                     </Censor>
                   </Grid>
                   <Grid item xs={8}>
@@ -156,7 +156,7 @@ const Child = ({child, setMode, mode, setChildStars}) => {
                     </Censor>
                   </Grid>
                 </Grid>
-                </CardContent>
+              </CardContent>
             </Card>
           </Box>
         ).toList()

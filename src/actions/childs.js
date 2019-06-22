@@ -1,13 +1,13 @@
 export const fetchChilds = () => dispatch => {
   fetch('./data/childs.json')
-  .then(response => response.json())
-  .then(childs => {
-    dispatch({type: 'SET_CHILDS', childs})
-  })
+    .then(response => response.json())
+    .then(childs => {
+      dispatch({type: 'SET_CHILDS', childs})
+    })
 }
 
 export const setChildProp = (child, prop, value) =>
-  (dispatch, getState) => {
+  dispatch => {
     dispatch({
       type: 'CHILDS_SET_CHILD_PROP',
       prop,
@@ -24,8 +24,7 @@ export const setChildType = (child, type) =>
   dispatch => dispatch(setChildProp(child, 'type', type))
 
 export const setChildTier = (child, type, tier) =>
-    dispatch => dispatch(setChildProp(child, 'tier' + type, tier))
-
+  dispatch => dispatch(setChildProp(child, 'tier' + type, tier))
 
 const saveData = () =>
   (dispatch, getState) => {
@@ -38,9 +37,9 @@ const saveData = () =>
       },
       body: JSON.stringify(getState().get('childs').toJS())
     })
-    .then(response => response.json())
-    .then(childs => {
-      dispatch({type: 'SET_CHILDS', childs})
-      dispatch({type: 'PROCESSING_SET', processing: false})
-    })
+      .then(response => response.json())
+      .then(childs => {
+        dispatch({type: 'SET_CHILDS', childs})
+        dispatch({type: 'PROCESSING_SET', processing: false})
+      })
   }
