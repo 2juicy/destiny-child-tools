@@ -41,7 +41,7 @@ const ChildCard = ({child}) => {
           </Censor>
           <Grid item xs={8}>
             <Typography gutterBottom variant="h6" component="h2">
-              {child.get('name')}
+              {child.get('name')} ({child.get('id')})
             </Typography>
             <Stars child={child} />
             <div>
