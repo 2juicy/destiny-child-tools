@@ -13,6 +13,7 @@ import TypeInput from '../type-input.jsx'
 import ElementInput from '../element-input.jsx'
 import TypeIcon from '../type-icon.jsx'
 import ElementIcon from '../element-icon.jsx'
+import Stars from '../stars.jsx'
 import {TierPVEInput, TierPVPInput, TierRaidInput, TierBossInput} from '../tier-input.jsx'
 import {setSort} from '../actions/child-list.js'
 
@@ -66,7 +67,7 @@ const ChildsTable = ({childs, order, asc, sort, setSort, mode}) => {
                 {child.get('name')}
               </TableChildCellLink>
               <TableChildCellLink child={child} mode={mode} Editor={StarsInput}>
-                {child.get('stars')}
+                <Stars child={child} />
               </TableChildCellLink>
               <TableChildCellLink child={child} mode={mode} Editor={ElementInput}>
                 {child.get('element')

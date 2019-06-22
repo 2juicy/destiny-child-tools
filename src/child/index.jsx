@@ -18,6 +18,7 @@ import TypeInput from '../type-input.jsx'
 import TypeIcon from '../type-icon.jsx'
 import ElementInput from '../element-input.jsx'
 import ElementIcon from '../element-icon.jsx'
+import Stars from '../stars.jsx'
 import {TierPVEInput, TierPVPInput, TierRaidInput, TierBossInput} from '../tier-input.jsx'
 
 const useStyles = makeStyles({
@@ -61,7 +62,7 @@ const Child = ({child, mode}) => {
         {mode == 'edit'
           ? <div><StarsInput child={child} /></div>
           : child.get('stars') && <div>
-            Stars: {child.get('stars')}
+            Stars: <Stars child={child} />
           </div>
         }
         {mode == 'edit'
