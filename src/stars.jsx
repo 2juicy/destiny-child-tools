@@ -17,15 +17,15 @@ const useStyles = makeStyles({
 const Stars = ({child, mode}) => {
   const stars = child.get('stars'),
         classes = useStyles()
-  return stars
-    ? mode == 'edit'
-      ? <StarsInput child={child} />
-      : <span className={classes.stars} title={`${stars} Stars`}>
+  return mode == 'edit'
+    ? <StarsInput child={child} />
+    : stars
+      ? <span className={classes.stars} title={`${stars} Stars`}>
         {(new Array(stars)).fill(0).map((_, i) =>
           <img key={'star' + i} src="./img/star.png" className={classes.star}/>
         )}
       </span>
-    : ''
+      : ''
 }
 
 export default connect(

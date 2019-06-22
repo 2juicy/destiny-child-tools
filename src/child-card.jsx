@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import Stars from './stars.jsx'
+import Tier from './tier.jsx'
 import TypeIcon from './type-icon.jsx'
 import ElementIcon from './element-icon.jsx'
 import {Censor} from './censorship.jsx'
@@ -51,34 +52,28 @@ const ChildCard = ({child}) => {
               <TypeIcon child={child} />
             </div>
             <Box mt={2}>
-              {child.get('tierPVE') && <div>
-                Tier PVE: {child.get('tierPVE')} (
-                <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
-                  RiceMine
-                </Link>
-                )
-              </div>}
-              {child.get('tierPVP') && <div>
-                Tier PVP: {child.get('tierPVP')} (
-                <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
-                  RiceMine
-                </Link>
-                )
-              </div>}
-              {child.get('tierRaid') && <div>
-                Tier Raid: {child.get('tierRaid')} (
-                <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
-                  RiceMine
-                </Link>
-                )
-              </div>}
-              {child.get('tierBoss') && <div>
-                Tier Boss: {child.get('tierBoss')} (
-                <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
-                  RiceMine
-                </Link>
-                )
-              </div>}
+              {(typeof child.get('tierPVP') !== 'undefined' ||
+                typeof child.get('tierPVE') !== 'undefined' ||
+                typeof child.get('tierRaid') !== 'undefined' ||
+                typeof child.get('tierBoss') !== 'undefined'
+              ) &&
+                <Typography gutterBottom variant="subtitle1" component="h3">
+                  Tier Levels (from <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
+                  RiceMine</Link>)
+                </Typography>
+              }
+              <Box>
+                <Tier child={child} type="PVP" />
+              </Box>
+              <Box>
+                <Tier child={child} type="PVE" />
+              </Box>
+              <Box>
+                <Tier child={child} type="Raid" />
+              </Box>
+              <Box>
+                <Tier child={child} type="Boss" />
+              </Box>
             </Box>
           </Grid>
         </Grid>
