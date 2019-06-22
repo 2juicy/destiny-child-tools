@@ -8,20 +8,23 @@ import Breadcrumbs from '@material-ui/core/Breadcrumbs'
 import Typography from '@material-ui/core/Typography'
 import TablePagination from '@material-ui/core/TablePagination'
 import ChildsTable from './table.jsx'
+import ChildCards from './cards.jsx'
 import Filters from './filters.jsx'
 import EditButton from '../edit-button.jsx'
+import {setPage, setFilter} from '../actions/child-list.js'
 
 const Childs = ({
   childs,
   numToShow,
-  setNumToShow,
   sort,
   asc,
-  setPage,
   page,
   stars,
   element,
-  type
+  type,
+  view,
+  setPage,
+  setFilter
 }) => {
   childs = childs.toList()
     .sortBy(child =>
@@ -45,15 +48,18 @@ const Childs = ({
         </Breadcrumbs>
       </Box>
       <Filters />
+      {view == 'table'
+        ? <ChildsTable childs={childs} numChilds={numChilds} />
+        : <ChildCards childs={childs} />
+      }
       <Paper>
-        <ChildsTable childs={childs} />
         <TablePagination
           component="div"
           rowsPerPageOptions={[10, 20, 50, 100, 200]}
           page={page}
           rowsPerPage={numToShow}
           count={numChilds}
-          onChangeRowsPerPage={e => setNumToShow(e.target.value)}
+          onChangeRowsPerPage={e => setFilter('numToShow', e.target.value)}
           onChangePage={(e, newPage) => setPage(newPage)} />
       </Paper>
     </div>
@@ -72,6 +78,8 @@ export default connect(
       stars: childList.get('stars'),
       element: childList.get('element'),
       type: childList.get('type'),
+      view: childList.get('view'),
     }
-  }
-)(Childs )
+  },
+  {setFilter, setPage}
+)(Childs)

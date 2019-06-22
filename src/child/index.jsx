@@ -19,6 +19,7 @@ import TypeIcon from '../type-icon.jsx'
 import ElementInput from '../element-input.jsx'
 import ElementIcon from '../element-icon.jsx'
 import Stars from '../stars.jsx'
+import ChildCard from '../child-card.jsx'
 import {TierPVEInput, TierPVPInput, TierRaidInput, TierBossInput} from '../tier-input.jsx'
 
 const useStyles = makeStyles({
@@ -59,64 +60,7 @@ const Child = ({child, mode}) => {
         <Typography color="textPrimary">{name} ({id})</Typography>
       </Breadcrumbs>
       <Box mt={2}>
-        {mode == 'edit'
-          ? <div><StarsInput child={child} /></div>
-          : child.get('stars') && <div>
-            Stars: <Stars child={child} />
-          </div>
-        }
-        {mode == 'edit'
-          ? <div><ElementInput child={child} /></div>
-          : child.get('element') && <div>
-            Element: <ElementIcon child={child} />
-          </div>
-        }
-        {mode == 'edit'
-          ? <div><TypeInput child={child} /></div>
-          : child.get('type') && <div>
-            Type: <TypeIcon child={child} />
-          </div>
-        }
-        {mode == 'edit'
-          ? <div><TierPVEInput child={child} /></div>
-          : child.get('tierPVE') && <div>
-            Tier PVE: {child.get('tierPVE')} (
-            <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
-              RiceMine
-            </Link>
-            )
-          </div>
-        }
-        {mode == 'edit'
-          ? <div><TierPVPInput child={child} /></div>
-          : child.get('tierPVP') && <div>
-            Tier PVP: {child.get('tierPVP')} (
-            <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
-              RiceMine
-            </Link>
-            )
-          </div>
-        }
-        {mode == 'edit'
-          ? <div><TierRaidInput child={child} /></div>
-          : child.get('tierRaid') && <div>
-            Tier Raid: {child.get('tierRaid')} (
-            <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
-              RiceMine
-            </Link>
-            )
-          </div>
-        }
-        {mode == 'edit'
-          ? <div><TierBossInput child={child} /></div>
-          : child.get('tierBoss') && <div>
-            Tier Boss: {child.get('tierBoss')} (
-            <Link href="http://destiny.us-east-2.elasticbeanstalk.com/" target="_blank">
-              RiceMine
-            </Link>
-            )
-          </div>
-        }
+        <ChildCard child={child} />
       </Box>
       <Box mt={2}>
         <Typography variant="h5">{name} Variants</Typography>

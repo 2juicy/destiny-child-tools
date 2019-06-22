@@ -9,11 +9,18 @@ const Filters = ({
   numToShow,
   stars,
   element,
-  type
+  type,
+  view,
+  sort,
+  asc
 }) => {
   return (
     <Paper>
       <Box mb={2} p={2}>
+        <Filter label="View as" value={view} name="view">
+          <MenuItem value="table">Table</MenuItem>
+          <MenuItem value="cards">Cards</MenuItem>
+        </Filter>
         <Filter label="Show" value={numToShow} name="numToShow">
           <MenuItem value={10}>10 Childs</MenuItem>
           <MenuItem value={20}>20 Childs</MenuItem>
@@ -45,6 +52,25 @@ const Filters = ({
           <MenuItem value={'support'}>Support</MenuItem>
           <MenuItem value={'debuffer'}>Debuffer</MenuItem>
         </Filter>
+        {view != 'table' &&
+          <Filter label="Sort By" value={sort} name="sort">
+            <MenuItem value={'id'}>Child ID</MenuItem>
+            <MenuItem value={'name'}>Name</MenuItem>
+            <MenuItem value={'stars'}>Stars</MenuItem>
+            <MenuItem value={'type'}>Type</MenuItem>
+            <MenuItem value={'element'}>Element</MenuItem>
+            <MenuItem value={'tierPVP'}>Tier PVP</MenuItem>
+            <MenuItem value={'tierPVE'}>Tier PVE</MenuItem>
+            <MenuItem value={'tierRaid'}>Tier Raid</MenuItem>
+            <MenuItem value={'tierBoss'}>Tier Boss</MenuItem>
+          </Filter>
+        }
+        {view != 'table' &&
+          <Filter label="Order" value={asc} name="asc">
+            <MenuItem value={true}>Ascending</MenuItem>
+            <MenuItem value={false}>Descending</MenuItem>
+          </Filter>
+        }
       </Box>
     </Paper>
   )
@@ -58,6 +84,9 @@ export default connect(
       stars: childList.get('stars'),
       element: childList.get('element'),
       type: childList.get('type'),
+      view: childList.get('view'),
+      sort: childList.get('sort'),
+      asc: childList.get('asc'),
     }
   }
 )(Filters)

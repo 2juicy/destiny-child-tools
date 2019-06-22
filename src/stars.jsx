@@ -1,5 +1,7 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import {makeStyles} from '@material-ui/core/styles'
+import StarsInput from './stars-input.jsx'
 
 const useStyles = makeStyles({
   star: {
@@ -12,16 +14,22 @@ const useStyles = makeStyles({
   }
 })
 
-const Stars = ({child}) => {
+const Stars = ({child, mode}) => {
   const stars = child.get('stars'),
         classes = useStyles()
   return stars
-    ? <span className={classes.stars} title={`${stars} Stars`}>
-      {(new Array(stars)).fill(0).map((_, i) =>
-        <img key={'star' + i} src="./img/star.png" className={classes.star}/>
-      )}
-    </span>
+    ? mode == 'edit'
+      ? <StarsInput child={child} />
+      : <span className={classes.stars} title={`${stars} Stars`}>
+        {(new Array(stars)).fill(0).map((_, i) =>
+          <img key={'star' + i} src="./img/star.png" className={classes.star}/>
+        )}
+      </span>
     : ''
 }
 
-export default Stars
+export default connect(
+  state => ({
+    mode: state.get('child').get('mode')
+  })
+)(Stars)

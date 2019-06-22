@@ -9,14 +9,17 @@ const useStyles = makeStyles({
   },
 })
 
-
-export default ({child, type}) => {
+const TypeIcon = ({child, type}) => {
   const classes = useStyles()
   type = child ? child.get('type') : type
-  return (
-    <img
-      src={`./img/types/${type}.png`}
-      className={classes.icon}
-      title={type.charAt(0).toUpperCase() + type.slice(1)}/>
-  )
+  return type
+    ? (
+      <img
+        src={`./img/types/${type}.png`}
+        className={classes.icon}
+        title={type.charAt(0).toUpperCase() + type.slice(1)}/>
+    )
+    : ''
 }
+
+export default TypeIcon

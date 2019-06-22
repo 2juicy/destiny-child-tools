@@ -1,17 +1,27 @@
 import {fromJS} from 'immutable'
 
+const load = (name, dflt) => {
+  const stored = localStorage.getItem('child-list-filter-' + name)
+  return stored === null
+    ? dflt
+    : stored.match(/^true|false$/)
+      ? stored === 'true'
+      : stored
+}
+
 const defaultState = fromJS({
   ids: [],
   numToShow: 20,
   asc: true,
   sort: 'id',
   page: 0,
-  element: false,
-  stars: false,
-  type: false
+  element: load('element', false),
+  stars: load('stars', false),
+  type: load('type', false),
+  view: load('view', 'table')
 })
 
-export default (state = defaultState, action) => {
+export default function(state = defaultState, action) {
   if(action.type == 'SET_CHILDS') {
     state = state.set('ids',
       fromJS(Object.keys(action.childs))
