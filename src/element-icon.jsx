@@ -1,5 +1,7 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import {makeStyles} from '@material-ui/core/styles'
+import ElementInput from './element-input.jsx'
 
 const useStyles = makeStyles({
   icon: {
@@ -9,17 +11,23 @@ const useStyles = makeStyles({
   },
 })
 
-const ElementIcon = ({child, element}) => {
+const ElementIcon = ({child, element, mode}) => {
   const classes = useStyles()
   element = child ? child.get('element') : element
   return element
-    ? (
-      <img
-        src={`./img/elements/${element}.png`}
-        className={classes.icon}
-        title={element.charAt(0).toUpperCase() + element.slice(1)}/>
-    )
+    ? (child && mode == 'edit')
+      ? <ElementInput child={child} />
+      : (
+        <img
+          src={`./img/elements/${element}.png`}
+          className={classes.icon}
+          title={element.charAt(0).toUpperCase() + element.slice(1)}/>
+      )
     : ''
 }
 
-export default ElementIcon
+export default connect(
+  state => ({
+    mode: state.get('child').get('mode')
+  })
+)(ElementIcon)

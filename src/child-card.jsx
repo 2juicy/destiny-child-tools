@@ -14,6 +14,7 @@ import {Censor} from './censorship.jsx'
 const useStyles = makeStyles({
   card: {
     width: 350,
+    minHeight: 225,
     display: 'inline-block'
   },
   portrait: {
