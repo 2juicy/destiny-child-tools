@@ -18,7 +18,8 @@ const defaultState = fromJS({
   element: load('element', false),
   stars: load('stars', false),
   type: load('type', false),
-  view: load('view', 'table')
+  view: load('view', 'table'),
+  filter: ''
 })
 
 export default function(state = defaultState, action) {

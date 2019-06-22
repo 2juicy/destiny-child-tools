@@ -23,6 +23,7 @@ const Childs = ({
   element,
   type,
   view,
+  filter,
   setPage,
   setFilter
 }) => {
@@ -35,6 +36,11 @@ const Childs = ({
   if(stars) childs = childs.filter(child => child.get('stars') == stars)
   if(element) childs = childs.filter(child => child.get('element') == element)
   if(type) childs = childs.filter(child => child.get('type') == type)
+  if(filter) {
+    childs = childs.filter(child =>
+      child.get('name').toLowerCase().match(filter.toLowerCase())
+    )
+  }
   if(!asc) childs = childs.reverse()
   const numChilds = childs.size
   childs = childs.slice(numToShow * page, numToShow * page + numToShow)
@@ -79,6 +85,7 @@ export default connect(
       element: childList.get('element'),
       type: childList.get('type'),
       view: childList.get('view'),
+      filter: childList.get('filter'),
     }
   },
   {setFilter, setPage}

@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 const Filter = ({children, value, label, name, setFilter}) => {
   const classes = useStyles()
   return (
-    <FormControl className={classes.filter}>
+    <FormControl className={classes.filter} margin="normal">
       <InputLabel>{label}</InputLabel>
       <Select value={value} onChange={e => setFilter(name, e.target.value)}>
         {children}

@@ -3,7 +3,9 @@ import {connect} from 'react-redux'
 import Box from '@material-ui/core/Box'
 import Paper from '@material-ui/core/Paper'
 import MenuItem from '@material-ui/core/MenuItem'
+import TextField from '@material-ui/core/TextField'
 import Filter from './filter.jsx'
+import {setFilter} from '../actions/child-list.js'
 
 const Filters = ({
   numToShow,
@@ -12,7 +14,9 @@ const Filters = ({
   type,
   view,
   sort,
-  asc
+  asc,
+  filter,
+  setFilter
 }) => {
   return (
     <Paper>
@@ -52,25 +56,34 @@ const Filters = ({
           <MenuItem value={'support'}>Support</MenuItem>
           <MenuItem value={'debuffer'}>Debuffer</MenuItem>
         </Filter>
-        {view != 'table' &&
-          <Filter label="Sort By" value={sort} name="sort">
-            <MenuItem value={'id'}>Child ID</MenuItem>
-            <MenuItem value={'name'}>Name</MenuItem>
-            <MenuItem value={'stars'}>Stars</MenuItem>
-            <MenuItem value={'type'}>Type</MenuItem>
-            <MenuItem value={'element'}>Element</MenuItem>
-            <MenuItem value={'tierPVP'}>Tier PVP</MenuItem>
-            <MenuItem value={'tierPVE'}>Tier PVE</MenuItem>
-            <MenuItem value={'tierRaid'}>Tier Raid</MenuItem>
-            <MenuItem value={'tierBoss'}>Tier Boss</MenuItem>
-          </Filter>
-        }
-        {view != 'table' &&
-          <Filter label="Order" value={asc} name="asc">
-            <MenuItem value={true}>Ascending</MenuItem>
-            <MenuItem value={false}>Descending</MenuItem>
-          </Filter>
-        }
+        <div style={{whiteSpace: 'nowrap', display: 'inline-block'}}>
+          {view != 'table' &&
+            <Filter label="Sort By" value={sort} name="sort">
+              <MenuItem value={'id'}>Child ID</MenuItem>
+              <MenuItem value={'name'}>Name</MenuItem>
+              <MenuItem value={'stars'}>Stars</MenuItem>
+              <MenuItem value={'type'}>Type</MenuItem>
+              <MenuItem value={'element'}>Element</MenuItem>
+              <MenuItem value={'tierPVP'}>Tier PVP</MenuItem>
+              <MenuItem value={'tierPVE'}>Tier PVE</MenuItem>
+              <MenuItem value={'tierRaid'}>Tier Raid</MenuItem>
+              <MenuItem value={'tierBoss'}>Tier Boss</MenuItem>
+            </Filter>
+          }
+          {view != 'table' &&
+            <Filter label="Order" value={asc} name="asc">
+              <MenuItem value={true}>Ascending</MenuItem>
+              <MenuItem value={false}>Descending</MenuItem>
+            </Filter>
+          }
+        </div>
+        <TextField
+          id="standard-name"
+          label="Filter by name"
+          value={filter}
+          onChange={e => setFilter('filter', e.target.value)}
+          margin="normal"
+        />
       </Box>
     </Paper>
   )
@@ -87,6 +100,8 @@ export default connect(
       view: childList.get('view'),
       sort: childList.get('sort'),
       asc: childList.get('asc'),
+      filter: childList.get('filter'),
     }
-  }
+  },
+  {setFilter}
 )(Filters)
