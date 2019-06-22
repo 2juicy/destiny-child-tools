@@ -78,7 +78,6 @@ const Filters = ({
           }
         </div>
         <TextField
-          id="standard-name"
           label="Filter by name"
           value={filter}
           onChange={e => setFilter('filter', e.target.value)}

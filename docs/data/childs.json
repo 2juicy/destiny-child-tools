@@ -5722,7 +5722,10 @@
     "id": "m148"
   },
   "m038": {
+    "stars": 5,
+    "tierPVP": 6,
     "name": "Diablo",
+    "tierRaid": 4,
     "variants": {
       "10": {
         "title": "Deathmatch",
@@ -5775,7 +5778,11 @@
         }
       }
     },
-    "id": "m038"
+    "tierBoss": 3,
+    "type": "tank",
+    "id": "m038",
+    "element": "light",
+    "tierPVE": 7
   },
   "m159": {
     "name": "Dark Drop",
@@ -10356,7 +10363,10 @@
     "id": "c232"
   },
   "c353": {
+    "stars": 5,
+    "tierPVP": 6,
     "name": "Charlotte",
+    "tierRaid": 6,
     "variants": {
       "00": {
         "title": "Young",
@@ -10389,7 +10399,11 @@
         }
       }
     },
-    "id": "c353"
+    "tierBoss": 7,
+    "type": "attacker",
+    "id": "c353",
+    "element": "light",
+    "tierPVE": 7
   },
   "c001": {
     "stars": 3,
@@ -11374,7 +11388,10 @@
     "id": "c244"
   },
   "c365": {
-    "name": "LISA",
+    "stars": 5,
+    "tierPVP": 6,
+    "name": "Buster Lisa",
+    "tierRaid": 4,
     "variants": {
       "01": {
         "title": "DARKSYDE",
@@ -11397,7 +11414,11 @@
         }
       }
     },
-    "id": "c365"
+    "tierBoss": 6,
+    "type": "attacker",
+    "id": "c365",
+    "element": "water",
+    "tierPVE": 4
   },
   "c013": {
     "name": "Artemis",
@@ -14087,7 +14108,10 @@
     "id": "c269"
   },
   "c038": {
+    "stars": 5,
+    "tierPVP": 5,
     "name": "Calypso",
+    "tierRaid": 6,
     "variants": {
       "10": {
         "title": "Water Amarin",
@@ -14130,7 +14154,11 @@
         }
       }
     },
-    "id": "c038"
+    "tierBoss": 9,
+    "type": "attacker",
+    "id": "c038",
+    "element": "water",
+    "tierPVE": 5
   },
   "c159": {
     "name": "Semele",

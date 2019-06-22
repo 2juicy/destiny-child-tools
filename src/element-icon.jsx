@@ -14,16 +14,16 @@ const useStyles = makeStyles({
 const ElementIcon = ({child, element, mode}) => {
   const classes = useStyles()
   element = child ? child.get('element') : element
-  return element
-    ? (child && mode == 'edit')
-      ? <ElementInput child={child} />
-      : (
+  return (child && mode == 'edit')
+    ? <ElementInput child={child} />
+    : element
+      ? (
         <img
           src={`./img/elements/${element}.png`}
           className={classes.icon}
           title={element.charAt(0).toUpperCase() + element.slice(1)}/>
       )
-    : ''
+      : ''
 }
 
 export default connect(

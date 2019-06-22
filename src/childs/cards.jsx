@@ -1,4 +1,5 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import {makeStyles} from '@material-ui/core/styles'
 import Box from '@material-ui/core/Box'
 import {pushRoute} from '../history.js'
@@ -13,13 +14,13 @@ const useStyles = makeStyles({
   },
 })
 
-const Cards = ({childs}) => {
+const Cards = ({childs, mode}) => {
   const classes = useStyles()
   return <Box p={2}>
     {childs.map(child =>
       <div
         className={classes.card}
-        onClick={() => pushRoute('CHILD', {id: child.get('id')})}
+        onClick={() => mode != 'edit' && pushRoute('CHILD', {id: child.get('id')})}
         key={child.get('id') + 'card'}>
         <ChildCard child={child} />
       </div>
@@ -27,4 +28,9 @@ const Cards = ({childs}) => {
   </Box>
 }
 
-export default Cards
+export default connect(
+  state => ({
+    mode: state.get('child').get('mode'),
+    processing: state.get('processing')
+  })
+)(Cards)

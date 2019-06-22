@@ -10,6 +10,7 @@ import Stars from './stars.jsx'
 import Tier from './tier.jsx'
 import TypeIcon from './type-icon.jsx'
 import ElementIcon from './element-icon.jsx'
+import ChildName from './child-name.jsx'
 import {Censor} from './censorship.jsx'
 
 const useStyles = makeStyles({
@@ -43,7 +44,7 @@ const ChildCard = ({child}) => {
           </Censor>
           <Grid item xs={8}>
             <Typography gutterBottom variant="h6" component="h2">
-              {child.get('name')} ({child.get('id')})
+              <ChildName child={child} /> ({child.get('id')})
             </Typography>
             <Stars child={child} />
             <div>
