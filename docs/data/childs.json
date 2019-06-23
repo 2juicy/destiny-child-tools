@@ -13753,6 +13753,18 @@
     },
     "id": "c169"
   },
+  "c401": {
+    "stars": 5,
+    "tierPVP": 6,
+    "name": "Snow Miku",
+    "tierRaid": 7,
+    "variants": {},
+    "tierBoss": 8,
+    "type": "support",
+    "id": "c401",
+    "element": "water",
+    "tierPVE": 6
+  },
   "sm150": {
     "name": "해트트릭",
     "variants": {
@@ -15232,7 +15244,7 @@
     "tierPVE": 6
   },
   "c359": {
-    "name": "Miku",
+    "name": "Snow Miku",
     "variants": {
       "01": {
         "title": "",
