@@ -14222,7 +14222,12 @@
     "tierPVP": 6,
     "name": "Snow Miku",
     "tierRaid": 7,
-    "variants": {},
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {}
+      }
+    },
     "tierBoss": 8,
     "type": "support",
     "id": "c401",
@@ -19078,7 +19083,27 @@
     "id": "c287",
     "name": "?",
     "variants": {
+      "00": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
       "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
         "title": "",
         "positions": {
           "home": {
@@ -19094,7 +19119,27 @@
     "id": "c073",
     "name": "?",
     "variants": {
+      "00": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
       "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
         "title": "",
         "positions": {
           "home": {

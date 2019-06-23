@@ -1935,5 +1935,11 @@
     "child": "c366",
     "modder": "KDG",
     "nsfw": true
+  },
+  {
+    "name": "Ahegao face",
+    "variant": "01",
+    "child": "c401",
+    "modder": "Ahegao"
   }
 ]
