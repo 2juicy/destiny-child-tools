@@ -15538,7 +15538,10 @@
     "id": "sm153"
   },
   "c305": {
+    "stars": 5,
+    "tierPVP": 7,
     "name": "Rita",
+    "tierRaid": 7,
     "variants": {
       "10": {
         "title": "Paradise",
@@ -15581,7 +15584,11 @@
         }
       }
     },
-    "id": "c305"
+    "tierBoss": 6,
+    "type": "debuffer",
+    "id": "c305",
+    "element": "dark",
+    "tierPVE": 7
   },
   "sm054": {
     "name": "고모라",

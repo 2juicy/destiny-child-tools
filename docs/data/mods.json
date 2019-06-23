@@ -707,5 +707,47 @@
     "variant": "02",
     "child": "m057",
     "modder": "Heather"
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c297",
+    "modder": "Gunz",
+    "nsfw": true
+  },
+  {
+    "name": "Pantiless",
+    "variant": "01",
+    "child": "c305",
+    "modder": "fapfapfap",
+    "nsfw": true
+  },
+  {
+    "name": "Pantiless",
+    "variant": "02",
+    "child": "c305",
+    "modder": "fapfapfap",
+    "nsfw": true
+  },
+  {
+    "name": "Samus from Metroid",
+    "variant": "02",
+    "child": "c365",
+    "modder": "Eljoseto",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c365",
+    "modder": "Sthera",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer",
+    "variant": "02",
+    "child": "c365",
+    "modder": "Gunz",
+    "nsfw": true
   }
 ]
