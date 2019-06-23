@@ -1,20 +1,40 @@
 [
   {
-    "child": "c227",
+    "name": "Swimsuit based on Eljoseto",
     "variant": "02",
-    "modder": "Loki",
-    "name": "Swimsuit based on Eljoseto"
+    "child": "c227",
+    "modder": "Loki"
   },
   {
-    "child": "c227",
+    "name": "Swimsuit2 based on Eljoseto",
     "variant": "02",
-    "modder": "Loki",
-    "name": "Swimsuit2 based on Eljoseto"
+    "child": "c227",
+    "modder": "Loki"
   },
   {
     "name": "Lewd",
     "variant": "02",
     "child": "c227",
     "modder": "Eljoseto"
+  },
+  {
+    "name": "topless",
+    "variant": "01",
+    "child": "c227",
+    "modder": "fapfapfap",
+    "nsfw": true
+  },
+  {
+    "name": "nude",
+    "variant": "02",
+    "child": "c227",
+    "modder": "fapfapfap",
+    "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "variant": "02",
+    "child": "c227",
+    "modder": "Seraphita"
   }
 ]

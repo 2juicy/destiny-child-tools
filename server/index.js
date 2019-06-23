@@ -35,6 +35,7 @@ app.post('/mod', function(req, res) {
     child: name.replace(/_.+$/, ''),
     modder: req.body.modder
   }
+  if(req.body.nsfw == 'nsfw') mod.nsfw = true
 
   function run(cmd) {
     const exec = require('child_process').exec
@@ -85,9 +86,10 @@ app.post('/mod', function(req, res) {
     .then(() => run(`mv ${assetPath}${stringify(mod)}/MOC.${name}.json ${assetPath}${stringify(mod)}/MOC.${stringify(mod)}.json`))
     // create unitersal
     .then(() => run(`rm -rf ${pckPath}${name}`))
-    .then(() => run('./pckmanager/PCK.exe /U /C ./pckmanager/' + name + '.pck'))
-    .then(() => run('./pckmanager/PCK.exe ./pckmanager/' + name + '/'))
-    .then(() => run(`mv ${pckPath}${name}/.pck.new ${assetPath}${stringify(mod)}/${name}.pck`))
+    .then(() => run('./pckmanager/PCK.exe /R /U ./pckmanager/' + name + '.pck'))
+    .then(() => run(`mv ${pckPath}${name}.pck.newUnencrypted ${assetPath}${stringify(mod)}/${name}.pck`))
+    .then(() => run(`rm ${pckPath}${name}.pck.newUnencrypted`))
+    .then(() => run(`rm ${pckPath}${name}`))
     .then(() => run(`rm -rf ${pckPath}${name}`))
     .then(() => {
       const mods = JSON.parse(fs.readFileSync(modsDataPath))

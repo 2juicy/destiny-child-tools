@@ -14,7 +14,8 @@ import {Censor} from '../censorship.jsx'
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 420
+    maxWidth: 420,
+    minHeight: 425
   },
   box: {
     display: 'inline-block',
@@ -45,7 +46,7 @@ const Mods = ({child, mods, mode}) => {
           </Link>
         </Typography>
         {child.get('variants').map((_, variantId) =>
-          mods.filter(mod => mod.get('variant') == variantId).map((mod, i) => {
+          mods.filter(mod => mod.get('variant') == variantId).sortBy(mod => mod.get('nsfw')).reverse().map((mod, i) => {
             const modPath = stringify(mod)
             return (
               <Box m={1} className={classes.box} key={mod.get('modder') + mod.get('name') + i}>
@@ -67,7 +68,13 @@ const Mods = ({child, mods, mode}) => {
                         </Censor>
                       </Grid>
                       <Grid item xs={11}>
-                        <Censor min={1}>
+                        <Censor min={mod.get('nsfw') ? 0 : 1}
+                          fallback={
+                            <div style={{marginLeft: '1em'}}>
+                              <p>Censored! (NSFW)</p>
+                              <p>Change your censorship settings in the footer if you want to see this.</p>
+                            </div>
+                          }>
                           <iframe
                             style={{
                               width: '100%',
@@ -100,6 +107,7 @@ const Mods = ({child, mods, mode}) => {
               <input type="hidden" value={document.location} name="backUrl" />
               <p>Modder: <input type="text" name="modder" /></p>
               <p>Name: <input type="text" name="name" /></p>
+              <p>NSFW? <input type="checkbox" name="nsfw" value="nsfw" /></p>
               <p>
                 PCK file:
                 {' '}
