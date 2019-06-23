@@ -193,6 +193,39 @@
     },
     "id": "sc198"
   },
+  "m261": {
+    "stars": 5,
+    "tierPVP": 5,
+    "name": "BiMoa",
+    "tierRaid": 3,
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -50,
+            "scale": 1.15
+          }
+        }
+      }
+    },
+    "tierBoss": 3,
+    "type": "tank",
+    "id": "m261",
+    "element": "dark",
+    "tierPVE": 5
+  },
   "m030": {
     "name": "Ball",
     "variants": {
@@ -19040,5 +19073,37 @@
       }
     },
     "id": "m095"
+  },
+  "c287": {
+    "id": "c287",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
+  },
+  "c073": {
+    "id": "c073",
+    "name": "?",
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": -15,
+            "y": -75,
+            "scale": 0.75
+          }
+        }
+      }
+    }
   }
 }

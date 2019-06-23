@@ -1858,5 +1858,82 @@
     "child": "c371",
     "modder": "KDG",
     "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "m261",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer top",
+    "variant": "02",
+    "child": "m261",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "BiMoa swap topless",
+    "variant": "01",
+    "child": "c132",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "BiMoa swap sheer top",
+    "variant": "02",
+    "child": "c132",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c287",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c073",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Cleavage",
+    "variant": "01",
+    "child": "c355",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c255",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c247",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c350",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c366",
+    "modder": "KDG",
+    "nsfw": true
   }
 ]
