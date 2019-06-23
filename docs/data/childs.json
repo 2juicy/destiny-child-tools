@@ -10047,6 +10047,69 @@
     "element": "water",
     "tierPVE": 4
   },
+  "c385": {
+    "stars": 5,
+    "tierPVP": 7,
+    "name": "marie Rose",
+    "tierRaid": 7,
+    "variants": {
+      "10": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "11": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "12": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      }
+    },
+    "tierBoss": 5,
+    "type": "tank",
+    "id": "c385",
+    "element": "grass",
+    "tierPVE": 7
+  },
   "c033": {
     "name": "Diana",
     "variants": {
@@ -18835,10 +18898,5 @@
       }
     },
     "id": "m095"
-  },
-  "c385": {
-    "id": "c385",
-    "variants": {},
-    "name": "marie Rose"
   }
 }
