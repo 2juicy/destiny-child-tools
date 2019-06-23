@@ -588,7 +588,7 @@
     "id": "sc144"
   },
   "sc386": {
-    "name": "카스미",
+    "name": "Kasumi",
     "variants": {
       "01": {
         "title": "온천의",
@@ -5887,7 +5887,7 @@
     "id": "m049"
   },
   "c270": {
-    "name": "Pixie",
+    "name": "Light Pixiet",
     "variants": {
       "01": {
         "title": "Light",
@@ -5910,7 +5910,8 @@
         }
       }
     },
-    "id": "c270"
+    "id": "c270",
+    "stars": 2
   },
   "c391": {
     "stars": 5,
@@ -6496,7 +6497,7 @@
     "id": "c370"
   },
   "c271": {
-    "name": "Pixie",
+    "name": "Blue Pixie",
     "variants": {
       "01": {
         "title": "Water",
@@ -6519,7 +6520,8 @@
         }
       }
     },
-    "id": "c271"
+    "id": "c271",
+    "stars": 2
   },
   "c392": {
     "name": "Davi",
@@ -7324,7 +7326,7 @@
     "tierPVE": 7
   },
   "c272": {
-    "name": "Pixie",
+    "name": "Green Pixie",
     "variants": {
       "01": {
         "title": "Wood",
@@ -7347,7 +7349,8 @@
         }
       }
     },
-    "id": "c272"
+    "id": "c272",
+    "stars": 2
   },
   "c393": {
     "name": "Mona",
@@ -14379,7 +14382,7 @@
     "tierPVE": 5
   },
   "c258": {
-    "name": "Pixie",
+    "name": "Red Pixie",
     "variants": {
       "01": {
         "title": "Fire",
@@ -14402,7 +14405,8 @@
         }
       }
     },
-    "id": "c258"
+    "id": "c258",
+    "stars": 2
   },
   "c027": {
     "name": "Cynthia",
@@ -14504,7 +14508,7 @@
     "tierPVE": 7
   },
   "c269": {
-    "name": "Pixie",
+    "name": "Dark Pixie",
     "variants": {
       "01": {
         "title": "Dark",
@@ -14527,7 +14531,8 @@
         }
       }
     },
-    "id": "c269"
+    "id": "c269",
+    "stars": 2
   },
   "c038": {
     "stars": 5,
@@ -18830,5 +18835,10 @@
       }
     },
     "id": "m095"
+  },
+  "c385": {
+    "id": "c385",
+    "variants": {},
+    "name": "marie Rose"
   }
 }

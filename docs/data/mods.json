@@ -1505,5 +1505,225 @@
     "child": "c283",
     "modder": "Anubis",
     "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c039",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c039",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c158",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c158",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c149",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c191",
+    "modder": "Anubis"
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c191",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c230",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c230",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "African",
+    "variant": "01",
+    "child": "c101",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "African",
+    "variant": "02",
+    "child": "c101",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c269",
+    "modder": "Anubis"
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c270",
+    "modder": "Anubis"
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c271",
+    "modder": "Anubis"
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c272",
+    "modder": "Anubis"
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c135",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c135",
+    "modder": "Anubis",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c040",
+    "modder": "Eljoseto",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c324",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Fishnets",
+    "variant": "01",
+    "child": "c324",
+    "modder": "Eljoseto"
+  },
+  {
+    "name": "No leggings",
+    "variant": "01",
+    "child": "c324",
+    "modder": "Eljoseto"
+  },
+  {
+    "name": "Blue bikini lewd",
+    "variant": "11",
+    "child": "c386",
+    "modder": "Heather"
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c349",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "11",
+    "child": "c386",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c253",
+    "modder": "KDG"
+  },
+  {
+    "name": "Pantiless",
+    "variant": "02",
+    "child": "c253",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c068",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c392",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "18",
+    "child": "c003",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer",
+    "variant": "01",
+    "child": "c354",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Pantiless",
+    "variant": "00",
+    "child": "c153",
+    "modder": "Seireiko",
+    "nsfw": true
+  },
+  {
+    "name": "Face",
+    "variant": "01",
+    "child": "c324",
+    "modder": "KDG"
+  },
+  {
+    "name": "Dick",
+    "variant": "01",
+    "child": "c205",
+    "modder": "KDG",
+    "nsfw": true
   }
 ]
