@@ -7491,7 +7491,13 @@
     "id": "c052"
   },
   "c173": {
-    "name": "Dinashi",
+    "name": "Diaone Sidhe (Dinashi)",
+    "stars": 5,
+    "tierPVP": 7,
+    "tierRaid": 10,
+    "tierBoss": 10,
+    "element": "fire",
+    "tierPVE": 4,
     "variants": {
       "10": {
         "title": "Danger Zone",
@@ -8170,7 +8176,10 @@
     "id": "c141"
   },
   "c262": {
+    "stars": 5,
+    "tierPVP": 8,
     "name": "Daphnis",
+    "tierRaid": 8,
     "variants": {
       "00": {
         "title": "Human",
@@ -8203,7 +8212,11 @@
         }
       }
     },
-    "id": "c262"
+    "tierBoss": 9,
+    "type": "attacker",
+    "id": "c262",
+    "element": "grass",
+    "tierPVE": 8
   },
   "c031": {
     "name": "Freyja",
@@ -12164,7 +12177,8 @@
         }
       }
     },
-    "id": "c223"
+    "id": "c223",
+    "stars": 5
   },
   "c344": {
     "name": "Isolde",
