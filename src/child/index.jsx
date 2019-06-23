@@ -13,14 +13,8 @@ import Link from '@material-ui/core/Link'
 import Grid from '@material-ui/core/Grid'
 import {Censor} from '../censorship.jsx'
 import EditButton from '../edit-button.jsx'
-import StarsInput from '../stars-input.jsx'
-import TypeInput from '../type-input.jsx'
-import TypeIcon from '../type-icon.jsx'
-import ElementInput from '../element-input.jsx'
-import ElementIcon from '../element-icon.jsx'
-import Stars from '../stars.jsx'
 import ChildCard from '../child-card.jsx'
-import {TierPVEInput, TierPVPInput, TierRaidInput, TierBossInput} from '../tier-input.jsx'
+import Mods from './mods.jsx'
 
 const useStyles = makeStyles({
   box: {
@@ -32,11 +26,6 @@ const useStyles = makeStyles({
   live2d: {
     minHeight: 275,
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
   title: {
     fontSize: 14,
   },
@@ -45,7 +34,7 @@ const useStyles = makeStyles({
   },
 })
 
-const Child = ({child, mode}) => {
+const Child = ({child, mods}) => {
   const classes = useStyles()
   if(!child) return <div>Loading ...</div>
   const name = child.get('name'),
@@ -106,13 +95,18 @@ const Child = ({child, mode}) => {
           </Box>
         ).toList()
       }
+      <Mods mods={mods} child={child} />
     </div>
   )
 }
 
 export default connect(
-  state => ({
-    child: state.get('childs').get(state.get('location').payload.id),
-    mode: state.get('child').get('mode')
-  })
+  state => {
+    const child = state.get('childs').get(state.get('location').payload.id)
+    return {
+      child,
+      mode: state.get('child').get('mode'),
+      mods: child && state.get('mods').get(child.get('id'))
+    }
+  }
 )(Child)

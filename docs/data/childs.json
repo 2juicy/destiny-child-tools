@@ -16045,7 +16045,10 @@
     "id": "sm056"
   },
   "c318": {
+    "stars": 5,
+    "tierPVP": 7,
     "name": "Bari",
+    "tierRaid": 7,
     "variants": {
       "10": {
         "title": "Afterlife",
@@ -16098,7 +16101,11 @@
         }
       }
     },
-    "id": "c318"
+    "tierBoss": 7,
+    "type": "attacker",
+    "id": "c318",
+    "element": "water",
+    "tierPVE": 7
   },
   "c208": {
     "name": "Pyro",

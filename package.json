@@ -42,7 +42,7 @@
     "start": "concurrently \"yarn server\" \"yarn client\"",
     "client": "NODE_ENV=development webpack-dev-server --config ./webpack.config.js --mode development",
     "server": "node ./server/index.js",
-    "dist": "webpack --config ./webpack.config.js --mode production",
+    "dist": "webpack --config ./webpack.config.js --mode production && node ./docs/live2d/generate-json.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
