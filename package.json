@@ -45,7 +45,8 @@
     "client": "NODE_ENV=development webpack-dev-server --config ./webpack.config.js --mode development",
     "server": "node ./server/index.js",
     "dist": "webpack --config ./webpack.config.js --mode production && node ./docs/live2d/generate-json.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "yarn dist && git add . && git commit -sm \"Release\" && git push"
   },
   "repository": {
     "type": "git",

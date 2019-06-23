@@ -30,10 +30,10 @@ app.post('/mod', function(req, res) {
     mod.name.toLowerCase().replace(/\s/g, '_')
 
   const mod = {
-    name: req.body.name,
+    name: req.body.name.replace(/^\s+/m, '').replace(/\s+$/m, ''),
     variant: name.replace(/^.+_/, ''),
     child: name.replace(/_.+$/, ''),
-    modder: req.body.modder
+    modder: req.body.modder.replace(/^\s+/m, '').replace(/\s+$/m, '')
   }
   if(req.body.nsfw == 'nsfw') mod.nsfw = true
 

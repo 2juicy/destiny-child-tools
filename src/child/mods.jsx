@@ -45,7 +45,7 @@ const Mods = ({child, mods, mode}) => {
             Installation instructions
           </Link>
         </Typography>
-        {child.get('variants').map((_, variantId) =>
+        {child.get('variants').toOrderedMap().sortBy((_, v) => parseInt(v)).map((_, variantId) =>
           mods.filter(mod => mod.get('variant') == variantId).sortBy(mod => mod.get('nsfw')).reverse().map((mod, i) => {
             const modPath = stringify(mod)
             return (

@@ -13220,7 +13220,10 @@
     "id": "c224"
   },
   "c345": {
+    "stars": 5,
+    "tierPVP": 7,
     "name": "Anemone",
+    "tierRaid": 7,
     "variants": {
       "10": {
         "title": "Sunrise",
@@ -13253,7 +13256,11 @@
         }
       }
     },
-    "id": "c345"
+    "tierBoss": 7,
+    "type": "support",
+    "id": "c345",
+    "element": "water",
+    "tierPVE": 8
   },
   "c235": {
     "name": "Danu",

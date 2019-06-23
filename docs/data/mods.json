@@ -36,5 +36,129 @@
     "variant": "02",
     "child": "c227",
     "modder": "Seraphita"
+  },
+  {
+    "name": "Female Hades Swap",
+    "variant": "01",
+    "child": "m056",
+    "modder": "Ahegao",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c174",
+    "modder": "Ahegao",
+    "nsfw": true
+  },
+  {
+    "name": "Translucent Top",
+    "variant": "01",
+    "child": "c345",
+    "modder": "Bugs Bunnay",
+    "nsfw": true
+  },
+  {
+    "name": "Striped Bikini",
+    "variant": "02",
+    "child": "c345",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "White sheer top",
+    "variant": "10",
+    "child": "c345",
+    "modder": "Bugs Bunnay",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c345",
+    "modder": "Eljoseto",
+    "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "variant": "01",
+    "child": "c345",
+    "modder": "fapfapfap",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c345",
+    "modder": "fapfapfap",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c345",
+    "modder": "HongChina",
+    "nsfw": true
+  },
+  {
+    "name": "Ahegai face",
+    "variant": "02",
+    "child": "c045",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Butt",
+    "variant": "10",
+    "child": "c318",
+    "modder": "Aeit",
+    "nsfw": true
+  },
+  {
+    "name": "Lewd",
+    "variant": "02",
+    "child": "c318",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Butt",
+    "variant": "10",
+    "child": "c318",
+    "modder": "Bugs Bunnay",
+    "nsfw": true
+  },
+  {
+    "name": "Redhead gender swap",
+    "variant": "02",
+    "child": "c319",
+    "modder": "Eljoseto"
+  },
+  {
+    "name": "Ahegao face",
+    "variant": "01",
+    "child": "c127",
+    "modder": "Ahegao"
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c127",
+    "modder": "fapfapfap"
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c127",
+    "modder": "fapfapfap"
+  },
+  {
+    "name": "",
+    "variant": "10",
+    "child": "c127",
+    "modder": "fapfapfap"
+  },
+  {
+    "name": "Swap and recolor",
+    "variant": "02",
+    "child": "c229",
+    "modder": "ljoseto"
   }
 ]
