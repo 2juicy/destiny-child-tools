@@ -3840,7 +3840,7 @@
   "m057": {
     "stars": 5,
     "tierPVP": 9,
-    "name": "Olga",
+    "name": "Olga (Orga / wola)",
     "tierRaid": 3,
     "variants": {
       "10": {
@@ -7491,13 +7491,10 @@
     "id": "c052"
   },
   "c173": {
-    "name": "Diaone Sidhe (Dinashi)",
     "stars": 5,
     "tierPVP": 7,
+    "name": "Diaone Sidhe (Dinashi)",
     "tierRaid": 10,
-    "tierBoss": 10,
-    "element": "fire",
-    "tierPVE": 4,
     "variants": {
       "10": {
         "title": "Danger Zone",
@@ -7540,7 +7537,10 @@
         }
       }
     },
-    "id": "c173"
+    "tierBoss": 10,
+    "id": "c173",
+    "element": "fire",
+    "tierPVE": 4
   },
   "c294": {
     "name": "Elisabeth",
@@ -8443,7 +8443,10 @@
     "id": "c295"
   },
   "c064": {
+    "stars": 5,
+    "tierPVP": 6,
     "name": "Medusa",
+    "tierRaid": 3,
     "variants": {
       "00": {
         "title": "Human",
@@ -8476,7 +8479,11 @@
         }
       }
     },
-    "id": "c064"
+    "tierBoss": 3,
+    "type": "debuffer",
+    "id": "c064",
+    "element": "dark",
+    "tierPVE": 6
   },
   "c185": {
     "name": "Hermod",
@@ -9786,7 +9793,10 @@
     "tierPVE": 6
   },
   "c253": {
+    "stars": 5,
+    "tierPVP": 8,
     "name": "Nicole",
+    "tierRaid": 9,
     "variants": {
       "10": {
         "title": "Nativity",
@@ -9839,7 +9849,11 @@
         }
       }
     },
-    "id": "c253"
+    "tierBoss": 9,
+    "type": "attacker",
+    "id": "c253",
+    "element": "grass",
+    "tierPVE": 9
   },
   "c374": {
     "name": "Hildr",
@@ -11070,7 +11084,10 @@
     "id": "c200"
   },
   "c321": {
+    "stars": 5,
+    "tierPVP": 4,
     "name": "Luna",
+    "tierRaid": 4,
     "variants": {
       "01": {
         "title": "Opposing",
@@ -11093,7 +11110,11 @@
         }
       }
     },
-    "id": "c321"
+    "tierBoss": 4,
+    "type": "support",
+    "id": "c321",
+    "element": "light",
+    "tierPVE": 4
   },
   "sm191": {
     "name": "키메이라",
@@ -12042,7 +12063,10 @@
     "id": "c300"
   },
   "c311": {
+    "stars": 5,
+    "tierPVP": 8,
     "name": "Khepri",
+    "tierRaid": 8,
     "variants": {
       "89": {
         "title": "Vicious",
@@ -12085,7 +12109,11 @@
         }
       }
     },
-    "id": "c311"
+    "tierBoss": 8,
+    "type": "attacker",
+    "id": "c311",
+    "element": "dark",
+    "tierPVE": 8
   },
   "c322": {
     "name": "Pandragon",
@@ -16319,7 +16347,10 @@
     "id": "sm145"
   },
   "c308": {
+    "stars": 5,
+    "tierPVP": 7,
     "name": "Kubaba",
+    "tierRaid": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -16352,7 +16383,11 @@
         }
       }
     },
-    "id": "c308"
+    "tierBoss": 8,
+    "type": "attacker",
+    "id": "c308",
+    "element": "dark",
+    "tierPVE": 6
   },
   "sm057": {
     "name": "월아",

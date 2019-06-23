@@ -91,6 +91,7 @@ app.post('/mod', function(req, res) {
     .then(() => run(`rm ${pckPath}${name}.pck.newUnencrypted`))
     .then(() => run(`rm ${pckPath}${name}`))
     .then(() => run(`rm -rf ${pckPath}${name}`))
+    .then(() => run(`rm -rf ${pckPath}${name}.pck`))
     .then(() => {
       const mods = JSON.parse(fs.readFileSync(modsDataPath))
       mods.push(mod)
