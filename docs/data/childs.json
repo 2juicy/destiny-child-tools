@@ -1507,7 +1507,7 @@
     "id": "m021"
   },
   "m142": {
-    "name": "Red",
+    "name": "Red Revenge Girl",
     "variants": {
       "01": {
         "title": "Revenger",
@@ -1530,7 +1530,8 @@
         }
       }
     },
-    "id": "m142"
+    "id": "m142",
+    "stars": 3
   },
   "m153": {
     "name": "Manti",
@@ -2281,7 +2282,7 @@
     "id": "m022"
   },
   "m143": {
-    "name": "Blue",
+    "name": "Blue Revenge Girl",
     "variants": {
       "01": {
         "title": "Revenger",
@@ -2304,7 +2305,8 @@
         }
       }
     },
-    "id": "m143"
+    "id": "m143",
+    "stars": 3
   },
   "m154": {
     "name": "Gungnir",
@@ -2948,7 +2950,7 @@
     "id": "m023"
   },
   "m144": {
-    "name": "Green",
+    "name": "Green Revenge Girl",
     "variants": {
       "01": {
         "title": "Revenger",
@@ -3735,7 +3737,7 @@
     "id": "m255"
   },
   "m145": {
-    "name": "Light",
+    "name": "Light Revenge Girl",
     "variants": {
       "01": {
         "title": "Revenger",
@@ -3758,7 +3760,8 @@
         }
       }
     },
-    "id": "m145"
+    "id": "m145",
+    "stars": 3
   },
   "m035": {
     "name": "Americano",
@@ -3970,7 +3973,10 @@
     "id": "m189"
   },
   "c190": {
+    "stars": 4,
+    "tierPVP": 6,
     "name": "Isis",
+    "tierRaid": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -4003,7 +4009,11 @@
         }
       }
     },
-    "id": "c190"
+    "tierBoss": 6,
+    "type": "healer",
+    "id": "c190",
+    "element": "water",
+    "tierPVE": 6
   },
   "c092": {
     "name": "Armida",
@@ -4356,7 +4366,7 @@
     "id": "m025"
   },
   "m146": {
-    "name": "Dark",
+    "name": "Dark Revenge Gil",
     "variants": {
       "01": {
         "title": "Revenger",
@@ -4379,7 +4389,8 @@
         }
       }
     },
-    "id": "m146"
+    "id": "m146",
+    "stars": 3
   },
   "m036": {
     "name": "Communicator",
@@ -5370,7 +5381,10 @@
     "id": "c060"
   },
   "c082": {
+    "stars": 3,
+    "tierPVP": 6,
     "name": "Calchas",
+    "tierRaid": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -5403,7 +5417,11 @@
         }
       }
     },
-    "id": "c082"
+    "tierBoss": 7,
+    "type": "attacker",
+    "id": "c082",
+    "element": "light",
+    "tierPVE": 7
   },
   "sc305": {
     "name": "리타",
@@ -7263,7 +7281,10 @@
     "id": "c382"
   },
   "c030": {
-    "name": "Maiden Detective",
+    "stars": 4,
+    "tierPVP": 6,
+    "name": "Maiden Detective (Detective Girl)",
+    "tierRaid": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -7296,7 +7317,11 @@
         }
       }
     },
-    "id": "c030"
+    "tierBoss": 7,
+    "type": "attacker",
+    "id": "c030",
+    "element": "light",
+    "tierPVE": 7
   },
   "c272": {
     "name": "Pixie",
@@ -8018,7 +8043,10 @@
     "tierPVE": 9
   },
   "c130": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Genius",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -8051,7 +8079,11 @@
         }
       }
     },
-    "id": "c130"
+    "tierBoss": 1,
+    "type": "attacker",
+    "id": "c130",
+    "element": "dark",
+    "tierPVE": 1
   },
   "c251": {
     "name": "Ganymede",
@@ -8248,7 +8280,9 @@
     "tierPVE": 8
   },
   "c031": {
+    "tierPVP": 1,
     "name": "Freyja",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -8281,7 +8315,11 @@
         }
       }
     },
-    "id": "c031"
+    "tierBoss": 1,
+    "type": "attacker",
+    "id": "c031",
+    "element": "grass",
+    "tierPVE": 1
   },
   "c152": {
     "name": "Hebe",
@@ -8587,7 +8625,10 @@
     "id": "c075"
   },
   "c196": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Idun",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -8620,7 +8661,11 @@
         }
       }
     },
-    "id": "c196"
+    "tierBoss": 1,
+    "type": "attacker",
+    "id": "c196",
+    "element": "dark",
+    "tierPVE": 1
   },
   "c086": {
     "name": "Goga",
@@ -8861,7 +8906,10 @@
     "id": "c120"
   },
   "c010": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Demeter",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -8894,7 +8942,11 @@
         }
       }
     },
-    "id": "c010"
+    "tierBoss": 1,
+    "type": "healer",
+    "id": "c010",
+    "element": "fire",
+    "tierPVE": 1
   },
   "c131": {
     "name": "Osiris",
@@ -8995,7 +9047,10 @@
     "id": "c384"
   },
   "c032": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Alecto",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -9028,7 +9083,11 @@
         }
       }
     },
-    "id": "c032"
+    "tierBoss": 1,
+    "type": "healer",
+    "id": "c032",
+    "element": "dark",
+    "tierPVE": 1
   },
   "c153": {
     "stars": 5,
@@ -9298,7 +9357,8 @@
         }
       }
     },
-    "id": "c054"
+    "id": "c054",
+    "stars": 3
   },
   "c175": {
     "stars": 5,
@@ -9452,7 +9512,10 @@
     "id": "c087"
   },
   "c099": {
+    "stars": 4,
+    "tierPVP": 6,
     "name": "Melpomene",
+    "tierRaid": 7,
     "variants": {
       "00": {
         "title": "Human",
@@ -9485,7 +9548,11 @@
         }
       }
     },
-    "id": "c099"
+    "tierBoss": 7,
+    "type": "support",
+    "id": "c099",
+    "element": "dark",
+    "tierPVE": 6
   },
   "m219": {
     "name": "Core",
@@ -9925,7 +9992,10 @@
     "id": "c374"
   },
   "c022": {
+    "stars": 4,
+    "tierPVP": 6,
     "name": "Mayahuel",
+    "tierRaid": 6,
     "variants": {
       "10": {
         "title": "Maid Mood",
@@ -9968,7 +10038,11 @@
         }
       }
     },
-    "id": "c022"
+    "tierBoss": 6,
+    "type": "support",
+    "id": "c022",
+    "element": "water",
+    "tierPVE": 4
   },
   "c033": {
     "name": "Diana",
@@ -10690,7 +10764,10 @@
     "id": "c012"
   },
   "c133": {
+    "stars": 4,
+    "tierPVP": 6,
     "name": "Titania",
+    "tierRaid": 7,
     "variants": {
       "00": {
         "title": "Human",
@@ -10723,7 +10800,11 @@
         }
       }
     },
-    "id": "c133"
+    "tierBoss": 8,
+    "type": "attacker",
+    "id": "c133",
+    "element": "light",
+    "tierPVE": 6
   },
   "c254": {
     "name": "Davi",
@@ -11239,7 +11320,10 @@
     "tierPVE": 9
   },
   "c222": {
+    "stars": 4,
+    "tierPVP": 6,
     "name": "El Dorado",
+    "tierRaid": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -11272,7 +11356,11 @@
         }
       }
     },
-    "id": "c222"
+    "tierBoss": 4,
+    "type": "tank",
+    "id": "c222",
+    "element": "fire",
+    "tierPVE": 6
   },
   "c112": {
     "name": "Elias",
@@ -11473,7 +11561,10 @@
     "tierPVE": 6
   },
   "c123": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Baphomet",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -11506,7 +11597,11 @@
         }
       }
     },
-    "id": "c123"
+    "tierBoss": 1,
+    "type": "tank",
+    "id": "c123",
+    "element": "water",
+    "tierPVE": 1
   },
   "c244": {
     "name": "Chun Li",
@@ -11801,7 +11896,10 @@
     "tierPVE": 6
   },
   "c277": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Leuce",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -11834,7 +11932,11 @@
         }
       }
     },
-    "id": "c277"
+    "tierBoss": 1,
+    "type": "support",
+    "id": "c277",
+    "element": "light",
+    "tierPVE": 1
   },
   "c167": {
     "stars": 5,
@@ -11943,7 +12045,10 @@
     "tierPVE": 8
   },
   "c178": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Morgana",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -11976,7 +12081,11 @@
         }
       }
     },
-    "id": "c178"
+    "tierBoss": 1,
+    "type": "support",
+    "id": "c178",
+    "element": "light",
+    "tierPVE": 1
   },
   "c299": {
     "stars": 5,
@@ -13264,7 +13373,10 @@
     "id": "c312"
   },
   "c202": {
+    "stars": 4,
+    "tierPVP": 6,
     "name": "Victorix",
+    "tierRaid": 7,
     "variants": {
       "00": {
         "title": "Human",
@@ -13297,7 +13409,11 @@
         }
       }
     },
-    "id": "c202"
+    "tierBoss": 7,
+    "type": "attacker",
+    "id": "c202",
+    "element": "light",
+    "tierPVE": 7
   },
   "sm193": {
     "name": "털뭉치",
@@ -13598,7 +13714,10 @@
     "id": "c257"
   },
   "c026": {
+    "stars": 3,
+    "tierPVP": 6,
     "name": "Eos",
+    "tierRaid": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -13631,7 +13750,11 @@
         }
       }
     },
-    "id": "c026"
+    "tierBoss": 6,
+    "type": "attacker",
+    "id": "c026",
+    "element": "light",
+    "tierPVE": 6
   },
   "c147": {
     "name": "Baal",
@@ -13795,7 +13918,10 @@
     "tierPVE": 7
   },
   "c048": {
-    "name": "Neman",
+    "stars": 4,
+    "tierPVP": 6,
+    "name": "Neman (Neamhain)",
+    "tierRaid": 7,
     "variants": {
       "00": {
         "title": "Human",
@@ -13828,10 +13954,17 @@
         }
       }
     },
-    "id": "c048"
+    "tierBoss": 9,
+    "type": "debuffer",
+    "id": "c048",
+    "element": "dark",
+    "tierPVE": 6
   },
   "c169": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Euros",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -13864,7 +13997,11 @@
         }
       }
     },
-    "id": "c169"
+    "tierBoss": 1,
+    "type": "support",
+    "id": "c169",
+    "element": "water",
+    "tierPVE": 1
   },
   "c401": {
     "stars": 5,
@@ -14008,7 +14145,10 @@
     "tierPVE": 8
   },
   "c225": {
+    "stars": 4,
+    "tierPVP": 5,
     "name": "Rudolph",
+    "tierRaid": 5,
     "variants": {
       "00": {
         "title": "Human",
@@ -14041,10 +14181,17 @@
         }
       }
     },
-    "id": "c225"
+    "tierBoss": 5,
+    "type": "support",
+    "id": "c225",
+    "element": "fire",
+    "tierPVE": 5
   },
   "c346": {
+    "stars": 4,
+    "tierPVP": 6,
     "name": "Tristan",
+    "tierRaid": 7,
     "variants": {
       "01": {
         "title": "Blocking",
@@ -14067,7 +14214,11 @@
         }
       }
     },
-    "id": "c346"
+    "tierBoss": 8,
+    "type": "attacker",
+    "id": "c346",
+    "element": "grass",
+    "tierPVE": 6
   },
   "c115": {
     "name": "Sonnet",
@@ -14843,7 +14994,10 @@
     "id": "c017"
   },
   "c028": {
+    "stars": 4,
+    "tierPVP": 10,
     "name": "Leda",
+    "tierRaid": 9,
     "variants": {
       "10": {
         "title": "Daydream",
@@ -14886,7 +15040,11 @@
         }
       }
     },
-    "id": "c028"
+    "tierBoss": 9,
+    "type": "support",
+    "id": "c028",
+    "element": "light",
+    "tierPVE": 6
   },
   "c149": {
     "stars": 5,
@@ -14932,7 +15090,10 @@
     "tierPVE": 6
   },
   "c039": {
+    "stars": 4,
+    "tierPVP": 6,
     "name": "Morrigan",
+    "tierRaid": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -14965,7 +15126,11 @@
         }
       }
     },
-    "id": "c039"
+    "tierBoss": 7,
+    "type": "attacker",
+    "id": "c039",
+    "element": "dark",
+    "tierPVE": 6
   },
   "sm141": {
     "name": "할로윈",
@@ -15153,7 +15318,10 @@
     "tierPVE": 4
   },
   "c106": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Medeia",
+    "tierRaid": 1,
     "variants": {
       "01": {
         "title": "Wizard",
@@ -15176,7 +15344,11 @@
         }
       }
     },
-    "id": "c106"
+    "tierBoss": 1,
+    "type": "attacker",
+    "id": "c106",
+    "element": "dark",
+    "tierPVE": 1
   },
   "c227": {
     "stars": 5,
@@ -15553,7 +15725,10 @@
     "tierPVE": 10
   },
   "c029": {
+    "stars": 4,
+    "tierPVP": 8,
     "name": "Selene",
+    "tierRaid": 9,
     "variants": {
       "00": {
         "title": "Human",
@@ -15586,7 +15761,11 @@
         }
       }
     },
-    "id": "c029"
+    "tierBoss": 6,
+    "type": "healer",
+    "id": "c029",
+    "element": "grass",
+    "tierPVE": 6
   },
   "sm142": {
     "name": "레드",
@@ -15732,7 +15911,10 @@
     "id": "sm197"
   },
   "c338": {
+    "stars": 5,
+    "tierPVP": 10,
     "name": "Pomona",
+    "tierRaid": 10,
     "variants": {
       "01": {
         "title": "Pure White",
@@ -15755,10 +15937,17 @@
         }
       }
     },
-    "id": "c338"
+    "tierBoss": 8,
+    "type": "healer",
+    "id": "c338",
+    "element": "light",
+    "tierPVE": 9
   },
   "c107": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Apollo",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -15791,7 +15980,11 @@
         }
       }
     },
-    "id": "c107"
+    "tierBoss": 1,
+    "type": "healer",
+    "id": "c107",
+    "element": "water",
+    "tierPVE": 1
   },
   "c349": {
     "stars": 5,
@@ -15914,7 +16107,10 @@
     "id": "c129"
   },
   "c019": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Eris",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -15947,7 +16143,11 @@
         }
       }
     },
-    "id": "c019"
+    "tierBoss": 1,
+    "type": "tank",
+    "id": "c019",
+    "element": "grass",
+    "tierPVE": 1
   },
   "sm143": {
     "name": "블루",
@@ -16144,7 +16344,12 @@
         }
       }
     },
-    "id": "c009"
+    "id": "c009",
+    "stars": 4,
+    "tierPVP": 5,
+    "tierPVE": 5,
+    "tierRaid": 5,
+    "tierBoss": 5
   },
   "sm144": {
     "name": "그린",
@@ -16240,7 +16445,10 @@
     "tierPVE": 7
   },
   "c208": {
+    "stars": 3,
+    "tierPVP": 1,
     "name": "Pyro",
+    "tierRaid": 1,
     "variants": {
       "00": {
         "title": "Human",
@@ -16273,7 +16481,11 @@
         }
       }
     },
-    "id": "c208"
+    "tierBoss": 1,
+    "type": "attacker",
+    "id": "c208",
+    "element": "fire",
+    "tierPVE": 1
   },
   "sm199": {
     "name": "수룡",
