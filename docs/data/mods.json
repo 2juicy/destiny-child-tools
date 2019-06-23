@@ -10,5 +10,11 @@
     "variant": "02",
     "modder": "Loki",
     "name": "Swimsuit2 based on Eljoseto"
+  },
+  {
+    "name": "Lewd",
+    "variant": "02",
+    "child": "c227",
+    "modder": "Eljoseto"
   }
 ]

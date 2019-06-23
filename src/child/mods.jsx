@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {makeStyles} from '@material-ui/core/styles'
+import {DropzoneArea} from 'material-ui-dropzone'
 import Box from '@material-ui/core/Box'
 import Link from '@material-ui/core/Link'
 import IconButton from '@material-ui/core/IconButton'
@@ -29,7 +30,7 @@ const stringify = mod =>
   mod.get('modder').toLowerCase().replace(/\s/g, '_') + '-' +
   mod.get('name').toLowerCase().replace(/\s/g, '_')
 
-const Mods = ({child, mods}) => {
+const Mods = ({child, mods, mode}) => {
   const id = child.get('id'),
         classes = useStyles()
   return mods
@@ -51,7 +52,9 @@ const Mods = ({child, mods}) => {
                 <Card className={classes.card}>
                   <CardContent>
                     <Typography variant="subtitle1">
-                      {child.get('id')}_{variantId} {mod.get('name')} by {mod.get('modder')} {' '}
+                      <Link href={`./live2d/viewer.html?mN=${modPath}&size=1000`} target="_blank">
+                        {child.get('id')}_{variantId} {mod.get('name')} by {mod.get('modder')} {' '}
+                      </Link>
                       <IconButton title="Download" href={`./live2d/assets/${modPath}/${id}_${variantId}.pck`}>
                         <DownloadIcon />
                       </IconButton>
@@ -86,6 +89,26 @@ const Mods = ({child, mods}) => {
             )
           })
         ).toList()}
+        {mode == 'edit' &&
+          <Box mt={2}>
+            <Box mb={1}>
+              <Typography variant="h6">
+                Upload new mod
+              </Typography>
+            </Box>
+            <form method="post" encType="multipart/form-data" action="./api/mod">
+              <input type="hidden" value={document.location} name="backUrl" />
+              <p>Modder: <input type="text" name="modder" /></p>
+              <p>Name: <input type="text" name="name" /></p>
+              <p>
+                PCK file:
+                {' '}
+                <input type="file" name="pck" />
+                <input type="submit" />
+              </p>
+            </form>
+          </Box>
+        }
       </Box>
     )
     : null
@@ -94,7 +117,8 @@ const Mods = ({child, mods}) => {
 export default connect(
   (state, {child}) => {
     return {
-      mods: state.get('mods').filter(mod => mod.get('child') == child.get('id'))
+      mods: state.get('mods').filter(mod => mod.get('child') == child.get('id')),
+      mode: state.get('child').get('mode')
     }
   }
 )(Mods)
