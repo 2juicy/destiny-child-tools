@@ -1649,20 +1649,14 @@
     "name": "Blue bikini lewd",
     "variant": "11",
     "child": "c386",
-    "modder": "Heather"
+    "modder": "Heather",
+    "nsfw": true
   },
   {
     "name": "",
     "variant": "01",
     "child": "c349",
     "modder": "KDG",
-    "nsfw": true
-  },
-  {
-    "name": "Nude",
-    "variant": "11",
-    "child": "c386",
-    "modder": "Heather",
     "nsfw": true
   },
   {
@@ -1723,6 +1717,145 @@
     "name": "Dick",
     "variant": "01",
     "child": "c205",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Swap blue bikini sheer",
+    "variant": "01",
+    "child": "c386",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c386",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "10",
+    "child": "c386",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap blue bikini sheer",
+    "variant": "02",
+    "child": "c387",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c409",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c409",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c385",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "11",
+    "child": "c385",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c409",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer pink bikini",
+    "variant": "02",
+    "child": "c385",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer pink bikini",
+    "variant": "12",
+    "child": "c385",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer top",
+    "variant": "01",
+    "child": "c385",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer top Harlequin",
+    "variant": "01",
+    "child": "c385",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude creampie",
+    "variant": "02",
+    "child": "c409",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c091",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c091",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Maera",
+    "variant": "01",
+    "child": "c235",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Maera",
+    "variant": "02",
+    "child": "c235",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Black gold with chains",
+    "variant": "02",
+    "child": "c353",
+    "modder": "Heather"
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c371",
     "modder": "KDG",
     "nsfw": true
   }

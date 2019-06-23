@@ -587,24 +587,6 @@
     },
     "id": "sc144"
   },
-  "sc386": {
-    "name": "Kasumi",
-    "variants": {
-      "01": {
-        "title": "온천의",
-        "positions": {}
-      },
-      "02": {
-        "title": "온천의",
-        "positions": {}
-      },
-      "03": {
-        "title": "온천의",
-        "positions": {}
-      }
-    },
-    "id": "sc386"
-  },
   "sc034": {
     "name": "므네모시네",
     "variants": {
@@ -7205,7 +7187,10 @@
     "tierPVE": 6
   },
   "c371": {
-    "name": "Lisa",
+    "stars": 5,
+    "tierPVP": 6,
+    "name": "Bikini Lisa ",
+    "tierRaid": 8,
     "variants": {
       "10": {
         "title": "Rashguard",
@@ -7238,7 +7223,11 @@
         }
       }
     },
-    "id": "c371"
+    "tierBoss": 9,
+    "type": "support",
+    "id": "c371",
+    "element": "grass",
+    "tierPVE": 5
   },
   "c140": {
     "name": "Nodens",
@@ -10940,6 +10929,69 @@
     },
     "id": "c144"
   },
+  "c386": {
+    "stars": 5,
+    "tierPVP": 8,
+    "name": "Kasumi",
+    "tierRaid": 8,
+    "variants": {
+      "10": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "11": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "12": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      }
+    },
+    "tierBoss": 8,
+    "type": "attacker",
+    "id": "c386",
+    "element": "water",
+    "tierPVE": 7
+  },
   "c034": {
     "name": "Mnemosyne",
     "variants": {
@@ -11882,6 +11934,59 @@
     "element": "light",
     "tierPVE": 3
   },
+  "c387": {
+    "stars": 5,
+    "tierPVP": 7,
+    "name": "Honoka",
+    "tierRaid": 7,
+    "variants": {
+      "10": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "11": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      }
+    },
+    "tierBoss": 7,
+    "type": "healer",
+    "id": "c387",
+    "element": "fire",
+    "tierPVE": 7
+  },
   "c035": {
     "name": "Persephone",
     "variants": {
@@ -12656,6 +12761,16 @@
       },
       "17": {
         "title": "Mini",
+        "positions": {
+          "home": {
+            "x": 9,
+            "y": -171,
+            "scale": 0.72
+          }
+        }
+      },
+      "18": {
+        "title": "Chearleader",
         "positions": {
           "home": {
             "x": 9,
@@ -17091,6 +17206,33 @@
       }
     },
     "id": "sm136"
+  },
+  "c409": {
+    "name": "?",
+    "tierRaid": false,
+    "variants": {
+      "01": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      },
+      "02": {
+        "title": "",
+        "positions": {
+          "home": {
+            "x": 0,
+            "y": -10,
+            "scale": 1.3
+          }
+        }
+      }
+    },
+    "id": "c409"
   },
   "sm037": {
     "name": "추격자",
