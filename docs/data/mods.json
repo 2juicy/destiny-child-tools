@@ -1941,5 +1941,40 @@
     "variant": "01",
     "child": "c401",
     "modder": "Ahegao"
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c401",
+    "modder": "Milky",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "10",
+    "child": "c377",
+    "modder": "Milky",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c013",
+    "modder": "Milky",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c013",
+    "modder": "Milky",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c285",
+    "modder": "Milky",
+    "nsfw": true
   }
 ]
