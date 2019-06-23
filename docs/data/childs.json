@@ -872,7 +872,7 @@
     "id": "m163"
   },
   "m053": {
-    "name": "Daria",
+    "name": "Daria (Hydra)",
     "variants": {
       "00": {
         "title": "Human",
@@ -905,7 +905,8 @@
         }
       }
     },
-    "id": "m053"
+    "id": "m053",
+    "stars": 4
   },
   "m174": {
     "name": "Light Star",
@@ -6030,7 +6031,10 @@
     "tierPVE": 7
   },
   "c072": {
+    "stars": 4,
+    "tierPVP": 4,
     "name": "Fenrir",
+    "tierRaid": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -6063,7 +6067,11 @@
         }
       }
     },
-    "id": "c072"
+    "tierBoss": 7,
+    "type": "attacker",
+    "id": "c072",
+    "element": "fire",
+    "tierPVE": 4
   },
   "c083": {
     "name": "Neith",
@@ -6733,7 +6741,10 @@
     "id": "c172"
   },
   "c062": {
+    "stars": 4,
+    "tierPVP": 5,
     "name": "Europa",
+    "tierRaid": 5,
     "variants": {
       "00": {
         "title": "Human",
@@ -6766,7 +6777,11 @@
         }
       }
     },
-    "id": "c062"
+    "tierBoss": 5,
+    "type": "tank",
+    "id": "c062",
+    "element": "grass",
+    "tierPVE": 5
   },
   "c183": {
     "stars": 5,
@@ -7615,7 +7630,10 @@
     "id": "c063"
   },
   "c184": {
-    "name": "Elysium",
+    "stars": 4,
+    "tierPVP": 7,
+    "name": "Elysium (Elysion)",
+    "tierRaid": 8,
     "variants": {
       "00": {
         "title": "Human",
@@ -7648,7 +7666,11 @@
         }
       }
     },
-    "id": "c184"
+    "tierBoss": 9,
+    "type": "attacker",
+    "id": "c184",
+    "element": "water",
+    "tierPVE": 9
   },
   "c074": {
     "name": "Quirinus",
@@ -8104,7 +8126,10 @@
     "id": "c372"
   },
   "c020": {
+    "stars": 4,
+    "tierPVP": 6,
     "name": "Fortuna",
+    "tierRaid": 6,
     "variants": {
       "00": {
         "title": "Human",
@@ -8137,7 +8162,11 @@
         }
       }
     },
-    "id": "c020"
+    "tierBoss": 7,
+    "type": "support",
+    "id": "c020",
+    "element": "fire",
+    "tierPVE": 4
   },
   "c141": {
     "name": "Amor",
@@ -9045,7 +9074,10 @@
     "tierPVE": 7
   },
   "c274": {
+    "stars": 4,
+    "tierPVP": 7,
     "name": "Bast",
+    "tierRaid": 8,
     "variants": {
       "00": {
         "title": "Human",
@@ -9078,7 +9110,11 @@
         }
       }
     },
-    "id": "c274"
+    "tierBoss": 7,
+    "type": "attacker",
+    "id": "c274",
+    "element": "light",
+    "tierPVE": 6
   },
   "c395": {
     "name": "Eve",
@@ -9160,7 +9196,10 @@
     "tierPVE": 7
   },
   "c164": {
+    "stars": 4,
+    "tierPVP": 6,
     "name": "Ishtar",
+    "tierRaid": 5,
     "variants": {
       "00": {
         "title": "Human",
@@ -9193,7 +9232,11 @@
         }
       }
     },
-    "id": "c164"
+    "tierBoss": 6,
+    "type": "debuffer",
+    "id": "c164",
+    "element": "light",
+    "tierPVE": 5
   },
   "c285": {
     "name": "Nautilus",
@@ -11268,7 +11311,10 @@
     "id": "c112"
   },
   "c233": {
+    "stars": 4,
+    "tierPVP": 6,
     "name": "Arges",
+    "tierRaid": 3,
     "variants": {
       "00": {
         "title": "Human",
@@ -11301,7 +11347,11 @@
         }
       }
     },
-    "id": "c233"
+    "tierBoss": 3,
+    "type": "debuffer",
+    "id": "c233",
+    "element": "water",
+    "tierPVE": 5
   },
   "c354": {
     "name": "Demeter",
@@ -11518,7 +11568,10 @@
     "tierPVE": 4
   },
   "c013": {
+    "stars": 4,
+    "tierPVP": 7,
     "name": "Artemis",
+    "tierRaid": 8,
     "variants": {
       "00": {
         "title": "Human",
@@ -11551,7 +11604,11 @@
         }
       }
     },
-    "id": "c013"
+    "tierBoss": 8,
+    "type": "attacker",
+    "id": "c013",
+    "element": "dark",
+    "tierPVE": 8
   },
   "c255": {
     "name": "Mona",
@@ -12271,7 +12328,10 @@
     "id": "c113"
   },
   "c234": {
-    "name": "Hercules",
+    "stars": 4,
+    "tierPVP": 6,
+    "name": "Hercules (Heracles)",
+    "tierRaid": 6,
     "variants": {
       "10": {
         "title": "Young Lion",
@@ -12314,7 +12374,11 @@
         }
       }
     },
-    "id": "c234"
+    "tierBoss": 5,
+    "type": "tank",
+    "id": "c234",
+    "element": "light",
+    "tierPVE": 6
   },
   "c355": {
     "stars": 5,
@@ -14226,7 +14290,10 @@
     "id": "c027"
   },
   "c148": {
+    "stars": 4,
+    "tierPVP": 7,
     "name": "Inanna",
+    "tierRaid": 7,
     "variants": {
       "10": {
         "title": "Purple Diamond",
@@ -14279,7 +14346,11 @@
         }
       }
     },
-    "id": "c148"
+    "tierBoss": 8,
+    "type": "attacker",
+    "id": "c148",
+    "element": "dark",
+    "tierPVE": 7
   },
   "c269": {
     "name": "Pixie",
@@ -15799,7 +15870,12 @@
         }
       }
     },
-    "id": "c008"
+    "id": "c008",
+    "stars": 4,
+    "tierPVP": 5,
+    "tierPVE": 5,
+    "tierRaid": 5,
+    "tierBoss": 5
   },
   "c129": {
     "name": "Nike",

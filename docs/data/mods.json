@@ -222,13 +222,6 @@
   },
   {
     "name": "Topless",
-    "variant": "01",
-    "child": "c167",
-    "modder": "fapfapfap",
-    "nsfw": true
-  },
-  {
-    "name": "Topless",
     "variant": "10",
     "child": "c167",
     "modder": "fapfapfap",
@@ -838,6 +831,139 @@
     "variant": "02",
     "child": "c219",
     "modder": "Gunz",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c233",
+    "modder": "Gunz",
+    "nsfw": true
+  },
+  {
+    "name": "Panty",
+    "variant": "01",
+    "child": "c013",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Panty",
+    "variant": "02",
+    "child": "c013",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "No cloth",
+    "variant": "01",
+    "child": "c274",
+    "modder": "fapfapfap"
+  },
+  {
+    "name": "No cloth",
+    "variant": "02",
+    "child": "c274",
+    "modder": "fapfapfap"
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c274",
+    "modder": "Okieries",
+    "nsfw": true
+  },
+  {
+    "name": "No ruffles",
+    "variant": "01",
+    "child": "c184",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Ahegao face bukakke",
+    "variant": "02",
+    "child": "c184",
+    "modder": "EcchiNeko",
+    "nsfw": true
+  },
+  {
+    "name": "No flower",
+    "variant": "02",
+    "child": "c062",
+    "modder": "EcchiNeko"
+  },
+  {
+    "name": "Dick",
+    "variant": "02",
+    "child": "c072",
+    "modder": "Gunz",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c020",
+    "modder": "Itzjustzee",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c008",
+    "modder": "HongChina",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c008",
+    "modder": "HongChina",
+    "nsfw": true
+  },
+  {
+    "name": "Dick",
+    "variant": "02",
+    "child": "c234",
+    "modder": "Gunz",
+    "nsfw": true
+  },
+  {
+    "name": "Dick",
+    "variant": "10",
+    "child": "c234",
+    "modder": "Gunz",
+    "nsfw": true
+  },
+  {
+    "name": "Pantiless",
+    "variant": "01",
+    "child": "m053",
+    "modder": "Bugs Bunnay",
+    "nsfw": true
+  },
+  {
+    "name": "Bukakke",
+    "variant": "10",
+    "child": "c148",
+    "modder": "EcchiNeko",
+    "nsfw": true
+  },
+  {
+    "name": "No Wings",
+    "variant": "02",
+    "child": "c164",
+    "modder": "Bugs Bunnay"
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c164",
+    "modder": "Gunz",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c167",
+    "modder": "fapfapfap",
     "nsfw": true
   }
 ]
