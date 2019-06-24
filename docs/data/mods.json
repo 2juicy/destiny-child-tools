@@ -2677,5 +2677,17 @@
     "variant": "01",
     "child": "c043",
     "modder": "Milky"
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c043",
+    "modder": "Milky"
+  },
+  {
+    "name": "",
+    "variant": "10",
+    "child": "c043",
+    "modder": "Milky"
   }
 ]
