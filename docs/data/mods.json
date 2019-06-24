@@ -346,12 +346,6 @@
     "nsfw": true
   },
   {
-    "name": "Special swap",
-    "variant": "01",
-    "child": "c124",
-    "modder": "Ahegao"
-  },
-  {
     "name": "Nude",
     "variant": "02",
     "child": "c124",
@@ -1975,6 +1969,451 @@
     "variant": "02",
     "child": "c285",
     "modder": "Milky",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c122",
+    "modder": "Milky",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c225",
+    "modder": "Milky",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c149",
+    "modder": "Milky",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c297",
+    "modder": "Milky",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c397",
+    "modder": "Arsylk",
+    "nsfw": true
+  },
+  {
+    "name": "Star-Struck",
+    "variant": "02",
+    "child": "c124",
+    "modder": "GTMeteor"
+  },
+  {
+    "name": "",
+    "variant": "17",
+    "child": "c001",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c003",
+    "modder": "Punkster",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c158",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Blue Tips",
+    "variant": "02",
+    "child": "c013",
+    "modder": "Sthera"
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc230",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Female Hades swap",
+    "variant": "01",
+    "child": "m056",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c406",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c406",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Nodens lewd",
+    "variant": "01",
+    "child": "m056",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Swap Nodens lewd",
+    "variant": "02",
+    "child": "m056",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c233",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c233",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c045",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c045",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "01",
+    "child": "c092",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c092",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless battleaxe",
+    "variant": "01",
+    "child": "c220",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "88",
+    "child": "c267",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc061",
+    "modder": "Punkster",
+    "nsfw": true
+  },
+  {
+    "name": "Full of thick thighs",
+    "variant": "89",
+    "child": "m234",
+    "modder": "Heather"
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c124",
+    "modder": "KDG",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c196",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c196",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "02",
+    "child": "c188",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c189",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c230",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "c233",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc008",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc011",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc019",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc026",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc028",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc029",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc040",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc043",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc045",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc048",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Sheer top",
+    "variant": "01",
+    "child": "sc057",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc058",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc060",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc061",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc083",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc086",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc099",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc115",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc133",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc148",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc149",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc158",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc160",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless no monkey",
+    "variant": "01",
+    "child": "sc167",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc174",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc195",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc196",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc199",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "01",
+    "child": "sc220",
+    "modder": "蠟燭炭",
+    "nsfw": true
+  },
+  {
+    "name": "Beric swapped for nude world boss",
+    "variant": "89",
+    "child": "c267",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Topless",
+    "variant": "02",
+    "child": "c316",
+    "modder": "Heather",
     "nsfw": true
   }
 ]

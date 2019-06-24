@@ -24,10 +24,14 @@ const Home = () => (
   <List component="nav">
     <ListItem button component={RouterLink} to="/childs">
       <ListItemIcon><FaceIcon /></ListItemIcon>
-      <ListItemText primary="Childs Database" />
+      <ListItemText primary="Childs &amp; Mods Database" />
     </ListItem>
     <Divider />
     <ListLink text="Live2D Viewer" href="./live2d/" Icon={ImageIcon} />
+    <ListLink
+      text="Arsylk's dctools"
+      href="https://arsylk.pythonanywhere.com/apk/view_models"
+      Icon={ExtensionIcon} />
     <ListLink
       text="Modding Wiki (nsfw)"
       href="http://wiki.anime-sharing.com/hgames/index.php?title=Destiny_Child/Mods"
