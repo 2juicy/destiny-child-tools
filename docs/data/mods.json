@@ -2643,5 +2643,39 @@
     "child": "c386",
     "modder": "Heather",
     "nsfw": true
+  },
+  {
+    "name": "Nude",
+    "variant": "02",
+    "child": "c385",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Schoolgirl sheer",
+    "variant": "02",
+    "child": "c385",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "Harleyquinn sheer",
+    "variant": "02",
+    "child": "c386",
+    "modder": "Heather",
+    "nsfw": true
+  },
+  {
+    "name": "No arms nude",
+    "variant": "02",
+    "child": "c297",
+    "modder": "Milky",
+    "nsfw": true
+  },
+  {
+    "name": "",
+    "variant": "01",
+    "child": "c043",
+    "modder": "Milky"
   }
 ]
