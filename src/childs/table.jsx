@@ -59,6 +59,7 @@ const ChildsTable = ({
         <TableHead>
           <TableRow>
             <Sortable name="id">ID</Sortable>
+            <Sortable name="name">Icon</Sortable>
             <Sortable name="name">Name</Sortable>
             <Sortable name="stars">Stars</Sortable>
             <Sortable name="element">Element</Sortable>
@@ -77,6 +78,9 @@ const ChildsTable = ({
               <TableRow key={id + 'list'}>
                 <TableChildCellLink child={child}>
                   {id}
+                </TableChildCellLink>
+                <TableChildCellLink child={child}>
+                  <img src={`./img/childs/icons/${child.get('id')}_01.png`} height="40" />
                 </TableChildCellLink>
                 <TableChildCellLink child={child}>
                   {child.get('name')}
