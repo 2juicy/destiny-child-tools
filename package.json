@@ -3,18 +3,60 @@
   "version": "1.0.0",
   "description": "Centralized repository for various Destiny Child game related tools",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@material-ui/core": "4.1.1",
+    "@material-ui/icons": "4.2.0",
+    "history": "4.9.0",
+    "immutable": "4.0.0-rc.12",
+    "material-ui-dropzone": "^2.3.5",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-redux": "7.1.0",
+    "react-select": "3.0.4",
+    "redux": "4.0.1",
+    "redux-first-router": "2.1.2",
+    "redux-first-router-link": "2.1.1",
+    "redux-immutable": "4.0.0",
+    "redux-thunk": "2.3.0"
+  },
   "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.6",
+    "body-parser": "1.19.0",
+    "concurrently": "4.1.0",
+    "css-loader": "3.0.0",
     "eslint": "5.13.0",
-    "http-server": "0.11.1"
+    "eslint-plugin-react": "7.13.0",
+    "express": "4.17.1",
+    "express-fileupload": "1.1.5",
+    "file-loader": "4.0.0",
+    "html-webpack-plugin": "3.2.0",
+    "http-server": "0.11.1",
+    "react-hot-loader": "4.11.1",
+    "style-loader": "0.23.1",
+    "webpack": "4.34.0",
+    "webpack-cli": "3.3.4",
+    "webpack-dev-server": "3.7.2"
   },
   "scripts": {
-    "start": "http-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"yarn server\" \"yarn client\"",
+    "client": "NODE_ENV=development webpack-dev-server --config ./webpack.config.js --mode development",
+    "server": "node ./server/index.js",
+    "dist": "webpack --config ./webpack.config.js --mode production && node ./docs/live2d/generate-json.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "yarn dist && git add . && git commit -sm \"Release\" && git push"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com-lokicoder:lokicoder/destiny-child-tools.git"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   },
   "author": "LokiCoder, Arsylk",
   "license": "MIT"
