@@ -8,7 +8,6 @@
     "@material-ui/icons": "4.2.0",
     "history": "4.9.0",
     "immutable": "4.0.0-rc.12",
-    "material-ui-dropzone": "^2.3.5",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-redux": "7.1.0",
